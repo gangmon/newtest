@@ -29,4 +29,17 @@ return [
      'Register' => '注册',
     'Rememberme' => '记住我',
     'Incorrect username or password.' => '用户名或密码不正确',
+    'Create Judgement' => '创建判断题',
+    'Create Time' => '创建时间',
+    'Update Time' => '更新时间',
+    'Judgements' => '判断题',
+    'Create Choice' => '创建选择题',
+    'Choices' => '选择题',
+    'Difficulty' => '难度等级',
+    'Fix it' => '修改',
+    'Update Choice' => '修改选择题',
+    'answer' => '正确答案',
+    'Submit Fixed' => '提交修改',
+    'Update Judgement' => '修改判断题',
+
 ];

@@ -34,7 +34,7 @@ class Judgement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['admin_id', 'title', 'answer', 'create_time', 'update_time'], 'required'],
+            [[ 'title', 'answer', ], 'required'],
             [['admin_id', 'score', 'create_time', 'update_time'], 'integer'],
             [['title', 'answer'], 'string'],
             [['admin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Adminuser::className(), 'targetAttribute' => ['admin_id' => 'id']],
@@ -49,7 +49,7 @@ class Judgement extends \yii\db\ActiveRecord
         return [
             'id' => Yii::t('app', 'ID'),
             'admin_id' => Yii::t('app', '出题人'),
-            'title' => Yii::t('app', '出题人'),
+            'title' => Yii::t('app', '题目'),
             'answer' => Yii::t('app', '答案'),
             'score' => Yii::t('app', '分数，默认5分'),
             'create_time' => Yii::t('app', 'Create Time'),
@@ -60,6 +60,57 @@ class Judgement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    //创建时间和修改时间
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->admin_id = Yii::$app->user->id;
+                $this->create_time = time();
+                $this->update_time = time();
+                $this->score = 5;
+            }
+            else
+            {
+                $this->update_time = time();
+            }
+
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+//    public function afterFind()
+//    {
+//        parent::afterFind();
+//        $this->_oldTags = $this->tags;
+//    }
+
+//    public function afterSave($insert, $changedAttributes)
+//    {
+//        parent::afterSave($insert, $changedAttributes);
+//        Tag::updateFrequency($this->_oldTags, $this->tags);
+//    }
+//
+//    public function afterDelete()
+//    {
+//        parent::afterDelete();
+//        Tag::updateFrequency($this->tags, '');
+//    }
+//获取题目详情
+//    public function getUrl()
+//    {
+//        return Yii::$app->urlManager->createUrl(
+//            ['choice/detail','id'=>$this->id,'title'=>$this->title]);
+//    }
+
+
+
     public function getAdmin()
     {
         return $this->hasOne(Adminuser::className(), ['id' => 'admin_id']);
@@ -81,4 +132,5 @@ class Judgement extends \yii\db\ActiveRecord
     {
         return new JudgementQuery(get_called_class());
     }
+
 }

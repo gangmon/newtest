@@ -39,7 +39,7 @@ class Choice extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['answer', 'admin_id', 'title', 'A', 'B', 'C', 'D', 'difficulty', 'create_time', 'update_time'], 'required'],
+            [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty', ], 'required'],
             [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty'], 'string'],
             [['admin_id', 'score', 'create_time', 'update_time'], 'integer'],
             [['admin_id'], 'exist', 'skipOnError' => true, 'targetClass' => Adminuser::className(), 'targetAttribute' => ['admin_id' => 'id']],
@@ -53,7 +53,7 @@ class Choice extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', '题号'),
-            'answer' => Yii::t('app', '答案'),
+            'answer' => Yii::t('app', '正确答案'),
             'admin_id' => Yii::t('app', '出题人'),
             'title' => Yii::t('app', '题目内容'),
             'A' => Yii::t('app', 'A'),
@@ -91,4 +91,32 @@ class Choice extends \yii\db\ActiveRecord
     {
         return new ChoiceQuery(get_called_class());
     }
+
+
+    //创建时间
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->admin_id = Yii::$app->user->id;
+                $this->create_time = time();
+                $this->update_time = time();
+                $this->score = 10;
+            }
+            else
+            {
+                $this->update_time = time();
+            }
+
+            return true;
+
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }

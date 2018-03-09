@@ -38,8 +38,18 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => Yii::t('app','Home'), 'url' => ['/site/index']],
-        ['label' => Yii::t('app','Create Exam'),'url' => ['result/create']],
+        ['label' => Yii::t('app','Create Exam'),'url' => ['result/create']
+        ,'items' =>
+            [
+                    ['label' => Yii::t('app','创建选择题'),'url' => ['choice/create']],
+                ['label' => Yii::t('app','创建判断题'),'url' => ['judgement/create']]
+            ]
+        ],
         ['label' => Yii::t('app','Create Adminuser'),'url' =>['adminuser/create']],
+        ['label' => Yii::t('app','考试结果'),'url' =>['result/index']],
+
+
+
 
     ];
     if (Yii::$app->user->isGuest) {

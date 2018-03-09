@@ -64,6 +64,7 @@ class JudgementController extends Controller
     public function actionCreate()
     {
         $model = new Judgement();
+//        print_r(Yii::$app->user->id);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['view', 'id' => $model->id]);
