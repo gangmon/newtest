@@ -78,6 +78,25 @@ $this->params['breadcrumbs'][] = $this->title;
           'header' => '操作',
           'template' => '{view}  {update}   {delete} ',//只需要展示删除和更新
           'headerOptions' => ['width' => '100'],
+                   'buttons' => [
+                       'view' => function($url,$model,$key){
+                           return Html::a('查看',
+                               ['choice/view','id' => $model->id],
+//                                ['class' => "glyphicon fa fa-eye"],
+                               ['class' => "btn btn-xs btn-success"]
+                           );},
+                       'update' => function($url,$model,$key){
+                           return Html::a('修改',
+                               ['choice/update','id' => $model->id],
+                               ['class' => "btn btn-xs btn-info"]
+                           );},
+                       'delete' => function($url,$model,$key){
+                           return Html::a('删除',
+                               ['choice/delete','id' => 'id'],
+                               ['class' => "btn btn-xs btn-danger"]
+                           );}
+
+                   ],
 //          'buttons' => [
 //            'delete' => function($url, $model, $key){
 //               return Html::a('<i class="fa fa-ban"></i> 删除',

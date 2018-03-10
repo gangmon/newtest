@@ -59,7 +59,27 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                     'class' => 'yii\grid\ActionColumn',
                     'header' => '操作',
+                'template' => '{view} {update} {delete}',//只需要展示删除和更新
                     'headerOptions' => ['width' => '100'],
+                'buttons' => [
+                        'view' => function($url,$model,$key){
+                            return Html::a('查看',
+                                ['judgement/view','id' => $model->id],
+//                                ['class' => "glyphicon fa fa-eye"],
+                                ['class' => "btn btn-xs btn-success"]
+                            );},
+                        'update' => function($url,$model,$key){
+                            return Html::a('修改',
+                                ['judgement/update','id' => $model->id],
+                                ['class' => "btn btn-xs btn-info"]
+                            );},
+                        'delete' => function($url,$model,$key){
+                            return Html::a('删除',
+                                ['judgement/delete','id' => 'id'],
+                                ['class' => "btn btn-xs btn-danger"]
+                            );}
+
+                ],
 
             ],
         ],

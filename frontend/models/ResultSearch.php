@@ -62,6 +62,7 @@ class ResultSearch extends Result
             'user_id' => $this->user_id,
             'score' => $this->score,
             'create_time' => $this->create_time,
+            'quizname' => $this->quizname,
         ]);
 
         return $dataProvider;

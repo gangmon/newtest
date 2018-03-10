@@ -18,6 +18,9 @@ use Yii;
  */
 class Result extends \yii\db\ActiveRecord
 {
+
+    public $quizname;
+
     /**
      * @inheritdoc
      */
@@ -75,12 +78,43 @@ class Result extends \yii\db\ActiveRecord
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
 
+
+    //得到考试人姓名
+    public function getQuizname(){
+        $quizname = $this->user->username;
+        return $this->user->username;
+//        return $this->hasOne(User::className(),['username' => $this->user->id]);
+    }
+
+
     /**
      * @inheritdoc
      * @return ResultQuery the active query used by this AR class.
      */
+
     public static function find()
     {
         return new ResultQuery(get_called_class());
+    }
+
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->create_time = time();
+            }
+            else
+            {
+
+            }
+            return true;
+
+        }
+        else
+        {
+            return false;
+        }
     }
 }

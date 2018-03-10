@@ -41,5 +41,7 @@ return [
     'answer' => '正确答案',
     'Submit Fixed' => '提交修改',
     'Update Judgement' => '修改判断题',
+    'Results' => '考试结果',
+    'Create Result' => '创建考试',
 
 ];
