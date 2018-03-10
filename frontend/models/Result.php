@@ -19,7 +19,7 @@ use Yii;
 class Result extends \yii\db\ActiveRecord
 {
 
-    public $quizname;
+//    public $quizname;
 
     /**
      * @inheritdoc
@@ -79,12 +79,12 @@ class Result extends \yii\db\ActiveRecord
     }
 
 
-    //得到考试人姓名
-    public function getQuizname(){
-        $quizname = $this->user->username;
-        return $this->user->username;
-//        return $this->hasOne(User::className(),['username' => $this->user->id]);
-    }
+//    //得到考试人姓名
+//    public function getQuizname(){
+//        $quizname = $this->user->username;
+//        return $this->user->username;
+////        return $this->hasOne(User::className(),['username' => $this->user->id]);
+//    }
 
 
     /**

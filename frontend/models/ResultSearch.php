@@ -6,12 +6,16 @@ use Yii;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use frontend\models\Result;
-
+use common\models\User;
 /**
  * ResultSearch represents the model behind the search form about `frontend\models\Result`.
  */
 class ResultSearch extends Result
 {
+    public function attributes()
+    {
+        return array_merge(parent::attributes(),['quizName']);
+    }
     /**
      * @inheritdoc
      */
@@ -19,6 +23,7 @@ class ResultSearch extends Result
     {
         return [
             [['id', 'user_id', 'score', 'create_time'], 'integer'],
+            [['quizName'],'safe'],
         ];
     }
 
@@ -62,9 +67,16 @@ class ResultSearch extends Result
             'user_id' => $this->user_id,
             'score' => $this->score,
             'create_time' => $this->create_time,
-            'quizname' => $this->quizname,
         ]);
 
+        $query->join('INNER JOIN',User::tableName(),'user_id = test_user.id');
+        $query->andFilterWhere(['like','test_user.username',$this->quizName]);
+
+        $dataProvider->sort->attributes['quizName'] =
+            [
+                'asc'=>['test_user.username'=>SORT_ASC],
+                'desc'=>['test_user.username'=>SORT_DESC],
+            ];
         return $dataProvider;
     }
 }

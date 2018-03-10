@@ -23,8 +23,8 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-//            ['class' => 'yii\grid\SerialColumn'],
-
+//            ['class' => 'yii\grid\ActionColumn'],
+//            ['class' => 'yii\grid\CheckboxColumn'],
             [
                     'attribute' => 'id',
                     'label' => '考试编号',
@@ -37,7 +37,7 @@ $this->params['breadcrumbs'][] = $this->title;
 //                'contentOptions' => ['width' => '30px'],
             ],
             [
-                    'attribute' => 'quizname',
+                    'attribute' => 'quizName',
                     'label' => '考试人姓名',
                     'value' => 'user.username',
 //                    'filter' => ['user_id' => 'user.username'],
