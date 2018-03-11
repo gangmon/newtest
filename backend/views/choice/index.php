@@ -32,6 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
             [
                 'attribute' => 'title',
+                'value' => 'beginning',
             ],
 //            'A:ntext',
             // 'B:ntext',
@@ -92,7 +93,7 @@ $this->params['breadcrumbs'][] = $this->title;
                            );},
                        'delete' => function($url,$model,$key){
                            return Html::a('删除',
-                               ['choice/delete','id' => 'id'],
+                               ['choice/delete','id' => $model->id],
                                ['class' => "btn btn-xs btn-danger"]
                            );}
 

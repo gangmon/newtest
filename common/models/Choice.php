@@ -39,6 +39,8 @@ class Choice extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+//            [['title',],['unique']],
+            ['title', 'unique', 'targetClass' => '\common\models\Choice', 'message' => '此题已存在.'],
             [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty', ], 'required'],
             [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty'], 'string'],
             [['admin_id', 'score', 'create_time', 'update_time'], 'integer'],
@@ -92,7 +94,14 @@ class Choice extends \yii\db\ActiveRecord
         return new ChoiceQuery(get_called_class());
     }
 
+//设置在总览页面题目的长度
+    public function getBeginning()
+    {
+        $tmpStr = strip_tags($this->title);
+        $tmpLen = mb_strlen($tmpStr);
 
+        return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
+    }
     //创建时间
     public function beforeSave($insert)
     {
@@ -118,5 +127,7 @@ class Choice extends \yii\db\ActiveRecord
             return false;
         }
     }
+    //得到数据库中存在的所有id
+
 
 }

@@ -43,5 +43,7 @@ return [
     'Update Judgement' => '修改判断题',
     'Results' => '考试结果',
     'Create Result' => '创建考试',
+    'Are you sure you want to delete this item?' => '确定删除？',
+    'Choice Answer' => '选择答案',
 
 ];

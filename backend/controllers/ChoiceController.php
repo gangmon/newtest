@@ -23,7 +23,7 @@ class ChoiceController extends Controller
             'verbs' => [
                 'class' => VerbFilter::className(),
                 'actions' => [
-                    'delete' => ['POST'],
+//                    'delete' => ['POST'],
                 ],
             ],
         ];
@@ -38,6 +38,8 @@ class ChoiceController extends Controller
         $searchModel = new ChoiceSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
+//        $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+//        print_r($queryID);
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
@@ -101,6 +103,7 @@ class ChoiceController extends Controller
      */
     public function actionDelete($id)
     {
+//        echo 'haha';die;
         $this->findModel($id)->delete();
 
         return $this->redirect(['index']);

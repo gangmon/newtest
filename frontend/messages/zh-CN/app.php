@@ -18,5 +18,9 @@ return [
     'Delete' => '删除',
 
     'Please fill out the following fields to login:' => '请输入密码：',
+    'Choice Answer' => '选项',
+
+    'Choice' => '选项',
+    'Judgement_answer' => '选项',
 
 ];

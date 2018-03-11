@@ -33,7 +33,7 @@ AppAsset::register($this);
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
-            'style' => ['height:42'],
+//            'style' => ['height:42'],
         ],
     ]);
     $menuItems = [
@@ -42,7 +42,7 @@ AppAsset::register($this);
         ,'items' =>
             [
                     ['label' => Yii::t('app','创建选择题'),'url' => ['choice/create']],
-                ['label' => Yii::t('app','创建判断题'),'url' => ['judgement/create']]
+                    ['label' => Yii::t('app','创建判断题'),'url' => ['judgement/create']]
             ]
         ],
         ['label' => Yii::t('app','Create Adminuser'),'url' =>['adminuser/create']],

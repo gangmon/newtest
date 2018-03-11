@@ -2,6 +2,8 @@
 
 namespace frontend\controllers;
 
+use common\models\Choice;
+use common\models\Judgement;
 use Yii;
 use frontend\models\Result;
 use frontend\models\ResultSearch;
@@ -33,15 +35,82 @@ class ResultController extends Controller
      * Lists all Result models.
      * @return mixed
      */
+//    public function actionIndex()
+//    {
+//        $searchModel = new ResultSearch();
+//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+//
+//        return $this->render('index', [
+//            'searchModel' => $searchModel,
+//            'dataProvider' => $dataProvider,
+//        ]);
+//    }
+//开始考试
     public function actionIndex()
     {
+        $result =  new Result();
         $searchModel = new ResultSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
-            'searchModel' => $searchModel,
-            'dataProvider' => $dataProvider,
+        $transaction = Yii::$app->db->beginTransaction();
+        try{
+            print_r('hahahahhahahahahhhh');
+            $result->score = 0;
+//    print_r('pppppppphahahahhahahahahhhh');
+//    print_r('<br>');
+            print_r( Yii::$app->user->id);
+            $result->user_id = Yii::$app->user->id;
+//    print_r('<br>');
+            print_r($result->user_id);
+
+            $result->save();
+
+            //得到choice表中的所有id
+            $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+            //$numID = range($queryID);
+            //打乱顺序
+            shuffle($queryID);
+            $how_mangChoice = 5;
+            $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
+            foreach ($shuffleIDs as $shuffleID ){
+                $choicequiz = Choice::findOne($shuffleID);
+                echo $this->render('_choicetitle', [
+                    'model' => $choicequiz,
+                ]);
+                //新建一个选择题下拉菜单，用来存放考试结果
+                $choiceform = new Choicepaper();
+                echo $this->render('_choiceform', [
+                    'model' => $choiceform,
+                    'result' => $result,
+                ]);
+            }
+
+        } catch(Exception $e){
+            $transaction->rollBack();
+
+        }
+        echo $this->render('_title', [
+
+//            'model' => $choicequiz,
+            'result' => $result,
         ]);
+
+
+
+//        foreach ($judgementquiz as $judgement){
+//            echo $this->render('_judgementtitle',[
+//                'model'  => $judgement,
+//            ]);
+//        }
+
+
+
+//        return $this->render('quiz', [
+//            'searchModel' => $searchModel,
+//            'dataProvider' => $dataProvider,
+//            'choicequiz' => $choicequiz,
+//            'judgementquiz' => $judegementquiz,
+//        ]);
     }
 
     /**

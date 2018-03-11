@@ -32,7 +32,8 @@ class Choicepaper extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['result_id', 'choice_id', 'choice_answer'], 'required'],
+//            [['result_id', 'choice_id', 'choice_answer'], 'required'],
+            [['choice_answer'], 'required'],
             [['result_id', 'choice_id', 'test_time'], 'integer'],
             [['choice_answer'], 'string'],
             [['result_id'], 'exist', 'skipOnError' => true, 'targetClass' => Result::className(), 'targetAttribute' => ['result_id' => 'id']],
@@ -78,4 +79,27 @@ class Choicepaper extends \yii\db\ActiveRecord
     {
         return new ChoicepaperQuery(get_called_class());
     }
+
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->create_time = time();
+            }
+            else
+            {
+
+            }
+            return true;
+
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+
 }

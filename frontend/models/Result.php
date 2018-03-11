@@ -18,9 +18,6 @@ use Yii;
  */
 class Result extends \yii\db\ActiveRecord
 {
-
-//    public $quizname;
-
     /**
      * @inheritdoc
      */
@@ -35,7 +32,7 @@ class Result extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['user_id', 'score'], 'required'],
+//            [['user_id', 'score'], 'required'],
             [['user_id', 'score', 'create_time'], 'integer'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -77,14 +74,6 @@ class Result extends \yii\db\ActiveRecord
     {
         return $this->hasOne(User::className(), ['id' => 'user_id']);
     }
-
-
-//    //得到考试人姓名
-//    public function getQuizname(){
-//        $quizname = $this->user->username;
-//        return $this->user->username;
-////        return $this->hasOne(User::className(),['username' => $this->user->id]);
-//    }
 
 
     /**

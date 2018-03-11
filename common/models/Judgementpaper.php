@@ -32,7 +32,7 @@ class Judgementpaper extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['result_id', 'judgement_id', 'judgement_answer'], 'required'],
+            [[ 'judgement_answer'], 'required'],
             [['result_id', 'judgement_id', 'test_time'], 'integer'],
             [['judgement_answer'], 'string'],
             [['judgement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Judgement::className(), 'targetAttribute' => ['judgement_id' => 'id']],
@@ -49,7 +49,7 @@ class Judgementpaper extends \yii\db\ActiveRecord
             'id' => Yii::t('app', 'ID'),
             'result_id' => Yii::t('app', 'Result ID'),
             'judgement_id' => Yii::t('app', 'Judgement ID'),
-            'judgement_answer' => Yii::t('app', 'Judgement Answer'),
+            'judgement_answer' => Yii::t('app', 'Judgement_answer'),
             'test_time' => Yii::t('app', 'Test Time'),
         ];
     }
@@ -78,4 +78,24 @@ class Judgementpaper extends \yii\db\ActiveRecord
     {
         return new JudgementpaperQuery(get_called_class());
     }
+
+
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->create_time = time();
+//                $this->result_id = ;
+
+            }
+            else {}return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
 }
