@@ -93,23 +93,14 @@ try{
 //    print_r('gggggggggggggggggg');
 //        $result->status =
 //            echo "<pre>"; print_r($result->id); echo "</pre>";
-    echo "<pre>"; print_r($result); echo "</pre>";
+//    echo "<pre>"; print_r($result); echo "</pre>";
 //        echo "<br><br><br><br>";
         echo "<pre>"; print_r($result->user_id); echo "</pre>";
 //        echo "<br><br><br><br>";
 //        echo "<pre>"; print_r($result->user); echo "</pre>";
 
     $result->save();
-            echo "<br><br><br><br>";
-    echo "<pre>"; print_r($result->id); echo "</pre>";
 
-
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($result->id); echo "</pre>";
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($result->id); echo "</pre>";
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($result->create_time); echo "</pre>";
     //得到choice表中的所有id
     $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
     //$numID = range($queryID);
@@ -117,28 +108,55 @@ try{
     shuffle($queryID);
     $how_mangChoice = 5;
     $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
+
+    $choiceforms = [new Choicepaper()];
+    $count = count(Yii::$app->request->post('Choicepaper', []));
+    for ($i = 0;$i < $how_mangChoice-1;$i++){
+        $choiceforms[] = new Choicepaper();
+        $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+    }
+//    print_r($choiceforms[1]);
+    echo "<pre>"; var_dump($choiceforms[0]->result_id); echo "</pre>";
+    echo "<br><br><br><br>";
+    echo "<pre>"; print_r($shuffleIDs[0]['id']); echo "</pre>";
+    echo "<br><br><br><br>";
+    echo "<pre>"; print_r($choiceforms); echo "</pre>";
+
+
+    echo "<br><br><br><br>";
+//
+    echo "<br><br><br><br>";
+//    echo "<pre>"; print_r($result->id); echo "</pre>";
+    echo "<br><br><br><br>";
+    echo "<pre>"; print_r($shuffleIDs); echo "</pre>";
+
+
+
+
+
     foreach ($shuffleIDs as $shuffleID ){
         $choicequiz = Choice::findOne($shuffleID);
         echo $this->render('_choicetitle', [
             'model' => $choicequiz,
         ]);
         //新建一个选择题下拉菜单，用来存放考试结果
-        $choiceform = new Choicepaper();
+//        $choiceforms[] = new Choicepaper();
+
 
         echo $this->render('_choiceform', [
-            'model' => $choiceform,
+            'model' => $choiceforms[1],
             'result' => $result,
         ]);
 
     }
-    if ($choiceform->load(Yii::$app->request->post()) && $choiceform->save()) {
-        return $this->redirect(['view', 'id' => $choiceform->id]);
-    } else {
-        return $this->render('_title', [
-            'model' => $model,
-        ]);
-    }
-    $transaction->commit();
+//    if ($choiceform->load(Yii::$app->request->post()) && $choiceform->save()) {
+//        return $this->redirect(['view', 'id' => $choiceform->id]);
+//    } else {
+//        return $this->render('_title', [
+//            'model' => $model,
+//        ]);
+//    }
+//    $transaction->commit();
 
 } catch(Exception $e){
     $transaction->rollBack();
