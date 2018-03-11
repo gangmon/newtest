@@ -5,6 +5,7 @@ use common\models\Judgement;
 use common\models\Choicepaper;
 use common\models\Choice;
 use yii\helpers\Html;
+use yii\widgets\ActiveForm;
 ?>
 
 <!--先显示选择题，然后选择填空题-->
@@ -74,7 +75,9 @@ use yii\helpers\Html;
 //        echo "<pre>"; print_r($result->user_id); echo "</pre>";
 //        echo "<br><br><br><br>";
 //        echo "<pre>"; print_r($result->user); echo "</pre>";
+?>
 
+<?php $form = ActiveForm::begin();
 $transaction = Yii::$app->db->beginTransaction();
 try{
     print_r('hahahahhahahahahhhh');
@@ -121,15 +124,24 @@ try{
         ]);
         //新建一个选择题下拉菜单，用来存放考试结果
         $choiceform = new Choicepaper();
+
         echo $this->render('_choiceform', [
             'model' => $choiceform,
             'result' => $result,
         ]);
+
     }
+    if ($choiceform->load(Yii::$app->request->post()) && $choiceform->save()) {
+        return $this->redirect(['view', 'id' => $choiceform->id]);
+    } else {
+        return $this->render('_title', [
+            'model' => $model,
+        ]);
+    }
+    $transaction->commit();
 
 } catch(Exception $e){
     $transaction->rollBack();
-
 }
 
 
@@ -137,28 +149,18 @@ try{
 ?>
 
     <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', '提交')); ?>
+        <?= Html::submitButton(Yii::t('app', '提交'),['class' => 'btn btn-success']); ?>
     </div>
 <?php
-
-
-print_r('hahahahhahahahahhhh');
-$result->score = 0;
-//    print_r('pppppppphahahahhahahahahhhh');
-//    print_r('<br>');
-print_r( Yii::$app->user->id);
-$result->user_id = Yii::$app->user->id;
-//    print_r('<br>');
-print_r($result->user_id);
-//    $result->cerate_time = time();
-
-//    print_r('gggggggggggggggggg');
-//        $result->status =
-//            echo "<pre>"; print_r($result->id); echo "</pre>";
-echo "<pre>"; print_r($result); echo "</pre>";
-//        echo "<br><br><br><br>";
-echo "<pre>"; print_r($result->user_id); echo "</pre>";
-//        echo "<br><br><br><br>";
-//        echo "<pre>"; print_r($result->user); echo "</pre>";
-
-$result->save();
+ActiveForm::end();
+?>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>

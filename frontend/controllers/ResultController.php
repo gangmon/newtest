@@ -10,6 +10,8 @@ use frontend\models\ResultSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use common\models\Choicepaper;
+
 
 /**
  * ResultController implements the CRUD actions for Result model.
@@ -52,43 +54,44 @@ class ResultController extends Controller
         $searchModel = new ResultSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        $transaction = Yii::$app->db->beginTransaction();
-        try{
-            print_r('hahahahhahahahahhhh');
-            $result->score = 0;
-//    print_r('pppppppphahahahhahahahahhhh');
-//    print_r('<br>');
-            print_r( Yii::$app->user->id);
-            $result->user_id = Yii::$app->user->id;
-//    print_r('<br>');
-            print_r($result->user_id);
-
-            $result->save();
-
-            //得到choice表中的所有id
-            $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
-            //$numID = range($queryID);
-            //打乱顺序
-            shuffle($queryID);
-            $how_mangChoice = 5;
-            $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
-            foreach ($shuffleIDs as $shuffleID ){
-                $choicequiz = Choice::findOne($shuffleID);
-                echo $this->render('_choicetitle', [
-                    'model' => $choicequiz,
-                ]);
-                //新建一个选择题下拉菜单，用来存放考试结果
-                $choiceform = new Choicepaper();
-                echo $this->render('_choiceform', [
-                    'model' => $choiceform,
-                    'result' => $result,
-                ]);
-            }
-
-        } catch(Exception $e){
-            $transaction->rollBack();
-
-        }
+//        $transaction = Yii::$app->db->beginTransaction();
+//        try{
+//            print_r('hahahahhahahahahhhh');
+//            $result->score = 0;
+////    print_r('pppppppphahahahhahahahahhhh');
+////    print_r('<br>');
+//            print_r( Yii::$app->user->id);
+//            $result->user_id = Yii::$app->user->id;
+////    print_r('<br>');
+//            print_r($result->user_id);
+//
+//            $result->save();
+//
+//            //得到choice表中的所有id
+//            $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+//            //$numID = range($queryID);
+//            //打乱顺序
+//            shuffle($queryID);
+//            $how_mangChoice = 5;
+//            $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
+//            foreach ($shuffleIDs as $shuffleID ){
+//                $choicequiz = Choice::findOne($shuffleID);
+//                echo $this->render('_choicetitle', [
+//                    'model' => $choicequiz,
+//                ]);
+//                //新建一个选择题下拉菜单，用来存放考试结果
+//                $choiceform = new Choicepaper();
+//                echo $this->render('_choiceform', [
+//                    'model' => $choiceform,
+//                    'result' => $result,
+//                ]);
+//            }
+//            $transaction->commit();
+//
+//        } catch(\Exception $e){
+//            $transaction->rollBack();
+//
+//        }
         echo $this->render('_title', [
 
 //            'model' => $choicequiz,
