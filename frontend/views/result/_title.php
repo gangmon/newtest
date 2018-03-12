@@ -6,6 +6,7 @@ use common\models\Choicepaper;
 use common\models\Choice;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use \yii\base\Model;
 ?>
 
 <!--先显示选择题，然后选择填空题-->
@@ -77,7 +78,7 @@ use yii\widgets\ActiveForm;
 //        echo "<pre>"; print_r($result->user); echo "</pre>";
 ?>
 
-<?php $form = ActiveForm::begin();
+<?php
 $transaction = Yii::$app->db->beginTransaction();
 try{
     print_r('hahahahhahahahahhhh');
@@ -114,26 +115,11 @@ try{
     for ($i = 0;$i < $how_mangChoice-1;$i++){
         $choiceforms[] = new Choicepaper();
         $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+        $choiceforms[$i]->result_id = $result->id;
     }
-//    print_r($choiceforms[1]);
-    echo "<pre>"; var_dump($choiceforms[0]->result_id); echo "</pre>";
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($shuffleIDs[0]['id']); echo "</pre>";
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($choiceforms); echo "</pre>";
+    $i = 0;
 
-
-    echo "<br><br><br><br>";
-//
-    echo "<br><br><br><br>";
-//    echo "<pre>"; print_r($result->id); echo "</pre>";
-    echo "<br><br><br><br>";
-    echo "<pre>"; print_r($shuffleIDs); echo "</pre>";
-
-
-
-
-
+    $form = ActiveForm::begin();
     foreach ($shuffleIDs as $shuffleID ){
         $choicequiz = Choice::findOne($shuffleID);
         echo $this->render('_choicetitle', [
@@ -143,20 +129,51 @@ try{
 //        $choiceforms[] = new Choicepaper();
 
 
-        echo $this->render('_choiceform', [
-            'model' => $choiceforms[1],
-            'result' => $result,
-        ]);
 
+
+
+
+      echo $form->field($choiceforms[$i], 'choice_answer')->dropDownList([ 'A' => 'A', 'B' => 'B', 'C' => 'C', 'D' => 'D', ], ['prompt' => '请选择正确选项']);
+
+
+
+
+//        echo $this->render('_choiceform', [
+//            'model' => $choiceforms[1],
+//            'result' => $result,
+//        ]);
+        echo "<pre>"; print_r($shuffleID); echo "</pre>";
+
+        $i ++;
+
+    }
+    ?>
+    <div class="form-group">
+        <?= Html::submitButton(Yii::t('app', '提交'),['class' => 'btn btn-success']); ?>
+    </div>
+
+
+<?php
+    ActiveForm::end();
+    if (Model::loadMultiple($choiceforms,Yii::$app->request->post()) && Model::validateMultiple($choiceforms)){
+
+        print_r("losdfiodshdfdkslafjkl");
+
+        foreach ($choiceforms as $choiceform){
+
+        }
+        $transaction->commit();
+    }else{
+//        return false;
     }
 //    if ($choiceform->load(Yii::$app->request->post()) && $choiceform->save()) {
 //        return $this->redirect(['view', 'id' => $choiceform->id]);
-//    } else {
+//    } else
 //        return $this->render('_title', [
 //            'model' => $model,
 //        ]);
 //    }
-//    $transaction->commit();
+
 
 } catch(Exception $e){
     $transaction->rollBack();
@@ -166,11 +183,11 @@ try{
 
 ?>
 
-    <div class="form-group">
-        <?= Html::submitButton(Yii::t('app', '提交'),['class' => 'btn btn-success']); ?>
-    </div>
+<!--    <div class="form-group">-->
+<!--        --><?//= Html::submitButton(Yii::t('app', '提交'),['class' => 'btn btn-success']); ?>
+<!--    </div>-->
 <?php
-ActiveForm::end();
+
 ?>
 <br><br><br>
 <br><br><br>

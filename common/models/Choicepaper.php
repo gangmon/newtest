@@ -86,7 +86,7 @@ class Choicepaper extends \yii\db\ActiveRecord
         {
             if($insert)
             {
-                $this->create_time = time();
+                $this->test_time = time();
             }
             else
             {

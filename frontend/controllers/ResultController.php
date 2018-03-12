@@ -4,6 +4,7 @@ namespace frontend\controllers;
 
 use common\models\Choice;
 use common\models\Judgement;
+use common\models\Judgementpaper;
 use Yii;
 use frontend\models\Result;
 use frontend\models\ResultSearch;
@@ -12,10 +13,13 @@ use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
 use common\models\Choicepaper;
 
-
+use yii\widgets\DetailView;
 /**
  * ResultController implements the CRUD actions for Result model.
  */
+use yii\widgets\ActiveForm;
+use yii\helpers\Html;
+use yii\base\Model;
 class ResultController extends Controller
 {
     /**
@@ -48,72 +52,145 @@ class ResultController extends Controller
 //        ]);
 //    }
 //开始考试
+    public function actionJudgement()
+    {
+        $result = new Result();
+
+        $queryID = Yii::$app->db->createCommand('SELECT id from test_judgement')->queryAll();
+        shuffle($queryID);
+        $how_mangJudgement = 3;
+        $shuffleIDs = array_slice($queryID, 0, $how_mangJudgement);
+        $judgementforms = [new Judgementpaper()];
+        for ($i = 0; $i < $how_mangJudgement - 1; $i--) {
+
+            $judgementforms[$i]->choice_id = $queryID[$i]['id'];
+        }
+        $transaction = Yii::$app->db->beginTransaction();
+        try {
+            $result->score = 0;
+            $result->user_id = Yii::$app->user->id;
+            $result->save();
+            if (Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
+
+                print_r("losdfiodshdfdkslafjkl");
+                $i = 0;
+                foreach ($judgementforms as $judgeform) {
+                    $judgeform->result_id = $result->id;
+                    $judgementforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+                    $judgementforms->save();
+
+                    $i++;
+
+                }
+
+            }
+        } catch
+            (\Exception $e){
+
+            }
+    }
+
     public function actionIndex()
     {
         $result =  new Result();
         $searchModel = new ResultSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-//        $transaction = Yii::$app->db->beginTransaction();
-//        try{
-//            print_r('hahahahhahahahahhhh');
-//            $result->score = 0;
-////    print_r('pppppppphahahahhahahahahhhh');
-////    print_r('<br>');
-//            print_r( Yii::$app->user->id);
-//            $result->user_id = Yii::$app->user->id;
-////    print_r('<br>');
-//            print_r($result->user_id);
+
+        //////////////////////////////////////////////
+        ///
+        ///
+        $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+        //打乱顺序
+        shuffle($queryID);
+        $how_mangChoice = 5;
+        $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
+
+        $choiceforms = [new Choicepaper()];
+        $count = count(Yii::$app->request->post('Choicepaper', []));
+        for ($i = 0;$i < $how_mangChoice-1;$i++){
+            $choiceforms[] = new Choicepaper();
+            $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+            $choiceforms[$i]->result_id = $result->id;
+        }
+
+        $transaction = Yii::$app->db->beginTransaction();
+try {
+    $result->score = 0;
+    print_r(Yii::$app->user->id);
+    $result->user_id = Yii::$app->user->id;
+    print_r($result->user_id);
+//            echo "<pre>"; print_r($result->id); echo "</pre>";
+//    echo "<pre>"; print_r($result); echo "</pre>";
+//        echo "<br><br><br><br>";
+    echo "<pre>";
+    print_r($result->user_id);
+    echo "</pre>";
+//        echo "<br><br><br><br>";
+    $result->save();
+//    if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms)) {
 //
-//            $result->save();
+//        print_r("这个表达是已经load过了的表单3");
+//        $i = 0;
+//        foreach ($choiceforms as $choiceform) {
+//            $choiceform->result_id = $result->id;
+//            $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+//            $choiceform->save();
 //
-//            //得到choice表中的所有id
-//            $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
-//            //$numID = range($queryID);
-//            //打乱顺序
-//            shuffle($queryID);
-//            $how_mangChoice = 5;
-//            $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
-//            foreach ($shuffleIDs as $shuffleID ){
-//                $choicequiz = Choice::findOne($shuffleID);
-//                echo $this->render('_choicetitle', [
-//                    'model' => $choicequiz,
-//                ]);
-//                //新建一个选择题下拉菜单，用来存放考试结果
-//                $choiceform = new Choicepaper();
-//                echo $this->render('_choiceform', [
-//                    'model' => $choiceform,
-//                    'result' => $result,
-//                ]);
-//            }
-//            $transaction->commit();
-//
-//        } catch(\Exception $e){
-//            $transaction->rollBack();
+//            $i++;
 //
 //        }
-        echo $this->render('_title', [
+//    得到choice表中的所有id
+//    $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+//    //打乱顺序
+//    shuffle($queryID);
+//    $how_mangChoice = 5;
+//    $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
+//
+//    $choiceforms = [new Choicepaper()];
+//    $count = count(Yii::$app->request->post('Choicepaper', []));
+//    for ($i = 0;$i < $how_mangChoice-1;$i++){
+//        $choiceforms[] = new Choicepaper();
+//        $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+//        $choiceforms[$i]->result_id = $result->id;
+//    }
+//    $i = 0;
 
-//            'model' => $choicequiz,
+
+        if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms)) {
+
+            print_r("losdfiodshdfdkslafjkl");
+            $i = 0;
+            foreach ($choiceforms as $choiceform) {
+                $choiceform->result_id = $result->id;
+                $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+                $choiceform->save();
+
+                $i++;
+
+            }
+            $transaction->commit();
+        } else {
+            return $this->render('_allform', [
+                'choiceform' => $choiceforms,
+                'result' => $result,
+            ]);
+        }
+
+
+    }catch
+    (Exception $e){
+        $transaction->rollBack();
+    }
+
+
+        return $this->render('_allform', [
+            'choiceform' => $choiceforms,
+//            'modeltitle' => $choicequiz,
             'result' => $result,
         ]);
 
 
-
-//        foreach ($judgementquiz as $judgement){
-//            echo $this->render('_judgementtitle',[
-//                'model'  => $judgement,
-//            ]);
-//        }
-
-
-
-//        return $this->render('quiz', [
-//            'searchModel' => $searchModel,
-//            'dataProvider' => $dataProvider,
-//            'choicequiz' => $choicequiz,
-//            'judgementquiz' => $judegementquiz,
-//        ]);
     }
 
     /**
