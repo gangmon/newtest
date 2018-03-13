@@ -35,7 +35,35 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'password_reset_token',
             // 'settime:datetime',
 
-            ['class' => 'yii\grid\ActionColumn'],
+//            ['class' => 'yii\grid\ActionColumn'],
+            [
+                //动作列yii\grid\ActionColumn
+                //用于显示一些动作按钮，如每一行的更新、删除操作。
+                'class' => 'yii\grid\ActionColumn',
+                'header' => '操作',
+                'template' => '{view}  {update}   {delete} ',//只需要展示删除和更新
+                'headerOptions' => ['width' => '100'],
+                'buttons' => [
+                    'view' => function($url,$model,$key){
+                        return Html::a('查看',
+                            ['adminuser/view','id' => $model->id],
+//                                ['class' => "glyphicon fa fa-eye"],
+                            ['class' => "btn btn-xs btn-success"]
+                        );},
+                    'update' => function($url,$model,$key){
+                        return Html::a('修改',
+                            ['adminuser/update','id' => $model->id],
+                            ['class' => "btn btn-xs btn-info"]
+                        );},
+                    'delete' => function($url,$model,$key){
+                        return Html::a('删除',
+                            ['adminuser/delete','id' => $model->id],
+                            ['class' => "btn btn-xs btn-danger"]
+                        );}
+
+                ],
+
+            ],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

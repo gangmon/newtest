@@ -6,13 +6,13 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model backend\models\Adminuser */
 
-$this->title = $model->id;
+$this->title = '出题人信息';
 $this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Adminusers'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="adminuser-view">
 
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode('管理员编号:'.$model->id) ?></h1>
 
     <p>
         <?= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
@@ -31,13 +31,12 @@ $this->params['breadcrumbs'][] = $this->title;
             'id',
             'username',
             'nickname',
-            'password',
             'email:email',
             'profile:ntext',
-            'auth_key',
-            'password_hash',
-            'password_reset_token',
-            'settime:datetime',
+            [
+                'attribute'=>'settime',
+                'value'=>date('Y-m-d h:i:s',$model->settime),
+            ],
         ],
     ]) ?>
 

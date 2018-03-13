@@ -7,7 +7,7 @@ $this->title = '工作人员在线考试系统';
 
 <!--<ol class="breadcrumb" style="font-size: 21px;">-->
 <!--    <li>-->
-<!--        <a href="--><?//= Yii::$app->homeUrl;?><!--" class="glyphicon glyphicon-home">首页</a>-->
+<!--        <a href="--><?php //Yii::$app->homeUrl;?><!--" class="glyphicon glyphicon-home">首页</a>-->
 <!--        <a href="#"  class="glyphicon glyphicon-align-justify">目录</a>-->
 <!--        <a href="#" class="glyphicon glyphicon-list-alt" >历史</a>-->
 <!--        <a href="#" class="glyphicon glyphicon-stats" >等级</a>-->
@@ -24,7 +24,8 @@ $this->title = '工作人员在线考试系统';
 
         <p class="lead">这里有最权威的测试系统，包含通风、排水</p>
 
-        <p><a class="btn btn-lg btn-success" href="<?php Yii::$app->runAction('result/index');?>">点击进入考试系统</a></p>
+<!--        <p><a class="btn btn-lg btn-success" href="--><?php //Yii::$app->runAction('result/index');?><!--">点击进入考试系统</a></p>-->
+        <p><?= Html::a('点击进入考试系统',['result/choice'],['class' => "btn btn-lg btn-success"]) ?> </p>
     </div>
 
     <div class="body-content">
@@ -35,7 +36,7 @@ $this->title = '工作人员在线考试系统';
 
                 <!--                <p><a class="btn btn-default" href="http://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>-->
                 <p>
-                    <?= Html::a('查看试卷&raquo;',['result/index'],['class' => "btn btn-default" ])?>
+                    <?= Html::a('查看试卷&raquo;',['result/judgement'],['class' => "btn btn-default" ])?>
                 </p>
             </div>
             <div class="col-lg-4">

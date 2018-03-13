@@ -61,9 +61,9 @@ class ResultController extends Controller
         $how_mangJudgement = 3;
         $shuffleIDs = array_slice($queryID, 0, $how_mangJudgement);
         $judgementforms = [new Judgementpaper()];
-        for ($i = 0; $i < $how_mangJudgement - 1; $i--) {
-
-            $judgementforms[$i]->choice_id = $queryID[$i]['id'];
+        for ($i = 0; $i < $how_mangJudgement - 1; $i++) {
+            $judgementforms[] = new Judgementpaper();
+            $judgementforms[$i]->judgement_id = $queryID[$i]['id'];
         }
         $transaction = Yii::$app->db->beginTransaction();
         try {
@@ -76,21 +76,32 @@ class ResultController extends Controller
                 $i = 0;
                 foreach ($judgementforms as $judgeform) {
                     $judgeform->result_id = $result->id;
-                    $judgementforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+                    $judgementforms[$i]->judgement_id = $shuffleIDs[$i]['id'];
                     $judgementforms->save();
 
                     $i++;
-
                 }
+                $transaction->commit();
 
+            }else{
+                return $this->render('allJudgementform',[
+                    'judgementform' => $judgementforms,
+                    'shuffleids' => $shuffleIDs,
+
+                ]);
             }
         } catch
             (\Exception $e){
-
+                $transaction->rollBack();
             }
+        return $this->render('_allJudgementform',[
+            'judgementform' => $judgementforms,
+            'shuffleids' => $shuffleIDs,
+
+        ]);
     }
 
-    public function actionIndex()
+    public function actionChoice()
     {
         $result =  new Result();
         $searchModel = new ResultSearch();
@@ -128,34 +139,6 @@ try {
     echo "</pre>";
 //        echo "<br><br><br><br>";
     $result->save();
-//    if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms)) {
-//
-//        print_r("这个表达是已经load过了的表单3");
-//        $i = 0;
-//        foreach ($choiceforms as $choiceform) {
-//            $choiceform->result_id = $result->id;
-//            $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
-//            $choiceform->save();
-//
-//            $i++;
-//
-//        }
-//    得到choice表中的所有id
-//    $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
-//    //打乱顺序
-//    shuffle($queryID);
-//    $how_mangChoice = 5;
-//    $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
-//
-//    $choiceforms = [new Choicepaper()];
-//    $count = count(Yii::$app->request->post('Choicepaper', []));
-//    for ($i = 0;$i < $how_mangChoice-1;$i++){
-//        $choiceforms[] = new Choicepaper();
-//        $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
-//        $choiceforms[$i]->result_id = $result->id;
-//    }
-//    $i = 0;
-
 
         if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms)) {
 
@@ -171,7 +154,7 @@ try {
             }
             $transaction->commit();
         } else {
-            return $this->render('_allform', [
+            return $this->render('_allChoiceform', [
                 'choiceform' => $choiceforms,
                 'result' => $result,
             ]);
@@ -184,7 +167,7 @@ try {
     }
 
 
-        return $this->render('_allform', [
+        return $this->render('_allChoiceform', [
             'choiceform' => $choiceforms,
 //            'modeltitle' => $choicequiz,
             'result' => $result,

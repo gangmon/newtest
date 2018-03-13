@@ -45,5 +45,6 @@ return [
     'Create Result' => '创建考试',
     'Are you sure you want to delete this item?' => '确定删除？',
     'Choice Answer' => '选择答案',
+    'Settime' => '创建时间',
 
 ];

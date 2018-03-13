@@ -26,6 +26,8 @@ $this->params['breadcrumbs'][] = $this->title;
                 <?= $form->field($model, 'rememberMe')->checkbox() ?>
 
                 <div class="form-group">
+                    <?= Html::a(Yii::t('app','Register'),['adminuser/create'], ['class' =>'btn btn-success']) ?>
+
                     <?= Html::submitButton(Yii::t('app','Login'), ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
                 </div>
 
