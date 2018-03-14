@@ -49,6 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 </div>
 <p>
+    <?= Html::a(Yii::t('app', '添加'), ['create', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
     <?= Html::a(Yii::t('app', 'Fix it'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
     <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
         'class' => 'btn btn-danger',

@@ -65,27 +65,30 @@ class ResultController extends Controller
             $judgementforms[] = new Judgementpaper();
             $judgementforms[$i]->judgement_id = $shuffleIDs[$i]['id'];
         }
-//        print_r($queryID);die;
+        $user_score = 0;
         $transaction = Yii::$app->db->beginTransaction();
         try {
             $result->score = 0;
             $result->user_id = Yii::$app->user->id;
-            print_r($result);echo "<br>";
-            print_r($shuffleIDs[2]['id']);echo "<br>";
-            echo "<pre>"; print_r($result); echo "</pre>";
-
             $result->save();
-            print_r("Save ok");
             if (Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
-                print_r("losdfiodshdfdkslafjkl");
                 $i = 0;
                 foreach ($judgementforms as $judgementform) {
                     $judgementform->result_id = $result->id;
                     $judgementform->judgement_id = $shuffleIDs[$i]['id'];
 //                    echo "<pre>"; print_r($judgementform); echo "</pre>";
                     $judgementform->save();
+//                    echo "<pre>"; print_r(Judgement::findOne($shuffleIDs[$i]['id'])->answer); echo "</pre>";
+//                    echo "<pre>"; print_r($judgementform->judgement_answer); echo "</pre>";
+//                    echo "<pre>"; print_r(Judgement::findOne($shuffleIDs[$i]['id'])->score); echo "</pre>";die;
+
+                    if ($judgementform->judgement_answer == Judgement::findOne($shuffleIDs[$i]['id'])->answer){
+                        $user_score = $user_score + Judgement::findOne($shuffleIDs[$i]['id'])->score;
+                    }
                     $i++;
                 }
+                $result->score = $user_score;
+                $result->save();
                 $transaction->commit();
             }else{
                 return $this->render('_allJudgementform',[
@@ -127,32 +130,27 @@ class ResultController extends Controller
             $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
             $choiceforms[$i]->result_id = $result->id;
         }
-
+        $user_score = 0;
         $transaction = Yii::$app->db->beginTransaction();
 try {
     $result->score = 0;
-    print_r(Yii::$app->user->id);
     $result->user_id = Yii::$app->user->id;
-    print_r($result->user_id);
-//            echo "<pre>"; print_r($result->id); echo "</pre>";
 //    echo "<pre>"; print_r($result); echo "</pre>";
-//        echo "<br><br><br><br>";
-    echo "<pre>";
-    print_r($result->user_id);
-    echo "</pre>";
-//        echo "<br><br><br><br>";
     $result->save();
-
         if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms)) {
 
-            print_r("losdfiodshdfdkslafjkl");
             $i = 0;
             foreach ($choiceforms as $choiceform) {
                 $choiceform->result_id = $result->id;
                 $choiceform->choice_id = $shuffleIDs[$i]['id'];
                 $choiceform->save();
+                if ($choiceform->choive_answer == Choice::findOne($shuffleIDs[$i]['id'])->answer){
+                    $user_score = $user_score + Choice::findOne($shuffleIDs[$i]['id'])->score;
+                }
                 $i++;
             }
+            $result->score = $user_score;
+            $result->save();
             $transaction->commit();
         } else {
             return $this->render('_allChoiceform', [
