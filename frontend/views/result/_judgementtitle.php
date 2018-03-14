@@ -7,16 +7,10 @@ use yii\widgets\DetailView;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'id',
             'title:ntext',
-//            'answer',
-            [
-                'attribute' => 'answer',
-//                'value'=>function ($model){return $model->answer==1?'对':'错';}
-            ],
-
         ],
+    'template'=>'<tr><th style="width:50px;">{label}</th><td>{value}</td></tr>',
+    'options'=>['class'=>'table table-striped table-bordered detail-view'],
 
     ]) ?>
-
 

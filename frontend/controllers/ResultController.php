@@ -63,39 +63,42 @@ class ResultController extends Controller
         $judgementforms = [new Judgementpaper()];
         for ($i = 0; $i < $how_mangJudgement - 1; $i++) {
             $judgementforms[] = new Judgementpaper();
-            $judgementforms[$i]->judgement_id = $queryID[$i]['id'];
+            $judgementforms[$i]->judgement_id = $shuffleIDs[$i]['id'];
         }
+//        print_r($queryID);die;
         $transaction = Yii::$app->db->beginTransaction();
         try {
             $result->score = 0;
             $result->user_id = Yii::$app->user->id;
-            $result->save();
-            if (Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
+            print_r($result);echo "<br>";
+            print_r($shuffleIDs[2]['id']);echo "<br>";
+            echo "<pre>"; print_r($result); echo "</pre>";
 
+            $result->save();
+            print_r("Save ok");
+            if (Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
                 print_r("losdfiodshdfdkslafjkl");
                 $i = 0;
-                foreach ($judgementforms as $judgeform) {
-                    $judgeform->result_id = $result->id;
-                    $judgementforms[$i]->judgement_id = $shuffleIDs[$i]['id'];
-                    $judgementforms->save();
-
+                foreach ($judgementforms as $judgementform) {
+                    $judgementform->result_id = $result->id;
+                    $judgementform->judgement_id = $shuffleIDs[$i]['id'];
+//                    echo "<pre>"; print_r($judgementform); echo "</pre>";
+                    $judgementform->save();
                     $i++;
                 }
                 $transaction->commit();
-
             }else{
-                return $this->render('allJudgementform',[
-                    'judgementform' => $judgementforms,
+                return $this->render('_allJudgementform',[
+                    'judgementforms' => $judgementforms,
                     'shuffleids' => $shuffleIDs,
-
                 ]);
             }
-        } catch
-            (\Exception $e){
+        } catch (Exception $e){
                 $transaction->rollBack();
-            }
+        }
+//        echo "<pre>"; print_r($judgementforms); echo "</pre>";
         return $this->render('_allJudgementform',[
-            'judgementform' => $judgementforms,
+            'judgementforms' => $judgementforms,
             'shuffleids' => $shuffleIDs,
 
         ]);
@@ -146,11 +149,9 @@ try {
             $i = 0;
             foreach ($choiceforms as $choiceform) {
                 $choiceform->result_id = $result->id;
-                $choiceforms[$i]->choice_id = $shuffleIDs[$i]['id'];
+                $choiceform->choice_id = $shuffleIDs[$i]['id'];
                 $choiceform->save();
-
                 $i++;
-
             }
             $transaction->commit();
         } else {
