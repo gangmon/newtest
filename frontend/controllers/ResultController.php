@@ -71,7 +71,8 @@ class ResultController extends Controller
             $result->score = 0;
             $result->user_id = Yii::$app->user->id;
             $result->save();
-            if (Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
+            $quizetime = Yii::$app->request->post('time');
+            if ( ($quizetime + 30*60)<=time() && Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
                 $i = 0;
                 foreach ($judgementforms as $judgementform) {
                     $judgementform->result_id = $result->id;

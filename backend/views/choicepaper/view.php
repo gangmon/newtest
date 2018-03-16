@@ -7,7 +7,7 @@ use yii\widgets\DetailView;
 /* @var $model common\models\Choicepaper */
 
 $this->title = $model->id;
-$this->params['breadcrumbs'][] = ['label' => Yii::t('app', 'Choicepapers'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = ['label' => Yii::t('app', '选择题考试记录'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="choicepaper-view">

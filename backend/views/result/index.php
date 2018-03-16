@@ -56,7 +56,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                     'class' => 'yii\grid\ActionColumn',
                     'header' => '操作',
-                    'template' => '{view}',//只需要展示删除和更新
+                    'template' => '{view} {detail}',//只需要展示删除和更新
                     'headerOptions' => ['width' => '100'],
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
@@ -71,9 +71,17 @@ $this->params['breadcrumbs'][] = $this->title;
 //                    'delete' => function ($url, $model, $key) {
 //                            return Html::a('拒绝', ['admin/reviewapp', 'id' => $model->id, 'status'=>0], ['class' => "btn btn-xs btn-danger"]);
 //                    }
+                    'detail' => function ($url, $model, $key) {
+                            return Html::a('考试记录', ['choicepaper/view-result-id', 'id' => $model->id ], ['class' => "btn btn-xs btn-danger"]);
+                    }
+
                 ]
 
             ],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>
+
+<?php
+//    echo $id;
+?>

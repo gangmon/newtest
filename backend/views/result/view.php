@@ -16,6 +16,14 @@ $this->params['breadcrumbs'][] = '详情';
 
     <h1><?= Html::encode('考试成绩编号：'.$model->id) ?></h1>
 
+    <?= Html::a(Yii::t('app', '查看选择题做题详情'), ['choicepaper/view', 'id' => $model->id], [
+        'class' => 'btn btn-primary',
+        'data' => [
+//            'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+            'method' => 'post',
+        ],
+    ]) ?>
+
 
 
     <?= DetailView::widget([
@@ -38,6 +46,7 @@ $this->params['breadcrumbs'][] = '详情';
 //            'create_time:datetime',
             [
                 'attribute'=>'create_time',
+                'label' => '考试时间',
                 'value'=>date("Y-m-d H:i:s",$model->create_time),
             ]
         ],
@@ -52,5 +61,6 @@ $this->params['breadcrumbs'][] = '详情';
                 'method' => 'post',
             ],
         ]) ?>
+
     </p>
 </div>

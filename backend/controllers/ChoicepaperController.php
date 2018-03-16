@@ -2,6 +2,7 @@
 
 namespace backend\controllers;
 
+use common\models\Choice;
 use Yii;
 use common\models\Choicepaper;
 use common\models\ChoicepaperSearch;
@@ -56,6 +57,13 @@ class ChoicepaperController extends Controller
         ]);
     }
 
+
+    public function actionViewResultId($id){
+        return $this->render('view_detail',[
+            'models' => Choicepaper::findAll(['result_id' => $id]),
+//            'real' => Choice::findAll([''])
+            ]);
+    }
     /**
      * Creates a new Choicepaper model.
      * If creation is successful, the browser will be redirected to the 'view' page.
