@@ -15,6 +15,7 @@ use yii\widgets\DetailView;
             [
                     'attribute' => 'choice_answer',
                     'label' => '考生答案',
+                    'value' => $model->choice_answer?$model->choice_answer:"未作答",
 
             ],
 //            'test_time:datetime',

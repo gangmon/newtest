@@ -10,7 +10,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <script>
-    var seconds = 2;
+    var seconds = 8;
     function secondPassed() {
         var minutes = Math.round((seconds - 30)/60);
         var remainingSeconds = seconds % 60;
@@ -19,11 +19,11 @@ $this->params['breadcrumbs'][] = $this->title;
         if (remainingSeconds < 10) {
             remainingSeconds = "0" + remainingSeconds;
             document.getElementById('countdown').style.color="#ff0000";
-
-
         }
         document.getElementById('countdown').innerHTML = minutes + ":" +    remainingSeconds;
         if (seconds == 0) {
+
+            sub();
 
             clearInterval(countdownTimer);
             document.getElementById('gethidden').hidden = true;
@@ -38,24 +38,32 @@ $this->params['breadcrumbs'][] = $this->title;
     var countdownTimer = setInterval('secondPassed()', 1000);
 
 
-</script>
 
 
 
 
-
-
-<script language="javascript">
-    var i=0;
-    function showtime(){
-        i=i+1;
-        id2.innerHTML=i;
-        setTimeout("showtime()",29);
-        if(i==30)
-            document.form.submit();
+    function sub(){
+        document.acform.submit();
     }
-    showtime();
+
 </script>
+
+
+
+
+
+<!---->
+<!--<script language="javascript">-->
+<!--    var i=0;-->
+<!--    function showtime(){-->
+<!--        i=i+1;-->
+<!--        id2.innerHTML=i;-->
+<!--        setTimeout("showtime()",29);-->
+<!--        if(i==30)-->
+<!--            document.form.submit();-->
+<!--    }-->
+<!--    showtime();-->
+<!--</script>-->
 
 
 
@@ -78,7 +86,14 @@ $this->params['breadcrumbs'][] = $this->title;
     ?>
 
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ActiveForm::begin([
+//            'method' => 'post',
+//            'id' => 'form-save',
+//            'enableAjaxValidation' => true,
+            'options' => [
+                    'name' => 'acform',
+            ],
+    ]); ?>
     <?php
     $i = 0;
         foreach ($judgementforms as $judgementform => $v){

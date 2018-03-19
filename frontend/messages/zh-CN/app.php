@@ -22,5 +22,18 @@ return [
 
     'Choice' => '选项',
     'Judgement_answer' => '选项',
-
+    'Username' => '用户名',
+    'Password' => '密码',
+    'Register' => '注册',
+    'rememberMe' => '记住我',
+    'reset it' => '重置密码',
+    'reset it' => '重置密码',
+    'Email' => '邮箱',
+    'Send' => '发送',
+    'If you forgot your password you can'=>'如果忘了密码您可以',
+    'Request password reset' => '重置密码',
+    'Check your email for further instructions.' => '请检查邮件进行进一步的指导。',
+    'Sorry, we are unable to reset password for the provided email address.' => '对不起，输入的邮箱未注册',
+    'There is no user with this email address.' => '请检查邮箱输入是否有误，此邮箱未注册',
+    'Incorrect username or password.' => "用户名或者密码不正确",
 ];

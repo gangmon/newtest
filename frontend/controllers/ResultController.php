@@ -5,6 +5,7 @@ namespace frontend\controllers;
 use common\models\Choice;
 use common\models\Judgement;
 use common\models\Judgementpaper;
+use http\Url;
 use Yii;
 use frontend\models\Result;
 use frontend\models\ResultSearch;
@@ -14,12 +15,15 @@ use yii\filters\VerbFilter;
 use common\models\Choicepaper;
 
 use yii\widgets\DetailView;
+
 /**
  * ResultController implements the CRUD actions for Result model.
  */
 use yii\widgets\ActiveForm;
 use yii\helpers\Html;
 use yii\base\Model;
+use yii\filters\AccessControl;
+
 class ResultController extends Controller
 {
     /**
@@ -33,6 +37,28 @@ class ResultController extends Controller
                 'actions' => [
                     'delete' => ['POST'],
                 ],
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'only' => ['judgement','choice',],
+//                'allowCallback' => function ($rule, $action) {
+//                   Yii::$app->session->setFlash('success', 'haha,Thank you for contacting us. We will respond to you as soon as possible.');
+//                },
+//                'allowCallback' => function($action){
+//                    if ($action->controller->id!='login'){
+//                        Yii::$app->session->setFlash('success', 'haha,Thank you for contacting us. We will respond to you as soon as possible.');
+//                    }
+//                },
+                'rules' =>
+                [
+                    [
+                        'allow' => true,
+                        'actions' => ['judgement','choice'],
+                        'roles' => ['@'],
+                    ],
+
+                ],
+
             ],
         ];
     }
@@ -52,8 +78,94 @@ class ResultController extends Controller
 //        ]);
 //    }
 //开始考试
+    public function actionAllquiz(){
+        $result =  new Result();
+        //这里是随机出判断题
+        $queryJudgementId = Yii::$app->db->createCommand('SELECT id from test_judgement')->queryAll();
+        shuffle($queryJudgementId);
+        $how_mangJudgement = 3;
+        $shuffleJudgeIDs = array_slice($queryJudgementId, 0, $how_mangJudgement);
+        $judgementforms = [new Judgementpaper()];
+        for ($i = 0; $i < $how_mangJudgement - 1; $i++) {
+            $judgementforms[] = new Judgementpaper();
+            $judgementforms[$i]->judgement_id = $shuffleJudgeIDs[$i]['id'];
+        }
+        $user_score = 0;
+        //这里是随机出选择题
+        $queryChoiceId = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
+        //打乱顺序
+        shuffle($queryChoiceId);
+        $how_mangChoice = 5;
+        $shuffleChoiceIDs = array_slice($queryChoiceId,0,$how_mangChoice);
+
+        $choiceforms = [new Choicepaper()];
+        $count = count(Yii::$app->request->post('Choicepaper', []));
+        for ($i = 0;$i < $how_mangChoice-1;$i++){
+            $choiceforms[] = new Choicepaper();
+            $choiceforms[$i]->choice_id = $shuffleChoiceIDs[$i]['id'];
+            $choiceforms[$i]->result_id = $result->id;
+        }
+        $user_score = 0;
+        $transaction = Yii::$app->db->beginTransaction();
+
+        try {
+            $result->score = 0;
+            $result->user_id = Yii::$app->user->id;
+            $result->save();
+//            $quizetime = Yii::$app->request->post('time');
+            if (Model::loadMultiple($choiceforms, Yii::$app->request->post()) && Model::validateMultiple($choiceforms) && Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms))
+            {
+                $i = 0;
+                foreach ($judgementforms as $judgementform)
+                {
+                    $judgementform->result_id = $result->id;
+                    $judgementform->judgement_id = $shuffleJudgeIDs[$i]['id'];
+                    $judgementform->save();
+
+                    if ($judgementform->judgement_answer == Judgement::findOne($shuffleJudgeIDs[$i]['id'])->answer){
+                        $user_score = $user_score + Judgement::findOne($shuffleJudgeIDs[$i]['id'])->score;
+                    }
+                    $i++;
+                }
+                $i = 0;
+                foreach ($choiceforms as $choiceform)
+                {
+                    $choiceform->result_id = $result->id;
+                    $choiceform->choice_id = $shuffleChoiceIDs[$i]['id'];
+                    $choiceform->save();
+                    if ($choiceform->choice_answer == Choice::findOne($shuffleChoiceIDs[$i]['id'])->answer)
+                    {
+                        $user_score = $user_score + Choice::findOne($shuffleChoiceIDs[$i]['id'])->score;
+                    }
+                    $i++;
+                }
+                $result->score = $user_score;
+                $result->save();
+                $transaction->commit();
+                $this->goHome();
+            }else{
+                return $this->render('_allQuizForm',[
+                    'judgementforms' => $judgementforms,
+                    'shuffleJudgementids' => $shuffleJudgeIDs,
+                    'choiceforms' => $choiceforms,
+                    'shuffleChoiceids' => $shuffleChoiceIDs,
+                ]);
+            }
+        } catch (Exception $e){
+            $transaction->rollBack();
+        }
+
+        return $this->render('_allQuizForm',[
+            'judgementforms' => $judgementforms,
+            'shuffleJudgementids' => $shuffleJudgeIDs,
+            'choiceforms' => $choiceforms,
+            'shuffleChoiceids' => $shuffleChoiceIDs,
+        ]);
+
+    }
     public function actionJudgement()
     {
+        Yii::$app->user->setReturnUrl(Yii::$app->request->referrer);
         $result = new Result();
 
         $queryID = Yii::$app->db->createCommand('SELECT id from test_judgement')->queryAll();
@@ -72,16 +184,13 @@ class ResultController extends Controller
             $result->user_id = Yii::$app->user->id;
             $result->save();
             $quizetime = Yii::$app->request->post('time');
-            if ( ($quizetime + 30*60)<=time() && Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
+            if ( ($quizetime + 30*60)!=time() && Model::loadMultiple($judgementforms, Yii::$app->request->post()) && Model::validateMultiple($judgementforms)) {
                 $i = 0;
                 foreach ($judgementforms as $judgementform) {
                     $judgementform->result_id = $result->id;
                     $judgementform->judgement_id = $shuffleIDs[$i]['id'];
 //                    echo "<pre>"; print_r($judgementform); echo "</pre>";
                     $judgementform->save();
-//                    echo "<pre>"; print_r(Judgement::findOne($shuffleIDs[$i]['id'])->answer); echo "</pre>";
-//                    echo "<pre>"; print_r($judgementform->judgement_answer); echo "</pre>";
-//                    echo "<pre>"; print_r(Judgement::findOne($shuffleIDs[$i]['id'])->score); echo "</pre>";die;
 
                     if ($judgementform->judgement_answer == Judgement::findOne($shuffleIDs[$i]['id'])->answer){
                         $user_score = $user_score + Judgement::findOne($shuffleIDs[$i]['id'])->score;
@@ -91,6 +200,7 @@ class ResultController extends Controller
                 $result->score = $user_score;
                 $result->save();
                 $transaction->commit();
+                $this->goHome();
             }else{
                 return $this->render('_allJudgementform',[
                     'judgementforms' => $judgementforms,
@@ -110,6 +220,7 @@ class ResultController extends Controller
 
     public function actionChoice()
     {
+        Yii::$app->user->setReturnUrl(Yii::$app->request->referrer);
         $result =  new Result();
         $searchModel = new ResultSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
@@ -153,6 +264,7 @@ try {
             $result->score = $user_score;
             $result->save();
             $transaction->commit();
+            $this->goHome();
         } else {
             return $this->render('_allChoiceform', [
                 'choiceform' => $choiceforms,

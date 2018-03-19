@@ -4,13 +4,9 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\models\Choice;
 
-
 ?>
 
-
-
 <div class="choicepaper-view">
-
 
     <?php
         foreach ($models as $model){
@@ -20,7 +16,6 @@ use common\models\Choice;
         }
     ?>
 
-<!--    -->
 <!--    --><?//= DetailView::widget([
 //        'model' => $model,
 //        'attributes' => [

@@ -33,6 +33,7 @@ class ChoiceController extends Controller
      * Lists all Choice models.
      * @return mixed
      */
+
     public function actionIndex()
     {
         $searchModel = new ChoiceSearch();

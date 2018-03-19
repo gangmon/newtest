@@ -16,13 +16,7 @@ $this->params['breadcrumbs'][] = '详情';
 
     <h1><?= Html::encode('考试成绩编号：'.$model->id) ?></h1>
 
-    <?= Html::a(Yii::t('app', '查看选择题做题详情'), ['choicepaper/view', 'id' => $model->id], [
-        'class' => 'btn btn-primary',
-        'data' => [
-//            'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-            'method' => 'post',
-        ],
-    ]) ?>
+
 
 
 
@@ -53,14 +47,27 @@ $this->params['breadcrumbs'][] = '详情';
     ]) ?>
 
     <p>
-<!--        --><?//= Html::a(Yii::t('app', 'Update'), ['update', 'id' => $model->id], ['class' => 'btn btn-primary']) ?>
-        <?= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-            'class' => 'btn btn-danger',
+        <?= Html::a(Yii::t('app', '查看判断题详情'), ['judgement/view-result-id', 'id' => $model->id], [
+           'class' => $model->score>60?'btn btn-success':'btn btn-danger',
+           'data' => ['nethod' => 'post'],]) ?>
+
+
+        <?= Html::a(Yii::t('app', '查看选择题详情'), ['choicepaper/view-result-id', 'id' => $model->id], [
+            'class' => $model->score>60?'btn btn-success':'btn btn-danger',
             'data' => [
-                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+//            'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
                 'method' => 'post',
             ],
         ]) ?>
+
+
+<!--        --><?//= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
+//            'class' => 'btn btn-danger',
+//            'data' => [
+//                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+//                'method' => 'post',
+//            ],
+//        ]) ?>
 
     </p>
 </div>

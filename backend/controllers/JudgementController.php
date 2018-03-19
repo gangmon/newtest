@@ -29,10 +29,12 @@ class JudgementController extends Controller
         ];
     }
 
+
     /**
      * Lists all Judgement models.
      * @return mixed
      */
+
     public function actionIndex()
     {
         $searchModel = new JudgementSearch();

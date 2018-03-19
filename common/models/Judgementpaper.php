@@ -32,9 +32,9 @@ class Judgementpaper extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['judgement_answer'], 'required'],
+//            [['judgement_answer'], 'required'],
             [['result_id', 'judgement_id', 'test_time'], 'integer'],
-            [['judgement_answer'], 'string'],
+//            [['judgement_answer'], 'string'],
             [['judgement_id'], 'exist', 'skipOnError' => true, 'targetClass' => Judgement::className(), 'targetAttribute' => ['judgement_id' => 'id']],
             [['result_id'], 'exist', 'skipOnError' => true, 'targetClass' => Result::className(), 'targetAttribute' => ['result_id' => 'id']],
         ];

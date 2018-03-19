@@ -33,9 +33,9 @@ class Choicepaper extends \yii\db\ActiveRecord
     {
         return [
 //            [['result_id', 'choice_id', 'choice_answer'], 'required'],
-            [['choice_answer'], 'required'],
+//            [['choice_answer'], 'required'],
             [['result_id', 'choice_id', 'test_time'], 'integer'],
-            [['choice_answer'], 'string'],
+//            [['choice_answer'], 'string'],
             [['result_id'], 'exist', 'skipOnError' => true, 'targetClass' => Result::className(), 'targetAttribute' => ['result_id' => 'id']],
             [['choice_id'], 'exist', 'skipOnError' => true, 'targetClass' => Choice::className(), 'targetAttribute' => ['choice_id' => 'id']],
         ];
