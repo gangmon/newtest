@@ -67,6 +67,15 @@ class ResultController extends Controller
      * Lists all Result models.
      * @return mixed
      */
+    public function actionMyresult()
+    {
+        $userID = Yii::$app->user->id;
+        $models = Result::findAll(['user_id' => $userID]);
+        return $this->render('',[
+            'models' =>  $models,
+    ]);
+    }
+
     public function actionIndex()
     {
         $searchModel = new ResultSearch();
