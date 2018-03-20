@@ -29,6 +29,19 @@ class ChoicepaperController extends Controller
         ];
     }
 
+    //找到考试结果表中的result_id对应的这场考试所有的选择题的题目
+    public function actionViewResultId($id){
+        return $this->render('view_detail',[
+            'models' => Choicepaper::findAll(['result_id' => $id]),
+//            'real' => Choice::findAll([''])
+        ]);
+    }
+    public  function actionSimulated($id)
+    {
+        return $this->render('simulated_result',[
+            'models' => Choicepaper::findAll(['result_id' => $id]),
+        ]);
+    }
     /**
      * Lists all Choicepaper models.
      * @return mixed

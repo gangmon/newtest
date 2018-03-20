@@ -34,6 +34,8 @@ class Judgement extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
+            [['title'],'unique','message' => '此题已存在.'],
+//            ['title', 'unique', 'targetClass' => '\common\models\Judgement', 'message' => '此题已存在.'],
             [[ 'title', 'answer', ], 'required'],
             [['admin_id', 'score', 'create_time', 'update_time'], 'integer'],
             [['title', 'answer'], 'string'],
@@ -60,6 +62,15 @@ class Judgement extends \yii\db\ActiveRecord
     /**
      * @return \yii\db\ActiveQuery
      */
+    //设置在总览页面题目的长度
+    public function getBeginning()
+    {
+        $tmpStr = strip_tags($this->title);
+        $tmpLen = mb_strlen($tmpStr);
+
+        return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
+    }
+
     //创建时间和修改时间
     public function beforeSave($insert)
     {

@@ -66,6 +66,12 @@ $this->params['breadcrumbs'][] = $this->title;
                 'method' => 'post',
             ],
         ]) ?>
+        <?php
+        $returnURL = Yii::$app->request->referrer;
+        ?>
+        <?= $returnURL?Html::a(Yii::t('app', '返回'), $returnURL, [
+            'class' => 'btn btn-success',
+        ]):'' ?>
     </p>
 
 </div>

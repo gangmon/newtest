@@ -8,63 +8,39 @@ $this->title = "判断题";
 $this->params['breadcrumbs'][] = $this->title;
 
 ?>
-
-<script>
-    var seconds = 8;
-    function secondPassed() {
-        var minutes = Math.round((seconds - 30)/60);
-        var remainingSeconds = seconds % 60;
-        document.getElementById('gethidden').innerHTML = "离考试结束剩余：";
-
-        if (remainingSeconds < 10) {
-            remainingSeconds = "0" + remainingSeconds;
-            document.getElementById('countdown').style.color="#ff0000";
-        }
-        document.getElementById('countdown').innerHTML = minutes + ":" +    remainingSeconds;
-        if (seconds == 0) {
-
-            sub();
-
-            clearInterval(countdownTimer);
-            document.getElementById('gethidden').hidden = true;
-            document.getElementById('countdown').innerHTML = "时间已用完,考试已结束";
-            alert("时间已用完,考试已结束");
-            document.getElementById('quizover').innerHTML = "哈哈";
-
-        } else {
-            seconds--;
-        }
-    }
-    var countdownTimer = setInterval('secondPassed()', 1000);
-
-
-
-
-
-
-    function sub(){
-        document.acform.submit();
-    }
-
-</script>
-
-
-
-
-
 <!---->
-<!--<script language="javascript">-->
-<!--    var i=0;-->
-<!--    function showtime(){-->
-<!--        i=i+1;-->
-<!--        id2.innerHTML=i;-->
-<!--        setTimeout("showtime()",29);-->
-<!--        if(i==30)-->
-<!--            document.form.submit();-->
+<!--<script>-->
+<!--    var seconds = 8;-->
+<!--    function secondPassed() {-->
+<!--        var minutes = Math.round((seconds - 30)/60);-->
+<!--        var remainingSeconds = seconds % 60;-->
+<!--        document.getElementById('gethidden').innerHTML = "离考试结束剩余：";-->
+<!---->
+<!--        if (remainingSeconds < 10) {-->
+<!--            remainingSeconds = "0" + remainingSeconds;-->
+<!--            document.getElementById('countdown').style.color="#ff0000";-->
+<!--        }-->
+<!--        document.getElementById('countdown').innerHTML = minutes + ":" +    remainingSeconds;-->
+<!--        if (seconds == 0) {-->
+<!--            sub();-->
+<!--            clearInterval(countdownTimer);-->
+<!--            document.getElementById('gethidden').hidden = true;-->
+<!--            document.getElementById('countdown').innerHTML = "时间已用完,考试已结束";-->
+<!--            alert("时间已用完,考试已结束");-->
+<!--            document.getElementById('quizover').innerHTML = "考试结束";-->
+<!---->
+<!--        } else {-->
+<!--            seconds--;-->
+<!--        }-->
 <!--    }-->
-<!--    showtime();-->
+<!--    var countdownTimer = setInterval('secondPassed()', 1000);-->
+<!---->
+<!---->
+<!--    function sub(){-->
+<!--        document.acform.submit();-->
+<!--    }-->
+<!---->
 <!--</script>-->
-
 
 
 
@@ -123,11 +99,34 @@ $this->params['breadcrumbs'][] = $this->title;
 <!---->
 <!--    <input type="submit" value="test">-->
 <!--</form>-->
-<?php echo $_SERVER['PHP_SELF'];
-print_r(Yii::$app->request->post('time'));
+<?php //echo $_SERVER['PHP_SELF'];
+//print_r(Yii::$app->request->post('time'));
 
 //   if($_POST["time"]+300 >= time()){
 //    echo "you took too long!";
 //    exit;
 //}
 //    if (Yii::$app->request)
+
+
+
+
+
+
+//
+//<!---->
+//<!--<script language="javascript">-->
+//<!--    var i=0;-->
+//<!--    function showtime(){-->
+//<!--        i=i+1;-->
+//<!--        id2.innerHTML=i;-->
+//<!--        setTimeout("showtime()",29);-->
+//<!--        if(i==30)-->
+//<!--            document.form.submit();-->
+//<!--    }-->
+//<!--    showtime();-->
+//<!--</script>-->
+
+
+
+

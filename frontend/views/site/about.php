@@ -4,13 +4,13 @@
 
 use yii\helpers\Html;
 
-$this->title = 'About';
+$this->title = '关于';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-about">
-    <h1><?= Html::encode($this->title) ?></h1>
+    <h1><?= Html::encode('关于本考试测试系统') ?></h1>
 
-    <p>This is the About page. You may modify the following file to customize its content:</p>
+    <p>本考试测试系统为施工安全员在线考核系统，提供在线模拟测试和真实测试功能</p>
 
-    <code><?= __FILE__ ?></code>
+<!--    <code>--><?//= __FILE__ ?><!--</code>-->
 </div>

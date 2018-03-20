@@ -33,6 +33,7 @@ class Result extends \yii\db\ActiveRecord
     {
         return [
 //            [['user_id', 'score'], 'required'],
+            [['is_real'], 'string'],
             [['user_id', 'score', 'create_time'], 'integer'],
             [['user_id'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['user_id' => 'id']],
         ];
@@ -48,6 +49,7 @@ class Result extends \yii\db\ActiveRecord
             'user_id' => Yii::t('app', '参与考试人员id'),
             'score' => Yii::t('app', '考试分数'),
             'create_time' => Yii::t('app', 'Create Time'),
+            'is_real' => Yii::t('app', '1代表模拟测试，2代表真时考试'),
         ];
     }
 

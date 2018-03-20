@@ -10,13 +10,14 @@ use yii\widgets\DetailView;
     <?= DetailView::widget([
         'model' => $model,
         'attributes' => [
-            'judgement_answer',
             [
                 'attribute' => 'judgement_answer',
                 'label' => '考生答案',
-                'value' => $model->judgement_answer?$model->judgement_answer:"未作答",
+                'value' => $model->judgement_answer?($model->judgement_answer==1?'对':'错'):"未作答",
             ],
         ],
+        'template'=>'<tr><th style="width:50px;">{label}</th><td>{value}</td></tr>',
+        'options'=>['class'=>'table table-striped table-bordered detail-view'],
     ]) ?>
 
 </div>

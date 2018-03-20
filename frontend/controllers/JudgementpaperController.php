@@ -29,6 +29,15 @@ class JudgementpaperController extends Controller
         ];
     }
 
+
+
+    //找到考试结果表中的result——id对应的这场考试所有的选择题的题目
+    public function actionViewResultId($id)
+    {
+        return $this->render('view_detail',[
+            'models' => Judgementpaper::findAll(['result_id' => $id]),
+        ]);
+    }
     /**
      * Lists all Judgementpaper models.
      * @return mixed

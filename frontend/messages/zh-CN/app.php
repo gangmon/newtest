@@ -36,4 +36,8 @@ return [
     'Sorry, we are unable to reset password for the provided email address.' => '对不起，输入的邮箱未注册',
     'There is no user with this email address.' => '请检查邮箱输入是否有误，此邮箱未注册',
     'Incorrect username or password.' => "用户名或者密码不正确",
+    'Verification Code' => '验证码',
+    'Name' => '姓名',
+    'Subject' => '主题',
+    'Body' => '内容',
 ];

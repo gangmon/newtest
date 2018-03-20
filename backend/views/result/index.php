@@ -30,6 +30,13 @@ $this->params['breadcrumbs'][] = $this->title;
             ],
 //            'user_id',
             [
+                    'attribute' => 'is_real',
+                    'label' => '考试类型',
+                    'value' => function ($model){return $model->is_real==1?'模拟测试':'正式考试';},
+                    'filter' => ['1' => '模拟测试','2' => '正式考试'],
+            ],
+
+            [
                     'attribute' => 'user_id',
                     'label' => '考试者编号ID',
 //                'contentOptions' => ['width' => '30px'],
@@ -60,10 +67,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     'headerOptions' => ['width' => '100'],
                 'buttons' => [
                     'view' => function ($url, $model, $key) {
-                        return Html::a(Html::tag('span', '查看',
+                        return Html::a(Html::tag('span', '查看详情',
                             ['class' => "glyphicon fa fa-eye"]),
                             ['result/view', 'id'=>$model->id],
-                            ['class' => "btn btn-xs btn-success", 'title' => '查看']);
+                            ['class' => $model->score>60?"btn btn-xs btn-success":"btn btn-xs btn-danger", 'title' => '查看详情']);
                     },
 //                    'update' => function ($url, $model, $key)  {
 //                        return Html::a('通过', ['admin/reviewapp','id'=>$model->id, 'status'=>1], ['class' => "btn btn-xs btn-info"]);
@@ -71,9 +78,9 @@ $this->params['breadcrumbs'][] = $this->title;
 //                    'delete' => function ($url, $model, $key) {
 //                            return Html::a('拒绝', ['admin/reviewapp', 'id' => $model->id, 'status'=>0], ['class' => "btn btn-xs btn-danger"]);
 //                    }
-                    'detail' => function ($url, $model, $key) {
-                            return Html::a('考试记录', ['choicepaper/view-result-id', 'id' => $model->id ], ['class' => "btn btn-xs btn-danger"]);
-                    }
+//                    'detail' => function ($url, $model, $key) {
+//                            return Html::a('考试记录', ['choicepaper/view-result-id', 'id' => $model->id ], ['class' => "btn btn-xs btn-danger"]);
+//                    }
 
                 ]
 

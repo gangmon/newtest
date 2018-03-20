@@ -45,7 +45,7 @@ AppAsset::register($this);
                     ['label' => Yii::t('app','创建判断题'),'url' => ['judgement/create']]
             ]
         ],
-        ['label' => Yii::t('app','Create Adminuser'),'url' =>['adminuser/create']],
+//        ['label' => Yii::t('app','Create Adminuser'),'url' =>['adminuser/create']],
         ['label' => Yii::t('app','考试结果'),'url' =>['result/index']],
 
 

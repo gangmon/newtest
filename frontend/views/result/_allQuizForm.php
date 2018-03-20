@@ -12,7 +12,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 
     <script>
-        var seconds = 8;
+        var seconds = 60*30;
         function secondPassed() {
             var minutes = Math.round((seconds - 30)/60);
             var remainingSeconds = seconds % 60;
@@ -29,7 +29,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 document.getElementById('gethidden').hidden = true;
                 document.getElementById('countdown').innerHTML = "时间已用完,考试已结束";
                 alert("时间已用完,考试已结束");
-                document.getElementById('quizover').innerHTML = "哈哈";
+                document.getElementById('quizover').innerHTML = "考试结束";
             } else {
                 seconds--;
             }
@@ -48,7 +48,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <div class="judgement-view">
 
-        <h1><?= Html::encode($this->title) ?> </h1>
+        <h1><?= Html::encode('判断题') ?> </h1>
         <h4> <span id="gethidden"></span><span id="countdown" class="timer"></span></h4>
 
         <?php $form = ActiveForm::begin([
@@ -69,6 +69,7 @@ $this->params['breadcrumbs'][] = $this->title;
         }
         ?>
         <input type="hidden" name="time" value="<?= time()?>">
+        <input type="hidden" name="is_real" value="<?= $is_real?>">
     </div>
 
     <h1><?= Html::encode("选择题") ?> </h1>
@@ -91,6 +92,3 @@ foreach ($choiceforms as $index => $v ){
 <?php
 ActiveForm::end();
 ?>
-
-<?php echo $_SERVER['PHP_SELF'];
-//print_r(Yii::$app->request->post('time'));

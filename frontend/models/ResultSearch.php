@@ -22,6 +22,7 @@ class ResultSearch extends Result
     public function rules()
     {
         return [
+            [['is_real'], 'safe'],
             [['id', 'user_id', 'score', 'create_time'], 'integer'],
             [['quizName'],'safe'],
         ];
@@ -71,6 +72,8 @@ class ResultSearch extends Result
 
         $query->join('INNER JOIN',User::tableName(),'user_id = test_user.id');
         $query->andFilterWhere(['like','test_user.username',$this->quizName]);
+
+        $query->andFilterWhere(['like', 'is_real', $this->is_real]);
 
         $dataProvider->sort->attributes['quizName'] =
             [

@@ -8,7 +8,7 @@ use common\models\ChoiceSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
-
+use yii\filters\AccessControl;
 /**
  * ChoiceController implements the CRUD actions for Choice model.
  */
@@ -19,12 +19,28 @@ class ChoiceController extends Controller
      */
     public function behaviors()
     {
-        return [
-            'verbs' => [
+        return
+        [
+            'verbs' =>
+            [
                 'class' => VerbFilter::className(),
-                'actions' => [
+                'actions' =>
+                [
 //                    'delete' => ['POST'],
                 ],
+            ],
+            'access' =>
+             [
+                'class' => AccessControl::className(),
+                'only' => ['create',],
+                'rules' =>
+                 [
+                    [
+                        'actions' => ['create',],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ]
+                 ],
             ],
         ];
     }

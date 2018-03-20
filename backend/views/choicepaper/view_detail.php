@@ -4,6 +4,10 @@ use yii\helpers\Html;
 use yii\widgets\DetailView;
 use common\models\Choice;
 
+
+$this->title = '选择题答题详情';
+//$this->params['breadcrumbs'][] = ['label' => Yii::t('app', '选择题考试记录'), 'url' => ['index']];
+$this->params['breadcrumbs'][] = $this->title;
 ?>
 
 <div class="choicepaper-view">
@@ -28,3 +32,9 @@ use common\models\Choice;
 //    ]) ?>
 
 </div>
+<?php
+$returnURL = Yii::$app->request->referrer;
+?>
+<?= $returnURL?Html::a(Yii::t('app', '返回上一页'), $returnURL, [
+    'class' => 'btn btn-success',
+]):'' ?>

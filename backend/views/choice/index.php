@@ -94,7 +94,15 @@ $this->params['breadcrumbs'][] = $this->title;
                        'delete' => function($url,$model,$key){
                            return Html::a('删除',
                                ['choice/delete','id' => $model->id],
-                               ['class' => "btn btn-xs btn-danger"]
+                               [
+                                   'class' => "btn btn-xs btn-danger",
+                                   'data' => [
+                                       'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
+                                       'method' => 'post',
+                                   ],
+                                   ]
+
+
                            );}
 
                    ],

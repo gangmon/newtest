@@ -29,7 +29,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     'label' => '编号',
                     'contentOptions' => ['width' => '20px'],
             ],
-            'title:ntext',
+//            'title:ntext',
+            [
+                    'attribute' => 'title',
+                    'value' => 'beginning'
+            ],
 //            'answer',
             [
                     'attribute' => 'answer',

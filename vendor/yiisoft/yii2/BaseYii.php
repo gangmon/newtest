@@ -476,8 +476,8 @@ class BaseYii
     public static function powered()
     {
         return \Yii::t('yii', 'Powered by {yii}', [
-            'yii' => '<a href="http://www.yiiframework.com/" rel="external">' . \Yii::t('yii',
-                    'Yii Framework') . '</a>',
+            'yii' => '<a href="http://www.usc.edu.cn" rel="external">' . \Yii::t('yii',
+                    '方钢  南华大学') . '</a>',
         ]);
     }
 

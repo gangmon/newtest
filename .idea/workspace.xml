@@ -2,29 +2,155 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae2804d-2a6d-48df-8e7e-7e3e80e56558" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/result/_allQuizForm.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/choice/_choice_view_only.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/simulated_result.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/view_result_id.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/judgement/_judgement_view_only.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/simulated_result.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/view_result_id.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/result/quizer_view_result.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/result/simulate_view_result.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/newtest.iml" afterPath="$PROJECT_DIR$/.idea/newtest.iml" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/AdminuserController.php" afterPath="$PROJECT_DIR$/backend/controllers/AdminuserController.php" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/ChoiceController.php" afterPath="$PROJECT_DIR$/backend/controllers/ChoiceController.php" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/ChoicepaperController.php" afterPath="$PROJECT_DIR$/backend/controllers/ChoicepaperController.php" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/JudgementController.php" afterPath="$PROJECT_DIR$/backend/controllers/JudgementController.php" />
       <change beforePath="$PROJECT_DIR$/backend/controllers/JudgementpaperController.php" afterPath="$PROJECT_DIR$/backend/controllers/JudgementpaperController.php" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/ResultController.php" afterPath="$PROJECT_DIR$/backend/controllers/ResultController.php" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/UserController.php" afterPath="$PROJECT_DIR$/backend/controllers/UserController.php" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Adminuser.php" afterPath="$PROJECT_DIR$/backend/models/Adminuser.php" />
+      <change beforePath="$PROJECT_DIR$/backend/models/AdminuserQuery.php" afterPath="$PROJECT_DIR$/backend/models/AdminuserQuery.php" />
+      <change beforePath="$PROJECT_DIR$/backend/models/AdminuserSearch.php" afterPath="$PROJECT_DIR$/backend/models/AdminuserSearch.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/_form.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/_search.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/create.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/index.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/update.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/adminuser/view.php" afterPath="$PROJECT_DIR$/backend/views/adminuser/view.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/_choice_view_only.php" afterPath="$PROJECT_DIR$/backend/views/choice/_choice_view_only.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/_form.php" afterPath="$PROJECT_DIR$/backend/views/choice/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/_search.php" afterPath="$PROJECT_DIR$/backend/views/choice/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/create.php" afterPath="$PROJECT_DIR$/backend/views/choice/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/index.php" afterPath="$PROJECT_DIR$/backend/views/choice/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/update.php" afterPath="$PROJECT_DIR$/backend/views/choice/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choice/view.php" afterPath="$PROJECT_DIR$/backend/views/choice/view.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/_form.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/_search.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/create.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/index.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/update.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/view.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/view.php" />
       <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" />
       <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/view_result_id.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/view_result_id.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/_form.php" afterPath="$PROJECT_DIR$/backend/views/judgement/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" afterPath="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/_search.php" afterPath="$PROJECT_DIR$/backend/views/judgement/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/create.php" afterPath="$PROJECT_DIR$/backend/views/judgement/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/index.php" afterPath="$PROJECT_DIR$/backend/views/judgement/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/update.php" afterPath="$PROJECT_DIR$/backend/views/judgement/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgement/view.php" afterPath="$PROJECT_DIR$/backend/views/judgement/view.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/_form.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/_search.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/create.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/index.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/update.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/view.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/layouts/main.php" afterPath="$PROJECT_DIR$/backend/views/layouts/main.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/result/_form.php" afterPath="$PROJECT_DIR$/backend/views/result/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/result/_search.php" afterPath="$PROJECT_DIR$/backend/views/result/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/result/create.php" afterPath="$PROJECT_DIR$/backend/views/result/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/result/index.php" afterPath="$PROJECT_DIR$/backend/views/result/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/result/update.php" afterPath="$PROJECT_DIR$/backend/views/result/update.php" />
       <change beforePath="$PROJECT_DIR$/backend/views/result/view.php" afterPath="$PROJECT_DIR$/backend/views/result/view.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/index.php" afterPath="$PROJECT_DIR$/backend/views/site/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/_form.php" afterPath="$PROJECT_DIR$/backend/views/user/_form.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/_search.php" afterPath="$PROJECT_DIR$/backend/views/user/_search.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/create.php" afterPath="$PROJECT_DIR$/backend/views/user/create.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/index.php" afterPath="$PROJECT_DIR$/backend/views/user/index.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/update.php" afterPath="$PROJECT_DIR$/backend/views/user/update.php" />
+      <change beforePath="$PROJECT_DIR$/backend/views/user/view.php" afterPath="$PROJECT_DIR$/backend/views/user/view.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/Choice.php" afterPath="$PROJECT_DIR$/common/models/Choice.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/ChoiceQuery.php" afterPath="$PROJECT_DIR$/common/models/ChoiceQuery.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/ChoiceSearch.php" afterPath="$PROJECT_DIR$/common/models/ChoiceSearch.php" />
       <change beforePath="$PROJECT_DIR$/common/models/Choicepaper.php" afterPath="$PROJECT_DIR$/common/models/Choicepaper.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/ChoicepaperQuery.php" afterPath="$PROJECT_DIR$/common/models/ChoicepaperQuery.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/ChoicepaperSearch.php" afterPath="$PROJECT_DIR$/common/models/ChoicepaperSearch.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/Judgement.php" afterPath="$PROJECT_DIR$/common/models/Judgement.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/JudgementQuery.php" afterPath="$PROJECT_DIR$/common/models/JudgementQuery.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/JudgementSearch.php" afterPath="$PROJECT_DIR$/common/models/JudgementSearch.php" />
       <change beforePath="$PROJECT_DIR$/common/models/Judgementpaper.php" afterPath="$PROJECT_DIR$/common/models/Judgementpaper.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/LoginForm.php" afterPath="$PROJECT_DIR$/common/models/LoginForm.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/config/main.php" afterPath="$PROJECT_DIR$/frontend/config/main.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/JudgementpaperQuery.php" afterPath="$PROJECT_DIR$/common/models/JudgementpaperQuery.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/JudgementpaperSearch.php" afterPath="$PROJECT_DIR$/common/models/JudgementpaperSearch.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/UserQuery.php" afterPath="$PROJECT_DIR$/common/models/UserQuery.php" />
+      <change beforePath="$PROJECT_DIR$/common/models/UserSearch.php" afterPath="$PROJECT_DIR$/common/models/UserSearch.php" />
+      <change beforePath="$PROJECT_DIR$/ex.txt" afterPath="$PROJECT_DIR$/ex.txt" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/ChoiceController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ChoiceController.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/ChoicepaperController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ChoicepaperController.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/JudgementController.php" afterPath="$PROJECT_DIR$/frontend/controllers/JudgementController.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/JudgementpaperController.php" afterPath="$PROJECT_DIR$/frontend/controllers/JudgementpaperController.php" />
       <change beforePath="$PROJECT_DIR$/frontend/controllers/ResultController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ResultController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
       <change beforePath="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" afterPath="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" afterPath="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/ContactForm.php" afterPath="$PROJECT_DIR$/frontend/models/ContactForm.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/Result.php" afterPath="$PROJECT_DIR$/frontend/models/Result.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/ResultQuery.php" afterPath="$PROJECT_DIR$/frontend/models/ResultQuery.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/ResultSearch.php" afterPath="$PROJECT_DIR$/frontend/models/ResultSearch.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/SignupForm.php" afterPath="$PROJECT_DIR$/frontend/models/SignupForm.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/models/Usergii.php" afterPath="$PROJECT_DIR$/frontend/models/Usergii.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/_form.php" afterPath="$PROJECT_DIR$/frontend/views/choice/_form.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/_search.php" afterPath="$PROJECT_DIR$/frontend/views/choice/_search.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/create.php" afterPath="$PROJECT_DIR$/frontend/views/choice/create.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/index.php" afterPath="$PROJECT_DIR$/frontend/views/choice/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/update.php" afterPath="$PROJECT_DIR$/frontend/views/choice/update.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choice/view.php" afterPath="$PROJECT_DIR$/frontend/views/choice/view.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/_form.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/_form.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/_search.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/_search.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/create.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/create.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/index.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/update.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/update.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/view.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/view.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/_form.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/_form.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/_search.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/_search.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/create.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/create.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/index.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/update.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/update.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/view.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/view.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/_form.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/_form.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/_search.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/_search.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/create.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/create.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/index.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/update.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/update.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/view.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/view.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_allChoiceform.php" afterPath="$PROJECT_DIR$/frontend/views/result/_allChoiceform.php" />
       <change beforePath="$PROJECT_DIR$/frontend/views/result/_allJudgementform.php" afterPath="$PROJECT_DIR$/frontend/views/result/_allJudgementform.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_allQuizForm.php" afterPath="$PROJECT_DIR$/frontend/views/result/_allQuizForm.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_choiceform.php" afterPath="$PROJECT_DIR$/frontend/views/result/_choiceform.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_choicetitle.php" afterPath="$PROJECT_DIR$/frontend/views/result/_choicetitle.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_form.php" afterPath="$PROJECT_DIR$/frontend/views/result/_form.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_judgementform.php" afterPath="$PROJECT_DIR$/frontend/views/result/_judgementform.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_judgementtitle.php" afterPath="$PROJECT_DIR$/frontend/views/result/_judgementtitle.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_quizform.php" afterPath="$PROJECT_DIR$/frontend/views/result/_quizform.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_search.php" afterPath="$PROJECT_DIR$/frontend/views/result/_search.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/_title.php" afterPath="$PROJECT_DIR$/frontend/views/result/_title.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/create.php" afterPath="$PROJECT_DIR$/frontend/views/result/create.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/index.php" afterPath="$PROJECT_DIR$/frontend/views/result/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/quiz.php" afterPath="$PROJECT_DIR$/frontend/views/result/quiz.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/update.php" afterPath="$PROJECT_DIR$/frontend/views/result/update.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/result/view.php" afterPath="$PROJECT_DIR$/frontend/views/result/view.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/site/about.php" afterPath="$PROJECT_DIR$/frontend/views/site/about.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/site/contact.php" afterPath="$PROJECT_DIR$/frontend/views/site/contact.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
       <change beforePath="$PROJECT_DIR$/frontend/views/site/login.php" afterPath="$PROJECT_DIR$/frontend/views/site/login.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" afterPath="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/views/site/signup.php" afterPath="$PROJECT_DIR$/frontend/views/site/signup.php" />
+      <change beforePath="$PROJECT_DIR$/readmeself.md" afterPath="$PROJECT_DIR$/readmeself.md" />
+      <change beforePath="$PROJECT_DIR$/vendor/yiisoft/yii2/BaseYii.php" afterPath="$PROJECT_DIR$/vendor/yiisoft/yii2/BaseYii.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,50 +163,36 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="DockManager">
-    <window id="2">
+    <window id="1">
       <content type="file-editors">
         <state>
-          <leaf>
-            <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/frontend/messages/zh-CN/app.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="480">
-                    <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ChoicepaperController.php" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/backend/controllers/ChoicepaperController.php">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="168">
-                    <caret line="59" column="40" lean-forward="false" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
+          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
             <file leaf-file-name="JudgementpaperController.php" pinned="false" current-in-tab="false">
               <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementpaperController.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="37">
-                    <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                    <folding>
-                      <element signature="e#39#47#0#PHP" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="315">
+                    <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
             </file>
-            <file leaf-file-name="view_detail.php" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_detail.php">
+            <file leaf-file-name="quizer_view_result.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/frontend/views/result/quizer_view_result.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="270">
-                    <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
-                    <folding>
-                      <element signature="e#7#28#0#PHP" expanded="true" />
-                    </folding>
+                  <state relative-caret-position="248">
+                    <caret line="51" column="54" lean-forward="false" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+                    <folding />
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="2805">
+                    <caret line="197" column="20" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -92,20 +204,30 @@
     <window id="1">
       <content type="file-editors">
         <state>
-          <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <leaf>
             <file leaf-file-name="ResultController.php" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/frontend/controllers/ResultController.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-881">
-                    <caret line="160" column="24" lean-forward="false" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
+                  <state relative-caret-position="918">
+                    <caret line="242" column="28" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
                     <folding>
                       <element signature="e#40#65#0#PHP" expanded="true" />
                       <element signature="e#436#463#0#PHP" expanded="true" />
-                      <marker date="1521471827797" expanded="true" signature="2368:2397" ph="SELECT id fr... test_judgement" />
-                      <marker date="1521471827797" expanded="true" signature="2911:2937" ph="SELECT id FR... test_choice" />
-                      <marker date="1521471827797" expanded="true" signature="6150:6179" ph="SELECT id fr... test_judgement" />
-                      <marker date="1521471827797" expanded="true" signature="8692:8718" ph="SELECT id FR... test_choice" />
+                      <marker date="1521557506090" expanded="true" signature="2379:2408" ph="SELECT id fr... test_judgement" />
+                      <marker date="1521557506090" expanded="true" signature="2923:2949" ph="SELECT id FR... test_choice" />
+                      <marker date="1521557506090" expanded="true" signature="6775:6804" ph="SELECT id fr... test_judgement" />
+                      <marker date="1521557506090" expanded="true" signature="9339:9365" ph="SELECT id FR... test_choice" />
                     </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="SiteController.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/backend/controllers/SiteController.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="270">
+                    <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+                    <folding />
                   </state>
                 </provider>
               </entry>
@@ -117,77 +239,105 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgement/view.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_allQuizForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/result/_allQuizForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-164">
+              <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Choice.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/models/Choice.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Judgementpaper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/Judgementpaper.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/backend/views/result/view.php">
+      <file leaf-file-name="Judgement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/Judgement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+            <state relative-caret-position="277">
+              <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_judgement_view_only.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php">
+      <file leaf-file-name="_allChoiceform.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/result/_allChoiceform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state relative-caret-position="135">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding>
-                <element signature="e#89#110#0#PHP" expanded="true" />
+                <marker date="1520863968384" expanded="true" signature="241:267" ph="SELECT id FR... test_choice" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_result_id.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php">
+      <file leaf-file-name="_allJudgementform.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/result/_allJudgementform.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="83" lean-forward="true" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
-              <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_detail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="94" lean-forward="false" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
-              <folding>
-                <element signature="e#7#28#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="539">
+              <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/index.php">
+        <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="372">
+              <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="create.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/create.php">
+      <file leaf-file-name="ChoiceController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/ChoiceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="152">
+              <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
+              <folding>
+                <element signature="e#39#47#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JudgementController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -206,57 +356,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/views/result/quiz.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_quizform.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_judgementfrom.php" />
-        <option value="$PROJECT_DIR$/common/models/Judgement.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_choicetitle.php" />
-        <option value="$PROJECT_DIR$/backend/views/choice/view.php" />
-        <option value="$PROJECT_DIR$/backend/views/choice/index.php" />
-        <option value="$PROJECT_DIR$/common/models/Choice.php" />
-        <option value="$PROJECT_DIR$/frontend/views/choicepaper/_form.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_choiceform.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_title.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_allform.php" />
-        <option value="$PROJECT_DIR$/frontend/models/Result.php" />
-        <option value="$PROJECT_DIR$/backend/views/choice/_form.php" />
-        <option value="$PROJECT_DIR$/backend/views/site/login.php" />
-        <option value="$PROJECT_DIR$/backend/views/adminuser/_form.php" />
-        <option value="$PROJECT_DIR$/backend/views/adminuser/index.php" />
-        <option value="$PROJECT_DIR$/backend/models/Adminuser.php" />
-        <option value="$PROJECT_DIR$/backend/messages/zh-CN/app.php" />
-        <option value="$PROJECT_DIR$/backend/views/adminuser/view.php" />
-        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
-        <option value="$PROJECT_DIR$/backend/views/adminuser/create.php" />
-        <option value="$PROJECT_DIR$/backend/views/judgement/_form.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_judgementform.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_judgementtitle.php" />
-        <option value="$PROJECT_DIR$/backend/views/judgement/view.php" />
-        <option value="$PROJECT_DIR$/backend/views/choicepaper/view.php" />
-        <option value="$PROJECT_DIR$/backend/views/result/index.php" />
-        <option value="$PROJECT_DIR$/backend/views/choice/_choice_view_only.php" />
-        <option value="$PROJECT_DIR$/frontend/config/main.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php" />
         <option value="$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php" />
-        <option value="$PROJECT_DIR$/frontend/views/site/login.php" />
         <option value="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" />
         <option value="$PROJECT_DIR$/common/models/LoginForm.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_allJudgementform.php" />
-        <option value="$PROJECT_DIR$/common/models/Judgementpaper.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/_allQuizForm.php" />
-        <option value="$PROJECT_DIR$/common/models/Choicepaper.php" />
-        <option value="$PROJECT_DIR$/frontend/controllers/ResultController.php" />
         <option value="$PROJECT_DIR$/backend/views/choicepaper/view_result_id.php" />
         <option value="$PROJECT_DIR$/backend/controllers/ChoicepaperController.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/ChoiceController.php" />
-        <option value="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" />
-        <option value="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
-        <option value="$PROJECT_DIR$/backend/controllers/JudgementController.php" />
         <option value="$PROJECT_DIR$/backend/controllers/JudgementpaperController.php" />
-        <option value="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/frontend/views/result/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
+        <option value="$PROJECT_DIR$/common/models/Choicepaper.php" />
+        <option value="$PROJECT_DIR$/common/models/Judgementpaper.php" />
         <option value="$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/JudgementpaperController.php" />
+        <option value="$PROJECT_DIR$/frontend/views/judgementpaper/view_result_id.php" />
+        <option value="$PROJECT_DIR$/frontend/views/choicepaper/view_result_id.php" />
+        <option value="$PROJECT_DIR$/frontend/views/result/quizer_view_result.php" />
+        <option value="$PROJECT_DIR$/frontend/views/choicepaper/similated_result.php" />
+        <option value="$PROJECT_DIR$/frontend/views/judgementpaper/similated_result.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/ChoicepaperController.php" />
+        <option value="$PROJECT_DIR$/frontend/models/Result.php" />
+        <option value="$PROJECT_DIR$/frontend/models/ResultSearch.php" />
+        <option value="$PROJECT_DIR$/backend/views/result/index.php" />
         <option value="$PROJECT_DIR$/backend/views/result/view.php" />
+        <option value="$PROJECT_DIR$/backend/views/choicepaper/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/backend/views/judgement/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/frontend/models/SignupForm.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/signup.php" />
+        <option value="$PROJECT_DIR$/backend/views/judgement/view.php" />
+        <option value="$PROJECT_DIR$/backend/views/choice/view.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/about.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/contact.php" />
+        <option value="$PROJECT_DIR$/frontend/models/ContactForm.php" />
+        <option value="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/login.php" />
+        <option value="$PROJECT_DIR$/frontend/views/result/simulate_view_result.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/vendor/yiisoft/yii2/BaseYii.php" />
+        <option value="$PROJECT_DIR$/backend/views/choice/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/layouts/main.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/ChoiceController.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/JudgementController.php" />
+        <option value="$PROJECT_DIR$/backend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/frontend/views/result/_allJudgementform.php" />
+        <option value="$PROJECT_DIR$/frontend/views/result/_allQuizForm.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/ResultController.php" />
+        <option value="$PROJECT_DIR$/common/models/Judgement.php" />
+        <option value="$PROJECT_DIR$/common/models/Choice.php" />
       </list>
     </option>
   </component>
@@ -336,7 +486,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="616" />
+    <option name="x" value="694" />
     <option name="y" value="23" />
     <option name="width" value="1292" />
     <option name="height" value="983" />
@@ -375,7 +525,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -405,35 +554,14 @@
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="choice" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="layouts" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="choicepaper" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="judgement" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="judgementpaper" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="result" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
@@ -461,12 +589,6 @@
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="messages" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -487,13 +609,23 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/frontend/views/result" />
+      <recent name="$PROJECT_DIR$/frontend/views/judgementpaper" />
+      <recent name="$PROJECT_DIR$/frontend/views/choice" />
+      <recent name="$PROJECT_DIR$/frontend/views/choicepaper" />
+      <recent name="$PROJECT_DIR$/frontend/views/judgement" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -528,26 +660,27 @@
       <workItem from="1520859984865" duration="3618000" />
       <workItem from="1520898039031" duration="22007000" />
       <workItem from="1521086968559" duration="26969000" />
-      <workItem from="1521242839292" duration="34945000" />
+      <workItem from="1521242839292" duration="35063000" />
+      <workItem from="1521503604416" duration="41299000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160079000" />
+    <option name="totallyTimeSpent" value="201496000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="616" y="23" width="1292" height="983" extended-state="0" />
+    <frame x="694" y="23" width="1292" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2152" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2184" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2496" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -574,163 +707,154 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="111" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/messages/zh-CN/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="30" column="32" lean-forward="false" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/models/Adminuser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="602">
-          <caret line="65" column="50" lean-forward="false" selection-start-line="65" selection-start-column="50" selection-end-line="65" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgement/_search.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/_search.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/choicepaper/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/update.php">
+    <entry file="file://$PROJECT_DIR$/frontend/models/ResultSearch.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="1065">
+          <caret line="75" column="68" lean-forward="false" selection-start-line="75" selection-start-column="68" selection-end-line="75" selection-end-column="68" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/create.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/judgementpaper/_search.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="29" lean-forward="false" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
+        <state relative-caret-position="405">
+          <caret line="28" column="56" lean-forward="false" selection-start-line="28" selection-start-column="56" selection-end-line="28" selection-end-column="86" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgement/update.php">
+    <entry file="file://$PROJECT_DIR$/frontend/models/Result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="50" column="58" lean-forward="false" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/view.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_judgementform.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+        <state relative-caret-position="105">
+          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_judgementtitle.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="21" lean-forward="false" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="false" />
-            <marker date="1520984775273" expanded="true" signature="213:224" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_choiceform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="27" />
+        <state relative-caret-position="180">
+          <caret line="14" column="46" lean-forward="false" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/result/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="43" column="43" lean-forward="false" selection-start-line="43" selection-start-column="43" selection-end-line="43" selection-end-column="43" />
+        <state relative-caret-position="495">
+          <caret line="73" column="22" lean-forward="false" selection-start-line="73" selection-start-column="22" selection-end-line="73" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/config/main.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/judgement/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="10" lean-forward="false" selection-start-line="26" selection-start-column="10" selection-end-line="26" selection-end-column="10" />
+        <state relative-caret-position="-280">
+          <caret line="17" column="7" lean-forward="false" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_choicetitle.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="75" />
+        <state relative-caret-position="375">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="39" column="8" lean-forward="false" selection-start-line="39" selection-start-column="8" selection-end-line="39" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/signup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="46" lean-forward="false" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/judgement/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="36" column="37" lean-forward="false" selection-start-line="36" selection-start-column="37" selection-end-line="36" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/about.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="46" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="40" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
           <folding>
-            <marker date="1520764609348" expanded="true" signature="520:531" ph="..." />
+            <element signature="e#127#148#0#PHP" expanded="false" />
+            <marker date="1521543937912" expanded="true" signature="1209:1253" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/User.php">
+    <entry file="file://$PROJECT_DIR$/frontend/models/ContactForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="76" column="0" lean-forward="false" selection-start-line="76" selection-start-column="0" selection-end-line="89" selection-end-column="5" />
+        <state relative-caret-position="541">
+          <caret line="46" column="43" lean-forward="false" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/requestPasswordResetToken.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/login.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="11" column="2" lean-forward="false" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
@@ -738,275 +862,274 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/web/Controller.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/choicepaper/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="208" column="83" lean-forward="true" selection-start-line="208" selection-start-column="83" selection-end-line="208" selection-end-column="83" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/login.php">
+    <entry file="file://$PROJECT_DIR$/frontend/models/SignupForm.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="62" lean-forward="false" selection-start-line="26" selection-start-column="62" selection-end-line="26" selection-end-column="62" />
+        <state relative-caret-position="240">
+          <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
           <folding>
-            <element signature="e#34#42#0#PHP" expanded="false" />
+            <element signature="e#33#41#0#PHP" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/LoginForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1185">
-          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/messages/zh-CN/app.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="37" column="54" lean-forward="false" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="54" />
+        <state relative-caret-position="345">
+          <caret line="28" column="25" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="28" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Judgementpaper.php">
+    <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="61" column="79" lean-forward="false" selection-start-line="61" selection-start-column="79" selection-end-line="61" selection-end-column="79" />
+        <state relative-caret-position="180">
+          <caret line="12" column="51" lean-forward="false" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allChoiceform.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/quizer_view_result.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="626">
-          <caret line="53" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <marker date="1520863968384" expanded="true" signature="241:267" ph="SELECT id FR... test_choice" />
-          </folding>
+        <state relative-caret-position="248">
+          <caret line="51" column="54" lean-forward="false" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/ResultController.php">
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/ChoicepaperController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-881">
-          <caret line="160" column="24" lean-forward="false" selection-start-line="160" selection-start-column="24" selection-end-line="160" selection-end-column="24" />
-          <folding>
-            <element signature="e#40#65#0#PHP" expanded="true" />
-            <element signature="e#436#463#0#PHP" expanded="true" />
-            <marker date="1521471827797" expanded="true" signature="2368:2397" ph="SELECT id fr... test_judgement" />
-            <marker date="1521471827797" expanded="true" signature="2911:2937" ph="SELECT id FR... test_choice" />
-            <marker date="1521471827797" expanded="true" signature="6150:6179" ph="SELECT id fr... test_judgement" />
-            <marker date="1521471827797" expanded="true" signature="8692:8718" ph="SELECT id FR... test_choice" />
-          </folding>
+        <state relative-caret-position="-38">
+          <caret line="33" column="39" lean-forward="false" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/ResultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1034">
+        <state relative-caret-position="594">
+          <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-start-column="45" selection-end-line="54" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-35226">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Choicepaper.php">
+    <entry file="file://$PROJECT_DIR$/backend/codeception.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="62" column="41" lean-forward="false" selection-start-line="62" selection-start-column="41" selection-end-line="62" selection-end-column="41" />
+        <state relative-caret-position="195">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allQuizForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="61" column="58" lean-forward="false" selection-start-line="61" selection-start-column="58" selection-end-line="61" selection-end-column="58" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allJudgementform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="132" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-            <marker date="1521456377439" expanded="true" signature="1567:1816" ph="..." />
-            <marker date="1521456377439" expanded="true" signature="2764:2803" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="38" column="41" lean-forward="false" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
-          <folding>
-            <element signature="e#39#47#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ChoiceController.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="34" column="7" lean-forward="false" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
+          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choice/_choice_view_only.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/result/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="28" column="6" lean-forward="false" selection-start-line="28" selection-start-column="6" selection-end-line="28" selection-end-column="6" />
-          <folding>
-            <marker date="1521206233526" expanded="true" signature="535:546" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgement/_form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_result_id.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="81" lean-forward="false" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-          <folding>
-            <marker date="1521472888323" expanded="true" signature="713:724" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/create.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="30" column="4" lean-forward="false" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="39" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgement/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ChoicepaperController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="59" column="40" lean-forward="false" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
+        <state relative-caret-position="481">
+          <caret line="60" column="5" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="82" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementpaperController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+        <state relative-caret-position="315">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="75" column="44" lean-forward="false" selection-start-line="75" selection-start-column="44" selection-end-line="75" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/yiisoft/yii2/BaseYii.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="475" column="36" lean-forward="false" selection-start-line="475" selection-start-column="36" selection-end-line="475" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/choice/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="66" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/choice/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/simulate_view_result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="49" column="13" lean-forward="false" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+          <folding>
+            <element signature="e#89#110#0#PHP" expanded="false" />
+            <element signature="n#style#0;n#h4#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2805">
+          <caret line="197" column="20" lean-forward="false" selection-start-line="197" selection-start-column="20" selection-end-line="197" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/layouts/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="28" column="18" lean-forward="false" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/SiteController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="28" lean-forward="false" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/ChoiceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
           <folding>
             <element signature="e#39#47#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_detail.php">
+    <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="11" lean-forward="true" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
+        <state relative-caret-position="340">
+          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/_choiceform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allChoiceform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
+            <marker date="1520863968384" expanded="true" signature="241:267" ph="SELECT id FR... test_choice" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allJudgementform.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="539">
+          <caret line="83" column="29" lean-forward="false" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allQuizForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-164">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/ResultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="242" column="28" lean-forward="false" selection-start-line="242" selection-start-column="28" selection-end-line="242" selection-end-column="28" />
           <folding>
-            <element signature="e#89#110#0#PHP" expanded="true" />
+            <element signature="e#40#65#0#PHP" expanded="true" />
+            <element signature="e#436#463#0#PHP" expanded="true" />
+            <marker date="1521557506090" expanded="true" signature="2379:2408" ph="SELECT id fr... test_judgement" />
+            <marker date="1521557506090" expanded="true" signature="2923:2949" ph="SELECT id FR... test_choice" />
+            <marker date="1521557506090" expanded="true" signature="6775:6804" ph="SELECT id fr... test_judgement" />
+            <marker date="1521557506090" expanded="true" signature="9339:9365" ph="SELECT id FR... test_choice" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php">
+    <entry file="file://$PROJECT_DIR$/common/models/Judgementpaper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="94" lean-forward="false" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php">
+    <entry file="file://$PROJECT_DIR$/common/models/Judgement.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="83" lean-forward="true" selection-start-line="16" selection-start-column="83" selection-end-line="16" selection-end-column="83" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="277">
+          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/result/view.php">
+    <entry file="file://$PROJECT_DIR$/common/models/Choice.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
-          <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
+        <state relative-caret-position="237">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding />
         </state>
       </provider>

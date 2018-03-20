@@ -40,7 +40,7 @@ class ResultController extends Controller
             ],
             'access' => [
                 'class' => AccessControl::className(),
-                'only' => ['judgement','choice',],
+                'only' => ['judgement','choice','allquiz'],
 //                'allowCallback' => function ($rule, $action) {
 //                   Yii::$app->session->setFlash('success', 'haha,Thank you for contacting us. We will respond to you as soon as possible.');
 //                },
@@ -53,7 +53,7 @@ class ResultController extends Controller
                 [
                     [
                         'allow' => true,
-                        'actions' => ['judgement','choice'],
+                        'actions' => ['judgement','choice','allquiz'],
                         'roles' => ['@'],
                     ],
 
@@ -67,23 +67,23 @@ class ResultController extends Controller
      * Lists all Result models.
      * @return mixed
      */
-//    public function actionIndex()
-//    {
-//        $searchModel = new ResultSearch();
-//        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-//
-//        return $this->render('index', [
-//            'searchModel' => $searchModel,
-//            'dataProvider' => $dataProvider,
-//        ]);
-//    }
-//开始考试
+    public function actionIndex()
+    {
+        $searchModel = new ResultSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
+    }
+//开始考试选择题和判断题的全套考试
     public function actionAllquiz(){
         $result =  new Result();
         //这里是随机出判断题
         $queryJudgementId = Yii::$app->db->createCommand('SELECT id from test_judgement')->queryAll();
         shuffle($queryJudgementId);
-        $how_mangJudgement = 3;
+        $how_mangJudgement = 10;
         $shuffleJudgeIDs = array_slice($queryJudgementId, 0, $how_mangJudgement);
         $judgementforms = [new Judgementpaper()];
         for ($i = 0; $i < $how_mangJudgement - 1; $i++) {
@@ -95,7 +95,7 @@ class ResultController extends Controller
         $queryChoiceId = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
         //打乱顺序
         shuffle($queryChoiceId);
-        $how_mangChoice = 5;
+        $how_mangChoice = 10;
         $shuffleChoiceIDs = array_slice($queryChoiceId,0,$how_mangChoice);
 
         $choiceforms = [new Choicepaper()];
@@ -109,6 +109,9 @@ class ResultController extends Controller
         $transaction = Yii::$app->db->beginTransaction();
 
         try {
+            $is_real = Yii::$app->request->post('is_real')?Yii::$app->request->post('is_real'):$is_real;
+//            print_r(Yii::$app->request->post('is_real'));die;
+            $result->is_real = $is_real;
             $result->score = 0;
             $result->user_id = Yii::$app->user->id;
             $result->save();
@@ -120,6 +123,9 @@ class ResultController extends Controller
                 {
                     $judgementform->result_id = $result->id;
                     $judgementform->judgement_id = $shuffleJudgeIDs[$i]['id'];
+                    if ($judgementform->judgement_answer == null){
+                        $judgementform->judgement_answer = '0';
+                    }
                     $judgementform->save();
 
                     if ($judgementform->judgement_answer == Judgement::findOne($shuffleJudgeIDs[$i]['id'])->answer){
@@ -132,6 +138,9 @@ class ResultController extends Controller
                 {
                     $choiceform->result_id = $result->id;
                     $choiceform->choice_id = $shuffleChoiceIDs[$i]['id'];
+                    if ($choiceform->choice_answer == null){
+                        $choiceform->choice_answer = '0';
+                    }
                     $choiceform->save();
                     if ($choiceform->choice_answer == Choice::findOne($shuffleChoiceIDs[$i]['id'])->answer)
                     {
@@ -142,9 +151,10 @@ class ResultController extends Controller
                 $result->score = $user_score;
                 $result->save();
                 $transaction->commit();
-                $this->goHome();
+                $this->redirect(['view','id' => $result->id]);
             }else{
                 return $this->render('_allQuizForm',[
+                    'is_real' => $is_real,
                     'judgementforms' => $judgementforms,
                     'shuffleJudgementids' => $shuffleJudgeIDs,
                     'choiceforms' => $choiceforms,
@@ -156,6 +166,7 @@ class ResultController extends Controller
         }
 
         return $this->render('_allQuizForm',[
+            'is_real' => $is_real,
             'judgementforms' => $judgementforms,
             'shuffleJudgementids' => $shuffleJudgeIDs,
             'choiceforms' => $choiceforms,
@@ -170,7 +181,7 @@ class ResultController extends Controller
 
         $queryID = Yii::$app->db->createCommand('SELECT id from test_judgement')->queryAll();
         shuffle($queryID);
-        $how_mangJudgement = 3;
+        $how_mangJudgement = 10;
         $shuffleIDs = array_slice($queryID, 0, $how_mangJudgement);
         $judgementforms = [new Judgementpaper()];
         for ($i = 0; $i < $how_mangJudgement - 1; $i++) {
@@ -189,7 +200,9 @@ class ResultController extends Controller
                 foreach ($judgementforms as $judgementform) {
                     $judgementform->result_id = $result->id;
                     $judgementform->judgement_id = $shuffleIDs[$i]['id'];
-//                    echo "<pre>"; print_r($judgementform); echo "</pre>";
+                    if ($judgementform->judgement_answer == null){
+                        $judgementform->judgement_answer = '0';
+                    }
                     $judgementform->save();
 
                     if ($judgementform->judgement_answer == Judgement::findOne($shuffleIDs[$i]['id'])->answer){
@@ -200,7 +213,7 @@ class ResultController extends Controller
                 $result->score = $user_score;
                 $result->save();
                 $transaction->commit();
-                $this->goHome();
+                $this->redirect(['simulate', 'id' => $result->id]);
             }else{
                 return $this->render('_allJudgementform',[
                     'judgementforms' => $judgementforms,
@@ -210,7 +223,6 @@ class ResultController extends Controller
         } catch (Exception $e){
                 $transaction->rollBack();
         }
-//        echo "<pre>"; print_r($judgementforms); echo "</pre>";
         return $this->render('_allJudgementform',[
             'judgementforms' => $judgementforms,
             'shuffleids' => $shuffleIDs,
@@ -224,15 +236,11 @@ class ResultController extends Controller
         $result =  new Result();
         $searchModel = new ResultSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
-
-
         //////////////////////////////////////////////
-        ///
-        ///
         $queryID = Yii::$app->db->createCommand('SELECT id FROM test_choice')->queryAll();
         //打乱顺序
         shuffle($queryID);
-        $how_mangChoice = 5;
+        $how_mangChoice = 10;
         $shuffleIDs = array_slice($queryID,0,$how_mangChoice);
 
         $choiceforms = [new Choicepaper()];
@@ -255,8 +263,11 @@ try {
             foreach ($choiceforms as $choiceform) {
                 $choiceform->result_id = $result->id;
                 $choiceform->choice_id = $shuffleIDs[$i]['id'];
+                if ($choiceform->choice_answer == null){
+                    $choiceform->choice_answer = '0';
+                }
                 $choiceform->save();
-                if ($choiceform->choive_answer == Choice::findOne($shuffleIDs[$i]['id'])->answer){
+                if ($choiceform->choice_answer == Choice::findOne($shuffleIDs[$i]['id'])->answer){
                     $user_score = $user_score + Choice::findOne($shuffleIDs[$i]['id'])->score;
                 }
                 $i++;
@@ -264,7 +275,7 @@ try {
             $result->score = $user_score;
             $result->save();
             $transaction->commit();
-            $this->goHome();
+            $this->redirect(['simulate', 'id' => $result->id]);
         } else {
             return $this->render('_allChoiceform', [
                 'choiceform' => $choiceforms,
@@ -295,11 +306,21 @@ try {
      */
     public function actionView($id)
     {
-        return $this->render('view', [
+        if (Result::findOne($id)->score>60){
+            Yii::$app->session->setFlash('success',"恭喜您，考试通过");
+        }else{
+            Yii::$app->session->setFlash('error',"对不起，考试未通过,请继续努力");
+        }
+        return $this->render('quizer_view_result', [
             'model' => $this->findModel($id),
         ]);
     }
-
+    //展示模拟测试的结果
+    public function actionSimulate($id ){
+        return $this->render('simulate_view_result', [
+            'model' => $this->findModel($id),
+        ]);
+    }
     /**
      * Creates a new Result model.
      * If creation is successful, the browser will be redirected to the 'view' page.

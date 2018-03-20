@@ -8,6 +8,7 @@ use common\models\JudgementSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * JudgementController implements the CRUD actions for Judgement model.
@@ -24,6 +25,19 @@ class JudgementController extends Controller
                 'class' => VerbFilter::className(),
                 'actions' => [
                     'delete' => ['POST'],
+                ],
+            ],
+            'access' =>
+             [
+                'class' => AccessControl::className(),
+                'only' => ['create'],
+                'rules' =>
+                [
+                    [
+                        'actions' => ['create'],
+                        'allow' => true,
+                        'roles' => ['@'],
+                    ],
                 ],
             ],
         ];

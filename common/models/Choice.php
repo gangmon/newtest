@@ -39,8 +39,8 @@ class Choice extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-//            [['title',],['unique']],
-            ['title', 'unique', 'targetClass' => '\common\models\Choice', 'message' => '此题已存在.'],
+            [['title',],'unique', 'message' => '此题已存在.'],
+//            ['title', 'unique', 'targetClass' => '\common\models\Choice', 'message' => '此题已存在.'],
             [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty', ], 'required'],
             [['answer', 'title', 'A', 'B', 'C', 'D', 'difficulty'], 'string'],
             [['admin_id', 'score', 'create_time', 'update_time'], 'integer'],

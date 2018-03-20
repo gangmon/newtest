@@ -13,31 +13,31 @@ $this->title = Yii::t('app', 'Results');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 
-<div id="leftnav" class="col-md-3" style="float: right">
-    <div class="list-group">
-        <!-- 用户管理 -->
-        <a class="list-group-item" data-toggle="collapse" href="#usercollapse" aria-expanded="false" aria-controls="collapseExample" style="float: right">用户管理<span class="caret"></span></a>
-        <div class="collapse" id="usercollapse">
-            <div class="well">
-                <div class="list-group">
-                    <a href="<?= Url::toRoute(['user/index'])?>" class="list-group-item">用户列表（gii）</a>
-                    <a href="<?= Url::toRoute(['user/manualuser'])?>" class="list-group-item">用户列表（manual）</a>
-                </div>
-            </div>
-        </div>
-        <!-- 权限管理 -->
-        <a class="list-group-item" data-toggle="collapse" href="#resourcecollapse" aria-expanded="false" aria-controls="collapseExample" style="float: right">资源管理<span class="caret"></span></a>
-        <div class="collapse" id="resourcecollapse">
-            <div class="well">
-                <div class="list-group">
-                    <a href="<?= Url::toRoute(['user/index'])?>" class="list-group-item">用户列表（gii）</a>
-                    <a href="<?= Url::toRoute(['user/index'])?>" class="list-group-item">用户列表（gii）</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+<!--<div id="leftnav" class="col-md-3" style="float: right">-->
+<!--    <div class="list-group">-->
+<!--        <!-- 用户管理 -->-->
+<!--        <a class="list-group-item" data-toggle="collapse" href="#usercollapse" aria-expanded="false" aria-controls="collapseExample" style="float: right">用户管理<span class="caret"></span></a>-->
+<!--        <div class="collapse" id="usercollapse">-->
+<!--            <div class="well">-->
+<!--                <div class="list-group">-->
+<!--                    <a href="--><?//= Url::toRoute(['user/index'])?><!--" class="list-group-item">用户列表（gii）</a>-->
+<!--                    <a href="--><?//= Url::toRoute(['user/manualuser'])?><!--" class="list-group-item">用户列表（manual）</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <!-- 权限管理 -->-->
+<!--        <a class="list-group-item" data-toggle="collapse" href="#resourcecollapse" aria-expanded="false" aria-controls="collapseExample" style="float: right">资源管理<span class="caret"></span></a>-->
+<!--        <div class="collapse" id="resourcecollapse">-->
+<!--            <div class="well">-->
+<!--                <div class="list-group">-->
+<!--                    <a href="--><?//= Url::toRoute(['user/index'])?><!--" class="list-group-item">用户列表（gii）</a>-->
+<!--                    <a href="--><?//= Url::toRoute(['user/index'])?><!--" class="list-group-item">用户列表（gii）</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+<!---->
 
 
 <div class="result-index">

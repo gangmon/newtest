@@ -13,7 +13,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="site-login">
     <h1><?= Html::encode($this->title) ?></h1>
 
-    <h5>请登陆后进行考试或者模拟测试，如果没有账号您可以<?= Html::a(Yii::t('app','Register'), ['site/register']) ?>。</h5>
+    <h5>请登陆后进行考试或者模拟测试，如果没有账号您可以<?= Html::a(Yii::t('app','Register'), ['site/signup']) ?>。</h5>
 
     <div class="row">
         <div class="col-lg-5">
@@ -31,7 +31,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group">
                     <?= Html::submitButton(Yii::t('app','Login'), ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
-                    <?= Html::submitButton(Yii::t('app','Register'), ['class' => 'btn btn-success', 'name' => 'login-button']) ?>
+                    <?= Html::a(Yii::t('app','Signup'), ['site/signup'],['class' => 'btn btn-success', 'name' => 'login-button']) ?>
                 </div>
             <?php ActiveForm::end(); ?>
         </div>
