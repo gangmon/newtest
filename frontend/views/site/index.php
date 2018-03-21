@@ -50,7 +50,6 @@ $this->title = '工作人员在线考试系统';
                     三年蓝天保卫战的目标将在“十三五”规划目标基础上进一步深化，
                     有些目标可能会有适当提高。</p>
 
-<!--                <p>--><?//= Html::a('选择题模拟测试&raquo;',['result/choice'],['class' => "btn btn-default" ])?><!--</p>-->
             </div>
             <div class="col-lg-4">
                 <h2>探究讨论</h2>
@@ -59,7 +58,6 @@ $this->title = '工作人员在线考试系统';
                     资源利用程度高低的主要技术经济指标，
                     “三率”水平的高低决定矿山的当前经济效益与总的资源效益。</p>
 
-<!--                <p>--><?//= Html::a('仿真模拟测试&raquo;',['result/allquiz',['is_real' => '2','method' => 'post']],['class' => "btn btn-default" ],['data' => ['method' => 'post', 'params' => ['is_real' => '2']]])?><!--</p>-->
             </div>
         </div>
 
