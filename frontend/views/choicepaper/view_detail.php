@@ -16,7 +16,7 @@ use common\models\Choice;
         }
     ?>
 
-<!--    --><?//= DetailView::widget([
+    <?//= DetailView::widget([
 //        'model' => $model,
 //        'attributes' => [
 //            'id',
