@@ -2,84 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae2804d-2a6d-48df-8e7e-7e3e80e56558" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/views/adminuser/privilege.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/backend/views/adminuser/resetpwd.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1229aaf8b6.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122a467aeb.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122aba367e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122ac1ea98.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122b51277c.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122bbd470d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122bc4eaea.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122c8c7ed8.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122d44f6bf.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122d4b95cf.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab122de08f3c.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/AdminuserController.php" afterPath="$PROJECT_DIR$/backend/controllers/AdminuserController.php" />
+      <change beforePath="$PROJECT_DIR$/backend/models/Adminuser.php" afterPath="$PROJECT_DIR$/backend/models/Adminuser.php" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1231c72f68.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12323ebd50.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab123244de0a.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1232a12397.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1232a79749.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12331c1983.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12338ae9d4.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab123392c746.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1234145613.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12345b71b1.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab123462dc7e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab123501a730.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1235da444c.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1235e1ebc9.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12366ddf7f.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1236e0bdce.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1237c74cda.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1237ce1f76.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab127b3ef368.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab127b6f3af3.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab127c697b58.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab127dc6c1ba.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab127e032c5e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1281e65dc2.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab128491d8c0.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab128b3529a6.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab128f265709.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab128fd8419e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab1293a50de0.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab12d6bb0673.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2f9a7a7ebc.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2f9b0c35d8.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2f9b5483db.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2f9b5ed294.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa1a707ee.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa253b93d.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa4debf37.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa8317d25.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa882b662.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fa89c8727.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fac238d41.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2facfa9a84.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2facfb38ad.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5ab2fae67abcc.data" afterPath="" />
       <change beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" afterPath="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" afterPath="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" afterPath="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/result/view.php" afterPath="$PROJECT_DIR$/backend/views/result/view.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/ResultController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ResultController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112e3e7be0.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112efba461.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112f12fb8a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112f3ced17.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112f770044.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab112fc26d6e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11301ced68.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1131aeb624.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1131ce0721.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1131e3fa59.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1132183254.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11321cd710.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c75eee26.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c7731e38.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c7862878.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c78bd6eb.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c7ae96ed.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c7b01137.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c7ccb9df.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c8564fd9.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c93b342a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c95186cf.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11c99e7a84.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11cac5fcde.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11caee6e92.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11cb64c591.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11cb9668f0.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11cbb04d2a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11e4d644f7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11e4f8c9fa.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f7839685.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f7acec79.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f8858a1d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f8a81a47.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f8dd02da.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f8f289f2.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab11f939e8fb.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1200772da5.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1200b1b439.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1265dd9356.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab126684a1c1.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1266d4e1b5.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab12731d7b07.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1273466b5a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1275b51806.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab12760bd68a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab12767e25b1.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1276a67cd4.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1adf5083f2.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1b04fcde8a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1b052b0109.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1b0578d01e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1b05c9fae4.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab1b1a8ebc5e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/frontend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/frontend/runtime/logs/app.log" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" afterPath="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/judgement/_judgement_view_only.php" afterPath="$PROJECT_DIR$/frontend/views/judgement/_judgement_view_only.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" afterPath="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/result/quizer_view_result.php" afterPath="$PROJECT_DIR$/frontend/views/result/quizer_view_result.php" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/backend/runtime/logs/app.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -148,110 +121,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simulate_view_result.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/result/simulate_view_result.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ResultController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/controllers/ResultController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="365">
-              <caret line="56" column="5" lean-forward="false" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/result/view.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="43" column="42" lean-forward="false" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="view_detail.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="32" column="8" lean-forward="false" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_judgement_view_only.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <marker date="1521678979211" expanded="true" signature="552:563" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="view_detail.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_detail.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_choice_view_only.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/choice/_choice_view_only.php">
+      <file leaf-file-name="Adminuser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/models/Adminuser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="325">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
-                <marker date="1521206233526" expanded="true" signature="535:546" ph="..." />
+                <element signature="e#34#42#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_result_id.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_result_id.php">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1521472888323" expanded="true" signature="713:724" ph="..." />
-              </folding>
+            <state relative-caret-position="-1255">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_result_id.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php">
+      <file leaf-file-name="LoginForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/models/LoginForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-54">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PasswordResetRequestForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-356">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResetPasswordForm.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/models/ResetPasswordForm.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="721">
+              <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/adminuser/_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminuserController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/AdminuserController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-865">
+              <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resetpwd.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/adminuser/resetpwd.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1521515998626" expanded="true" signature="438:449" ph="..." />
-              </folding>
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="privilege.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/views/adminuser/privilege.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -261,6 +228,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>quizname</find>
+      <find>password_re</find>
+      <find>password_repeat</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -269,8 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/backend/controllers/JudgementpaperController.php" />
-        <option value="$PROJECT_DIR$/frontend/views/result/index.php" />
         <option value="$PROJECT_DIR$/common/models/Choicepaper.php" />
         <option value="$PROJECT_DIR$/common/models/Judgementpaper.php" />
         <option value="$PROJECT_DIR$/backend/views/judgementpaper/view_result_id.php" />
@@ -320,6 +287,8 @@
         <option value="$PROJECT_DIR$/backend/views/judgementpaper/view_detail.php" />
         <option value="$PROJECT_DIR$/backend/views/judgement/_judgement_view_only.php" />
         <option value="$PROJECT_DIR$/backend/views/choicepaper/view_detail.php" />
+        <option value="$PROJECT_DIR$/backend/models/Adminuser.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/AdminuserController.php" />
       </list>
     </option>
   </component>
@@ -399,7 +368,7 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="480" />
+    <option name="x" value="660" />
     <option name="y" value="23" />
     <option name="width" value="1292" />
     <option name="height" value="983" />
@@ -468,13 +437,14 @@
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="adminuser" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
@@ -548,35 +518,6 @@
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_data" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="_support" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="unit" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="tests" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="unit" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -600,6 +541,12 @@
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
@@ -635,48 +582,6 @@
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="result" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="frontend" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="web" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vagrant" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vagrant" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="config" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vagrant" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="nginx" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="vendor" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -691,11 +596,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend/views/adminuser" />
       <recent name="$PROJECT_DIR$/frontend/views" />
       <recent name="$PROJECT_DIR$/frontend/views/result" />
       <recent name="$PROJECT_DIR$/frontend/views/judgementpaper" />
       <recent name="$PROJECT_DIR$/frontend/views/choice" />
-      <recent name="$PROJECT_DIR$/frontend/views/choicepaper" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -734,15 +639,15 @@
       <workItem from="1521242839292" duration="35063000" />
       <workItem from="1521503604416" duration="42349000" />
       <workItem from="1521560150484" duration="5551000" />
-      <workItem from="1521645196804" duration="3256000" />
+      <workItem from="1521645196804" duration="7520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="211353000" />
+    <option name="totallyTimeSpent" value="215617000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="480" y="23" width="1292" height="983" extended-state="0" />
+    <frame x="660" y="23" width="1292" height="983" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -780,92 +685,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/backend/controllers/ChoiceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="19" column="31" lean-forward="false" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#39#47#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="52" column="5" lean-forward="false" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="34" lean-forward="false" selection-start-line="20" selection-start-column="34" selection-end-line="20" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_choiceform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/result/_allQuizForm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-164">
-          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/UserController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/user/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Choice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="51" column="18" lean-forward="true" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Judgementpaper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Judgement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/result/_allChoiceform.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1128,10 +947,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/update.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="26" lean-forward="false" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/backend/views/choicepaper/view_detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="5" lean-forward="true" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="300">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="12" column="28" lean-forward="false" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/Usergii.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/models/Adminuser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding>
+            <element signature="e#34#42#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1255">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/models/LoginForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/PasswordResetRequestForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-356">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/models/ResetPasswordForm.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="721">
+          <caret line="62" column="5" lean-forward="false" selection-start-line="62" selection-start-column="5" selection-end-line="62" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/privilege.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="44" column="0" lean-forward="true" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/adminuser/resetpwd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/AdminuserController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-865">
+          <caret line="35" column="7" lean-forward="true" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding />
         </state>
       </provider>
