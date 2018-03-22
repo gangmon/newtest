@@ -13,7 +13,6 @@ use yii\widgets\DetailView;
 ?>
 <div class="judgement-view">
 
-<!--    <h1>--><?//= Html::encode($this->title) ?><!--</h1>-->
 
     <?= DetailView::widget([
         'model' => $model,

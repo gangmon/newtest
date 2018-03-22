@@ -72,13 +72,6 @@ $this->params['breadcrumbs'][] = '详情';
         ]):'此考试仅为判断题模拟测试' ?>
 
 
-<!--        --><?//= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-//            'class' => 'btn btn-danger',
-//            'data' => [
-//                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-//                'method' => 'post',
-//            ],
-//        ]) ?>
 
     </p>
 </div>

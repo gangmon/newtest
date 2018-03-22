@@ -16,16 +16,6 @@ use common\models\Choice;
         }
     ?>
 
-    <?//= DetailView::widget([
-//        'model' => $model,
-//        'attributes' => [
-//            'id',
-//            'result_id',
-//            'choice_id',
-//            'choice_answer',
-//            'test_time:datetime',
-//        ],
-//    ]) ?>
 
 </div>
 <?php

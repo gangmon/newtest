@@ -118,6 +118,7 @@ class ResultController extends Controller
         $transaction = Yii::$app->db->beginTransaction();
 
         try {
+            $is_real = 1;
             $is_real = Yii::$app->request->post('is_real')?Yii::$app->request->post('is_real'):$is_real;
 //            print_r(Yii::$app->request->post('is_real'));die;
             $result->is_real = $is_real;

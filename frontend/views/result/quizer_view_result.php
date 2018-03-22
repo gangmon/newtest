@@ -27,7 +27,7 @@ $this->title = '考试结果';
 <!--    </div>-->
 <!--    --><?php //endif; ?>
 
-<!--    <h1>--><?//= Html::encode('考试成绩编号：'.$model->id) ?><!--</h1>-->
+    <h1><?= Html::encode('考试成绩编号：'.$model->id) ?></h1>
     <h4 style="color: <?= $model->score>60?'green':'red'?>">此次考试成绩：<?= $model->score>60?'合格':'不合格'?></h4>
 
 
@@ -75,19 +75,11 @@ $this->title = '考试结果';
         <?= Html::a(Yii::t('app', '查看选择题详情'), ['choicepaper/view-result-id', 'id' => $model->id], [
             'class' => $model->score>60?'btn btn-success':'btn btn-danger',
             'data' => [
-//            'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
                 'method' => 'post',
             ],
         ]) ?>
 
 
-<!--        --><?//= Html::a(Yii::t('app', 'Delete'), ['delete', 'id' => $model->id], [
-//            'class' => 'btn btn-danger',
-//            'data' => [
-//                'confirm' => Yii::t('app', 'Are you sure you want to delete this item?'),
-//                'method' => 'post',
-//            ],
-//        ]) ?>
 
     </p>
 </div>
