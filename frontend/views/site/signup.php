@@ -27,7 +27,6 @@ $this->params['breadcrumbs'][] = $this->title;
 
                 <div class="form-group">
                     <?= Html::submitButton('注册', ['class' => 'btn btn-primary', 'name' => 'signup-button']) ?>
-<!--                    --><?//= Html::a(Yii::t('app','Login'), ['site/login'],['class' => 'btn btn-success', 'name' => 'login-button']) ?>
                 </div>
 
             <?php ActiveForm::end(); ?>

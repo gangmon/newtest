@@ -27,7 +27,6 @@ return [
     'Register' => '注册',
     'rememberMe' => '记住我',
     'reset it' => '重置密码',
-    'reset it' => '重置密码',
     'Email' => '邮箱',
     'Send' => '发送',
     'If you forgot your password you can'=>'如果忘了密码您可以',
@@ -40,4 +39,7 @@ return [
     'Name' => '姓名',
     'Subject' => '主题',
     'Body' => '内容',
+    'This username has already been taken.' => '用户名已被注册',
+    'This email address has already been taken.' => '邮箱已被注册',
+
 ];

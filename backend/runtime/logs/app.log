@@ -9409,3 +9409,90 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1521684996.5749
     'REQUEST_TIME' => 1521684996
 ]
+2018-03-23 08:19:08 [127.0.0.1][-][fh72h4pqphlh9v16gsah37np9n][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: backend\models\Adminuser::password_repeat in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php:148
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(288): yii\base\Component->__get('password_repeat')
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/helpers/BaseHtml.php(2121): yii\db\BaseActiveRecord->__get('password_repeat')
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/helpers/BaseHtml.php(1294): yii\helpers\BaseHtml::getAttributeValue(Object(backend\models\Adminuser), 'password_repeat')
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/helpers/BaseHtml.php(1385): yii\helpers\BaseHtml::activeInput('password', Object(backend\models\Adminuser), 'password_repeat', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/widgets/ActiveField.php(441): yii\helpers\BaseHtml::activePasswordInput(Object(backend\models\Adminuser), 'password_repeat', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/backend/views/adminuser/_form.php(22): yii\widgets\ActiveField->passwordInput(Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(332): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, NULL)
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/backend/views/adminuser/update.php(18): yii\base\View->render('_form', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(332): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(152): yii\base\View->renderFile('/Applications/X...', Array, Object(backend\controllers\AdminuserController))
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render('update', Array, Object(backend\controllers\AdminuserController))
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/backend/controllers/AdminuserController.php(102): yii\base\Controller->render('update', Array)
+#15 [internal function]: backend\controllers\AdminuserController->actionUpdate('5')
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('update', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('adminuser/updat...', Array)
+#20 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/backend/web/index.php(17): yii\base\Application->run()
+#22 {main}
+2018-03-23 08:19:08 [127.0.0.1][-][fh72h4pqphlh9v16gsah37np9n][info][application] $_GET = [
+    'r' => 'adminuser/update'
+    'id' => '5'
+]
+
+$_COOKIE = [
+    'UM_distinctid' => '1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285'
+    'PHPSESSID' => '2r9qtr0era1i7l7vpv4oalgp80'
+    '_csrf-frontend' => '16314170b3c05fb6a083abd7d7d430166be01bae65ad565bf3d865e52c6e7afba:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"A66wAJMFIpCUVukAratldDIPeetlMtz_\";}'
+    'admin_username' => 'admin'
+    '_csrf-backend' => '7e92f54cf583ba7da62c88ba783c5024ea3c7ecba8677095a1b66fa1c3c3a94da:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"YYN4xllUmSQezBefG2YM4SJ-9Cf7V7Cv\";}'
+    'pgv_pvi' => '1133319168'
+    'pgv_si' => 's7593602048'
+    'Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1520925642,1521434820'
+    'CNZZDATA1259283333' => '435157345-1520925641-|1521437815'
+    'Hm_lpvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1521441069'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+    'advanced-frontend' => 'otdkca177l8c2jl0d7cff1t1qj'
+    'advanced-backend' => 'fh72h4pqphlh9v16gsah37np9n'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/newtest/backend/web/index.php?r=site%2Findex'
+]
+
+$_SERVER = [
+    'USER' => 'gang'
+    'HOME' => '/Users/gang'
+    'HTTP_COOKIE' => 'UM_distinctid=1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285; PHPSESSID=2r9qtr0era1i7l7vpv4oalgp80; _csrf-frontend=16314170b3c05fb6a083abd7d7d430166be01bae65ad565bf3d865e52c6e7afba%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22A66wAJMFIpCUVukAratldDIPeetlMtz_%22%3B%7D; admin_username=admin; _csrf-backend=7e92f54cf583ba7da62c88ba783c5024ea3c7ecba8677095a1b66fa1c3c3a94da%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22YYN4xllUmSQezBefG2YM4SJ-9Cf7V7Cv%22%3B%7D; pgv_pvi=1133319168; pgv_si=s7593602048; Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1520925642,1521434820; CNZZDATA1259283333=435157345-1520925641-%7C1521437815; Hm_lpvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1521441069; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D; advanced-frontend=otdkca177l8c2jl0d7cff1t1qj; advanced-backend=fh72h4pqphlh9v16gsah37np9n'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_HOST' => 'fg'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'fg'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64362'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_SOFTWARE' => 'nginx/1.13.9'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'DOCUMENT_URI' => '/newtest/backend/web/index.php'
+    'REQUEST_URI' => '/newtest/backend/web/index.php?r=adminuser%2Fupdate&id=5'
+    'SCRIPT_NAME' => '/newtest/backend/web/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=adminuser%2Fupdate&id=5'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/backend/web/index.php'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/newtest/backend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1521764348.2554
+    'REQUEST_TIME' => 1521764348
+]
