@@ -24,8 +24,8 @@ $this->title = '工作人员在线考试系统';
 
         <p class="lead">这里有最权威的测试系统，包含井巷、通风、排水、爆破</p>
 <!--        <p><a class="btn btn-lg btn-success" href="--><?php //Yii::$app->runAction('result/index');?><!--">点击进入考试系统</a></p>-->
-        <p><?= Html::a('点击进入模拟考试系统',['result/allquiz'],['class' => "btn btn-lg btn-success",'data' => ['method' => 'post', 'params' => ['is_real' => '1']]])?>
-        <?= Html::a('点击进入正式考试系统',['result/allquiz'],['class' => "btn btn-lg btn-primary",'data' => ['method' => 'post', 'params' => ['is_real' => '2']]])?></p>
+        <p><?= Html::a('点击进入模拟考试系统',['result/allquiz'],['class' => "btn btn-lg btn-success",'style' => 'margin-top:19px;border-radius: 30px','data' => ['method' => 'post', 'params' => ['is_real' => '1']]])?>
+        <?= Html::a('点击进入正式考试系统',['result/allquiz'],['class' => "btn btn-lg btn-primary",'style' => 'margin-top:19px;border-radius: 30px','data' => ['method' => 'post', 'params' => ['is_real' => '2']]])?></p>
 
     </div>
 
