@@ -23913,3 +23913,189 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1521701963.5326
     'REQUEST_TIME' => 1521701963
 ]
+2018-03-27 11:21:35 [::1][2][ia467s0knraeucbh6ob1mpan01][error][Error] Error: Class 'common\models\Adminuser' not found in /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/Post.php:42
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(447): common\models\Post->rules()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(413): yii\base\Model->createValidators()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(189): yii\base\Model->getValidators()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(759): yii\base\Model->scenarios()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php(11): yii\base\Model->safeAttributes()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(332): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/Applications/X...', Array, Object(yii\gii\generators\crud\Generator))
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(182): yii\gii\Generator->render('views/_form.php')
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(50): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2018-03-27 11:21:35 [::1][2][ia467s0knraeucbh6ob1mpan01][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'Ggd2iz0YrM0KEJaugGVE5jqKjpE4TCOEnS47wzh43mwragbbVnX9p3xB1-LQXDapf_K8-004YdfsSGKpUzfsJw=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Post'
+        'searchModelClass' => 'common\\models\\PostSearch'
+        'controllerClass' => 'frontend\\controllers\\PostController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '1'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_identity-frontend' => 'a72b8dac9f879b6b90628bea45e34b26cb8f558635ea086854f2b97a6bbb1fb8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"-HD3Rl_ef0kBa9AtwFbFj-B5gRv913Jl\",2592000]\";}'
+    'admin_username' => 'admin'
+    'PHPSESSID' => 'neebnshcoporejve05q2sc8kf3'
+    'advanced-frontend' => 'ia467s0knraeucbh6ob1mpan01'
+    '_csrf-frontend' => '4f04e4a6f3191c372bb76b097582fd680adb39f7b4ca1bec834744107b9d54bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1mpPkmQjvQALP9rOEx2jutBSqfYjkO2K\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wrm4vsCoAWUAAIKGRfsAAAAG'
+    'HTTP_HOST' => 'fg'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://fg/newtest/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '595'
+    'HTTP_COOKIE' => '_identity-frontend=a72b8dac9f879b6b90628bea45e34b26cb8f558635ea086854f2b97a6bbb1fb8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22-HD3Rl_ef0kBa9AtwFbFj-B5gRv913Jl%22%2C2592000%5D%22%3B%7D; admin_username=admin; PHPSESSID=neebnshcoporejve05q2sc8kf3; advanced-frontend=ia467s0knraeucbh6ob1mpan01; _csrf-frontend=4f04e4a6f3191c372bb76b097582fd680adb39f7b4ca1bec834744107b9d54bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221mpPkmQjvQALP9rOEx2jutBSqfYjkO2K%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2f PHP/7.0.2 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '64445'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/newtest/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1522120894.983
+    'REQUEST_TIME' => 1522120894
+]
+2018-03-27 11:26:21 [::1][2][ia467s0knraeucbh6ob1mpan01][error][Error] Error: Class 'common\models\Adminuser' not found in /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/Post.php:42
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(447): common\models\Post->rules()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(413): yii\base\Model->createValidators()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(189): yii\base\Model->getValidators()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Model.php(759): yii\base\Model->scenarios()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/generators/crud/default/views/_form.php(11): yii\base\Model->safeAttributes()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(332): require('/Applications/X...')
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/View.php(250): yii\base\View->renderPhpFile('/Applications/X...', Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/Generator.php(317): yii\base\View->renderFile('/Applications/X...', Array, Object(yii\gii\generators\crud\Generator))
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/generators/crud/Generator.php(182): yii\gii\Generator->render('views/_form.php')
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-gii/controllers/DefaultController.php(50): yii\gii\generators\crud\Generator->generate()
+#10 [internal function]: yii\gii\controllers\DefaultController->actionView('crud')
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('view', Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('gii/default/vie...', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->run()
+#17 {main}
+2018-03-27 11:26:21 [::1][2][ia467s0knraeucbh6ob1mpan01][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'crud'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'f8bKY-zLBiX-PQda3lgpouJ98zn5oik-aoGc-k1UG3lOq7ozh6ZXT4hsRhaOYVvtpwXBU4zWa20b58WQJhspMg=='
+    'Generator' => [
+        'modelClass' => 'common\\models\\Post'
+        'searchModelClass' => 'common\\models\\PostSearch'
+        'controllerClass' => 'frontend\\controllers\\PostController'
+        'viewPath' => ''
+        'baseControllerClass' => 'yii\\web\\Controller'
+        'indexWidgetType' => 'grid'
+        'enableI18N' => '1'
+        'enablePjax' => '1'
+        'messageCategory' => 'app'
+        'template' => 'default'
+    ]
+    'preview' => ''
+]
+
+$_COOKIE = [
+    '_identity-frontend' => 'a72b8dac9f879b6b90628bea45e34b26cb8f558635ea086854f2b97a6bbb1fb8a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[2,\"-HD3Rl_ef0kBa9AtwFbFj-B5gRv913Jl\",2592000]\";}'
+    'admin_username' => 'admin'
+    'PHPSESSID' => 'neebnshcoporejve05q2sc8kf3'
+    'advanced-frontend' => 'ia467s0knraeucbh6ob1mpan01'
+    '_csrf-frontend' => '4f04e4a6f3191c372bb76b097582fd680adb39f7b4ca1bec834744107b9d54bfa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"1mpPkmQjvQALP9rOEx2jutBSqfYjkO2K\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 2
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wrm53cCoAWUAAV3vYjMAAAAF'
+    'HTTP_HOST' => 'fg'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:59.0) Gecko/20100101 Firefox/59.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_REFERER' => 'http://fg/newtest/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '595'
+    'HTTP_COOKIE' => '_identity-frontend=a72b8dac9f879b6b90628bea45e34b26cb8f558635ea086854f2b97a6bbb1fb8a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B2%2C%22-HD3Rl_ef0kBa9AtwFbFj-B5gRv913Jl%22%2C2592000%5D%22%3B%7D; admin_username=admin; PHPSESSID=neebnshcoporejve05q2sc8kf3; advanced-frontend=ia467s0knraeucbh6ob1mpan01; _csrf-frontend=4f04e4a6f3191c372bb76b097582fd680adb39f7b4ca1bec834744107b9d54bfa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%221mpPkmQjvQALP9rOEx2jutBSqfYjkO2K%22%3B%7D'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.18 (Unix) OpenSSL/1.0.2f PHP/7.0.2 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '64580'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=crud'
+    'REQUEST_URI' => '/newtest/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1522121181.183
+    'REQUEST_TIME' => 1522121181
+]
