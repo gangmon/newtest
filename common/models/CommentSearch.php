@@ -18,7 +18,7 @@ class CommentSearch extends Comment
     public function rules()
     {
         return [
-            [['id', 'create_at', 'user_id', 'post_id', 'remind'], 'integer'],
+            [['id', 'created_at', 'user_id', 'post_id', 'remind'], 'integer'],
             [['title', 'status', 'email', 'url'], 'safe'],
         ];
     }
@@ -60,7 +60,7 @@ class CommentSearch extends Comment
         // grid filtering conditions
         $query->andFilterWhere([
             'id' => $this->id,
-            'create_at' => $this->create_at,
+            'created_at' => $this->created_at,
             'user_id' => $this->user_id,
             'post_id' => $this->post_id,
             'remind' => $this->remind,

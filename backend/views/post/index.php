@@ -22,18 +22,63 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
-            'id',
-            'title',
-            'content:ntext',
-            'tags',
-            'status',
+//            ['class' => 'yii\grid\SerialColumn'],
+            [
+                    'attribute' => 'id',
+                    'contentOptions' => ['width' => '50px'],
+            ],
+            [
+                    'attribute' => 'title',
+                    'contentOptions' => ['width' => '50px'],
+            ],
+//            'content:ntext',
+            [
+                    'attribute' => 'content',
+                    'value' => 'beginning',
+            ],
+            [
+                    'attribute' => 'tags',
+                'contentOptions' => ['width' => '50px'],
+            ],
+            [
+                    'attribute' => 'status',
+                    'value' => 'status',
+                    'contentOptions' => ['width' => '40px'],
+                    'filter' => \common\models\Post::find()
+                        ->select(['status'])
+                        ->indexBy('status')
+                        ->column(),
+            ],
             // 'author_id',
             // 'create_at',
             // 'update_at',
+//            ['class' => 'yii\grid\ActionColumn'],
+            [
+                'class' => 'yii\grid\ActionColumn',
+                'header' => '操作',
+                'template' => '{view} {update} {delete}',//只需要展示删除和更新
+                'headerOptions' => ['width' => '100'],
+                'buttons' => [
+                    'view' => function($url,$model,$key){
+                        return Html::a('查看',
+                            ['post/view','id' => $model->id],
+//                                ['class' => "glyphicon fa fa-eye"],
+                            ['class' => "btn btn-xs btn-success"]
+                        );},
+                    'update' => function($url,$model,$key){
+                        return Html::a('修改',
+                            ['post/update','id' => $model->id],
+                            ['class' => "btn btn-xs btn-info"]
+                        );},
+                    'delete' => function($url,$model,$key){
+                        return Html::a('删除',
+                            ['post/delete','id' => 'id'],
+                            ['class' => "btn btn-xs btn-danger"]
+                        );}
 
-            ['class' => 'yii\grid\ActionColumn'],
+                ],
+
+            ],
         ],
     ]); ?>
 <?php Pjax::end(); ?></div>

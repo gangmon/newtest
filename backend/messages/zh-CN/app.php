@@ -47,4 +47,10 @@ return [
     'Choice Answer' => '选择答案',
     'Settime' => '创建时间',
 
+    'Create Post' => '创建文章',
+    'Posts' => "文章",
+
+
+
+
 ];

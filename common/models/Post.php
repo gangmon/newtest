@@ -43,9 +43,9 @@ class Post extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'content', 'tags', 'author_id'], 'required'],
+            [['title', 'content', 'tags'], 'required'],
             [['content', 'status'], 'string'],
-            [['author_id', 'create_at', 'update_at'], 'integer'],
+            [['author_id', 'created_at', 'updated_at'], 'integer'],
             [['title', 'tags'], 'string', 'max' => 128],
             [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => Adminuser::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
@@ -63,19 +63,31 @@ class Post extends \yii\db\ActiveRecord
             'tags' => Yii::t('app', '标签'),
             'status' => Yii::t('app', '状态'),
             'author_id' => Yii::t('app', '作者'),
-            'create_at' => Yii::t('app', '创建时间'),
-            'update_at' => Yii::t('app', '更新时间'),
+            'created_at' => Yii::t('app', '创建时间'),
+            'updated_at' => Yii::t('app', '更新时间'),
         ];
     }
 
     /**
-     * @return \yii\db\ActiveQuery
+     * 获取URL地址
+     *
+     */
+    public function getUrl()
+    {
+        return Yii::$app->urlManager->createUrl([
+            'post/detail',
+            'id' => $this->id,
+            'title' => $this->title
+        ]);
+    }
+
+    /**
+     * 获取评论
      */
     public function getComments()
     {
         return $this->hasMany(Comment::className(), ['post_id' => 'id']);
     }
-
     /**
      * @return \yii\db\ActiveQuery
      */
@@ -91,5 +103,30 @@ class Post extends \yii\db\ActiveRecord
     public static function find()
     {
         return new PostQuery(get_called_class());
+    }
+    //设置在总览页面题目的长度
+    public function getBeginning()
+    {
+        $tmpStr = strip_tags($this->content);
+        $tmpLen = mb_strlen($tmpStr);
+
+        return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
+    }
+    //设置出题人
+    public function beforeSave($insert)
+    {
+        if(parent::beforeSave($insert))
+        {
+            if($insert)
+            {
+                $this->author_id = Yii::$app->user->id;
+            }
+            return true;
+
+        }
+        else
+        {
+            return false;
+        }
     }
 }

@@ -33,9 +33,19 @@ $this->params['breadcrumbs'][] = $this->title;
             'content:ntext',
             'tags',
             'status',
-            'author_id',
-            'create_at',
-            'update_at',
+            [
+                    'attribute' => 'author_id',
+                    'value' => $model->author->username,
+                    'contentOptions' => ['width' => '95%'],
+            ],
+            [
+                'attribute'=>'created_at',
+                'value'=>date('Y-m-d h:i:s',$model->updated_at)
+            ],
+            [
+                'attribute'=>'updated_at',
+                'value'=>date('Y-m-d h:i:s',$model->updated_at)
+            ],
         ],
     ]) ?>
 

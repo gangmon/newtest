@@ -38,8 +38,10 @@ AppAsset::register($this);
     ]);
     $menuItems = [
         ['label' => Yii::t('app','Home'), 'url' => ['/site/index']],
-        ['label' => Yii::t('app','Create Exam'),'url' => ['result/create']
-        ,'items' =>
+        ['label' => Yii::t('app','Create Post'),'url' => ['post/create']],
+
+        ['label' => Yii::t('app','Create Exam'),'url' => ['result/create'],
+        'items' =>
             [
                     ['label' => Yii::t('app','创建选择题'),'url' => ['choice/create']],
                     ['label' => Yii::t('app','创建判断题'),'url' => ['judgement/create']]

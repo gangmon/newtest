@@ -16,7 +16,7 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'status')->dropDownList([ '待审核' => '待审核', '已审核' => '已审核', ], ['prompt' => '']) ?>
 
-    <?= $form->field($model, 'create_at')->textInput() ?>
+    <?= $form->field($model, 'created_at')->textInput() ?>
 
     <?= $form->field($model, 'user_id')->textInput() ?>
 
