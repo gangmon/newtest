@@ -35,7 +35,9 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                     'attribute' => 'content',
                     'value' => 'beginning',
+//                    'value' => $searchModel->getBeginning(),
             ],
+
             [
                     'attribute' => 'tags',
                 'contentOptions' => ['width' => '50px'],

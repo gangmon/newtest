@@ -43,7 +43,7 @@ class Comment extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'user_id', 'post_id', 'remind'], 'required'],
+            [['title'], 'required'],
             [['title', 'status'], 'string'],
             [['created_at', 'user_id', 'post_id', 'remind'], 'integer'],
             [['email'], 'string', 'max' => 100],
@@ -104,4 +104,12 @@ class Comment extends \yii\db\ActiveRecord
 
         return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
     }
+    /**
+     * 获取最近评论
+     */
+    public static function findRecentComments($limit=10)
+    {
+        return Comment::find()->where(['status'=>'已审核'])->orderBy('created_at DESC')->limit($limit)->all();
+    }
+
 }

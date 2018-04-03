@@ -12,6 +12,8 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
+use common\models\PostSearch;
+use common\models\Post;
 
 /**
  * Site controller
@@ -75,6 +77,18 @@ class SiteController extends Controller
 //        Yii::$app->language = 'en-US';
 //        print_r(date('Y-m-d H:i:s',1520555762));die();
 //        Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
+        $searchModel = new PostSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
+
+        $tags = Post::findTagsWeight();
+        $recentComments = Post::findRecentComment();
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+            'tags' =>$tags,
+            'recentComments' => $recentComments,
+        ]);
 
         return $this->render('index');
     }

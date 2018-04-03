@@ -2,6 +2,8 @@
 
 namespace frontend\controllers;
 
+use common\models\Comment;
+use common\models\User;
 use Yii;
 use common\models\Post;
 use common\models\PostSearch;
@@ -30,17 +32,22 @@ class PostController extends Controller
     }
 
     /**
-     * Lists all Post models.
-     * @return mixed
+
      */
     public function actionIndex()
     {
         $searchModel = new PostSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
-        return $this->render('index', [
+        $tags = Post::findTagsWeight();
+        $recentComments = Post::findRecentComment();
+
+
+        return $this->render('indexall', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'tags' => $tags,
+            'recentComments' => $recentComments,
         ]);
     }
 
@@ -120,5 +127,50 @@ class PostController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public $added = 0;
+    public function actionDetail($id)
+    {
+        //prepare data Model
+
+        $model = $this->findModel($id);
+        $model->times = $model->times + 1;
+        $model->update();
+        $tags = $model->tags;
+        $recentComments = Comment::findRecentComments();
+        $userMe = User::findOne(Yii::$app->user->id);
+        $commentModel = new Comment();
+        $commentModel->email = $userMe->email;
+        $commentModel->user_id = $userMe->id;
+
+        if ($commentModel->load(Yii::$app->request->post() ))
+        {
+            $commentModel->status = "已审核";//新评论默认状态
+            $commentModel->post_id = $model->id;
+            $commentModel->user_id = Yii::$app->user->id;
+            $commentModel->remind = 0;
+            if ($commentModel->save() )
+            {
+            $this->added=1;
+            }
+
+        }
+        $tags = Post::findTagsWeight();
+        $recentComments = Post::findRecentComment();
+
+        return $this->render('detail',[
+            'model' => $model,
+            'tags' => $tags,
+            'recentComments' => $recentComments,
+            'commentModel' => $commentModel,
+            'added' => $this->added,
+            'tags' => $tags,
+            'recentComments' => $recentComments,
+        ]);
+
+
+
+
     }
 }

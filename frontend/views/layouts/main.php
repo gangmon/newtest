@@ -44,7 +44,7 @@ AppAsset::register($this);
         $menuItems[] = ['label' => Yii::t('app','Signup'), 'url' => ['/site/signup']];
         $menuItems[] = ['label' => Yii::t('app','Login'), 'url' => ['/site/login']];
     } else {
-        $menuItems[] = ['label'=> Yii::t('app','历史成绩'),'url' => ['result/indexuser']];
+        $menuItems[] = ['label'=> Yii::t('app','历史成绩'),'url' => ['result/index']];
         $menuItems[] = '<li>'
             . Html::beginForm(['/site/logout'], 'post')
             . Html::submitButton(

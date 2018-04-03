@@ -9,6 +9,7 @@ use http\Url;
 use Yii;
 use frontend\models\Result;
 use frontend\models\ResultSearch;
+use frontend\models\ResultFrontSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
@@ -67,18 +68,21 @@ class ResultController extends Controller
      * Lists all Result models.
      * @return mixed
      */
-    public function actionMyresult()
+    public function actionMyhistory()
     {
         $userID = Yii::$app->user->id;
         $models = Result::findAll(['user_id' => $userID]);
-        return $this->render('',[
+        return $this->render('index',[
             'models' =>  $models,
     ]);
     }
 
+    /**
+     * @用户查询自己的考试成绩
+     */
     public function actionIndex()
     {
-        $searchModel = new ResultSearch();
+        $searchModel = new ResultFrontSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
         return $this->render('index', [

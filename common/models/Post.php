@@ -16,7 +16,7 @@ use backend\models\Adminuser;
  * @property integer $author_id
  * @property integer $create_at
  * @property integer $update_at
- *
+ * @property integer $times
  * @property Comment[] $comments
  * @property Adminuser $author
  */
@@ -45,7 +45,7 @@ class Post extends \yii\db\ActiveRecord
         return [
             [['title', 'content', 'tags'], 'required'],
             [['content', 'status'], 'string'],
-            [['author_id', 'created_at', 'updated_at'], 'integer'],
+            [['author_id', 'created_at', 'updated_at','times'], 'integer'],
             [['title', 'tags'], 'string', 'max' => 128],
             [['author_id'], 'exist', 'skipOnError' => true, 'targetClass' => Adminuser::className(), 'targetAttribute' => ['author_id' => 'id']],
         ];
@@ -65,8 +65,17 @@ class Post extends \yii\db\ActiveRecord
             'author_id' => Yii::t('app', '作者'),
             'created_at' => Yii::t('app', '创建时间'),
             'updated_at' => Yii::t('app', '更新时间'),
+            'times' => Yii::t('app', '阅读次数'),
         ];
     }
+    /**
+     * 获取标签云
+     */
+//    public function getTagLinks()
+//    {
+//        $links = array();
+//        foreach ()
+//    }
 
     /**
      * 获取URL地址
@@ -79,6 +88,22 @@ class Post extends \yii\db\ActiveRecord
             'id' => $this->id,
             'title' => $this->title
         ]);
+    }
+    /**
+     *获取激活（通过审核的）的评论
+     *
+     */
+    public function getActiveComments()
+    {
+        return $this->hasMany(Comment::className(),['post_id' => 'id'])
+            ->where('status=:status',[':status' => "已审核"])->orderBy('id DESC');
+    }
+    /**
+     * 获取评论数量
+     */
+    public function getCommentCount()
+    {
+        return Comment::find()->where(['post_id' => $this->id,'status' => '已审核'])->count();
     }
 
     /**
@@ -105,13 +130,53 @@ class Post extends \yii\db\ActiveRecord
         return new PostQuery(get_called_class());
     }
     //设置在总览页面题目的长度
-    public function getBeginning()
+//    public function getBeginning()
+//    {
+//        $tmpStr = strip_tags($this->content);
+//        $tmpLen = mb_strlen($tmpStr);
+//
+//        return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
+//    }
+    public function getBeginning($length=18)
     {
         $tmpStr = strip_tags($this->content);
         $tmpLen = mb_strlen($tmpStr);
 
-        return mb_substr($tmpStr,0,18,'utf-8').(($tmpLen>18)?'...':'');
+        $tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
+        return $tmpStr.($tmpLen>$length?'...':'');
     }
+    public function getBeginning188($length=150)
+    {
+        $tmpStr = strip_tags($this->content);
+        $tmpLen = mb_strlen($tmpStr);
+
+        $tmpStr = mb_substr($tmpStr,0,$length,'utf-8');
+        return $tmpStr.($tmpLen>$length?'...':'');
+    }
+
+    public static function findTagsWeight($limit = 20)
+    {
+        $tag_size_level = 5;
+        $models = Post::find()->orderBy('times desc')->limit($limit)->all();
+        $total = Post::find()->limit($limit)->count();
+        //算出每个档次应该放几个标签
+        $stepper = ceil($total/$tag_size_level);
+
+        $tags = array();
+        $counter = 1;
+        if ($total > 0)
+        {
+            foreach ($models as $model)//给tags数组赋值
+            {
+                $weight = ceil($counter/$stepper) + 1;
+                $tags[$model->tags] = $weight;
+                $counter++;
+            }
+            ksort($tags);
+        }
+        return $tags;
+    }
+
     //设置出题人
     public function beforeSave($insert)
     {
@@ -128,5 +193,10 @@ class Post extends \yii\db\ActiveRecord
         {
             return false;
         }
+    }
+
+    public static function findRecentComment($limit = 5)
+    {
+        return Comment::find()->where(['status' => '已审核'])->orderBy('created_at DESC')->limit($limit)->all();
     }
 }

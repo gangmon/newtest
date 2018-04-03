@@ -41,5 +41,8 @@ return [
     'Body' => '内容',
     'This username has already been taken.' => '用户名已被注册',
     'This email address has already been taken.' => '邮箱已被注册',
+    'Create Post' => '创建文章',
+    'Posts' => "文章总览",
+
 
 ];
