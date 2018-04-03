@@ -2,167 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae2804d-2a6d-48df-8e7e-7e3e80e56558" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/components/RctReplyWidget.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/components/TagsCloudWidget.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/components/hellowidget.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/models/ResultFrontSearch.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/post/_comment.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/post/_guestform.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/post/_listitem.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/post/detail.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/post/indexall.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/frontend/views/result/index2.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/CommentController.php" afterPath="$PROJECT_DIR$/backend/controllers/CommentController.php" />
-      <change beforePath="$PROJECT_DIR$/backend/controllers/PostController.php" afterPath="$PROJECT_DIR$/backend/controllers/PostController.php" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7857219ea.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb785ac8b5c.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb785e79db1.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb796931b45.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7ba92f95c.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7c219634f.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7c29a8ca2.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7c2a2d3e0.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7cfdc1810.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7e722169d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7e9462023.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7ee7a08c4.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7eeb199f5.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7ef695fe7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7f9d6a367.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb7fcc64140.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8040daeec.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb804d2567c.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb80d7cd6bd.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb80e20b56c.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb816513a90.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb816584e52.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb816b5cb09.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8171c12d2.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8174d7a98.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8178c7325.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb825fcb1f9.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb82662902d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb82ff98c1e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb83813a4db.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb83d10c0e9.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb83d1750f8.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb83d303a88.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84d9b677b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84da32466.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84dcaa1a6.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84e417f36.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84e6c2df8.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84f5c3d46.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb84f634e18.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb85e529608.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb860005d79.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb861885c40.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86218fb89.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86c0b5548.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb86c0b5548.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86fc6f6ad.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb86fc6f6ad.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb872965098.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb872965098.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a1184f9e.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8a1184f9e.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a15bb789.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8a15bb789.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d19b0dd6.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8d19b0dd6.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d23c5757.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8d23c5757.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d342ce8e.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8d342ce8e.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d35997dc.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8d35997dc.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d38e2438.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/5abb8d38e2438.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/gii-2.0.13-dev/yii-gii-generators-model-Generator.json" afterPath="$PROJECT_DIR$/backend/runtime/gii-2.0.13-dev/yii-gii-generators-model-Generator.json" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/_form.php" afterPath="$PROJECT_DIR$/backend/views/comment/_form.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/_search.php" afterPath="$PROJECT_DIR$/backend/views/comment/_search.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/create.php" afterPath="$PROJECT_DIR$/backend/views/comment/create.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/index.php" afterPath="$PROJECT_DIR$/backend/views/comment/index.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/update.php" afterPath="$PROJECT_DIR$/backend/views/comment/update.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/comment/view.php" afterPath="$PROJECT_DIR$/backend/views/comment/view.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/_form.php" afterPath="$PROJECT_DIR$/backend/views/post/_form.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/_search.php" afterPath="$PROJECT_DIR$/backend/views/post/_search.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/create.php" afterPath="$PROJECT_DIR$/backend/views/post/create.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/index.php" afterPath="$PROJECT_DIR$/backend/views/post/index.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/update.php" afterPath="$PROJECT_DIR$/backend/views/post/update.php" />
-      <change beforePath="$PROJECT_DIR$/backend/views/post/view.php" afterPath="$PROJECT_DIR$/backend/views/post/view.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/Comment.php" afterPath="$PROJECT_DIR$/common/models/Comment.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/CommentQuery.php" afterPath="$PROJECT_DIR$/common/models/CommentQuery.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/CommentSearch.php" afterPath="$PROJECT_DIR$/common/models/CommentSearch.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/Post.php" afterPath="$PROJECT_DIR$/common/models/Post.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/PostQuery.php" afterPath="$PROJECT_DIR$/common/models/PostQuery.php" />
-      <change beforePath="$PROJECT_DIR$/common/models/PostSearch.php" afterPath="$PROJECT_DIR$/common/models/PostSearch.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/CommentController.php" afterPath="$PROJECT_DIR$/frontend/controllers/CommentController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/PostController.php" afterPath="$PROJECT_DIR$/frontend/controllers/PostController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/ResultController.php" afterPath="$PROJECT_DIR$/frontend/controllers/ResultController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/SiteController.php" afterPath="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/controllers/UserController.php" afterPath="$PROJECT_DIR$/frontend/controllers/UserController.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" afterPath="$PROJECT_DIR$/frontend/messages/zh-CN/app.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab35453887d5.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab3794459e85.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d1fdf3c96.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d203b6fb3.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d204243c7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d20752113.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d20b08a49.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d46b86d18.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d46ebeddc.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab5d46f7bd17.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab61aeadc44d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab61af2a8c1a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab61af44e891.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab6559f4c921.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab655a809099.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab655a96a559.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab65695d7bfb.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab656bdb770b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab6585bdf7cc.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab6585f424b7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab65881992c7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab6589c180f3.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab658aed2610.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab659b72c27f.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9aacec3bd1.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9aade04ddc.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9aae1cc1a9.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b5c1b3c8f.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b60927f24.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b672b8705.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b68230d74.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b6be57de4.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b6d77e620.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b6e32055d.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b6f606077.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b6fbb7c0f.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b71bf17f9.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b72fd5679.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b773693ce.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b783815ac.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b8bf69cb0.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b8c911fe3.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b8d12393b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9b9dda14a7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9ba22acfa0.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9ba3099b31.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9ba576e559.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9ba62cea5a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ab9f6f576a47.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5abb694193de3.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5abb6989a8dfc.data" afterPath="" />
       <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/frontend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/frontend/runtime/logs/app.log" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/_form.php" afterPath="$PROJECT_DIR$/frontend/views/comment/_form.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/_search.php" afterPath="$PROJECT_DIR$/frontend/views/comment/_search.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/create.php" afterPath="$PROJECT_DIR$/frontend/views/comment/create.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/index.php" afterPath="$PROJECT_DIR$/frontend/views/comment/index.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/update.php" afterPath="$PROJECT_DIR$/frontend/views/comment/update.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/comment/view.php" afterPath="$PROJECT_DIR$/frontend/views/comment/view.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/layouts/main.php" afterPath="$PROJECT_DIR$/frontend/views/layouts/main.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/_form.php" afterPath="$PROJECT_DIR$/frontend/views/post/_form.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/_search.php" afterPath="$PROJECT_DIR$/frontend/views/post/_search.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/create.php" afterPath="$PROJECT_DIR$/frontend/views/post/create.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/createComment.php" afterPath="$PROJECT_DIR$/frontend/views/post/createComment.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/index.php" afterPath="$PROJECT_DIR$/frontend/views/post/index.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/update.php" afterPath="$PROJECT_DIR$/frontend/views/post/update.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/post/view.php" afterPath="$PROJECT_DIR$/frontend/views/post/view.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/result/index.php" afterPath="$PROJECT_DIR$/frontend/views/result/index.php" />
       <change beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -194,7 +34,7 @@
               <entry file="file://$PROJECT_DIR$/common/models/Post.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="301">
-                    <caret line="172" column="27" lean-forward="true" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
+                    <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
                     <folding>
                       <element signature="e#33#41#0#PHP" expanded="true" />
                     </folding>
@@ -216,7 +56,7 @@
               <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
                 <provider selected="true" editor-type-id="text-editor">
                   <state relative-caret-position="-1364">
-                    <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+                    <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
                     <folding>
                       <element signature="e#7#28#0#PHP" expanded="true" />
                     </folding>
@@ -231,24 +71,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-503">
-              <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+            <state relative-caret-position="374">
+              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
               <folding>
                 <element signature="e#6#27#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TagsCloudWidget.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/components/TagsCloudWidget.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="80" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -289,11 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RctReplyWidget.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RctReplyWidget.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/components/RctReplyWidget.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+            <state relative-caret-position="105">
+              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <marker date="1522746395109" expanded="true" signature="334:764" ph="..." />
                 <marker date="1522746395109" expanded="true" signature="362:758" ph="..." />
@@ -398,9 +228,9 @@
         <option value="$PROJECT_DIR$/frontend/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/indexall.php" />
         <option value="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
-        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
         <option value="$PROJECT_DIR$/common/models/Post.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/detail.php" />
+        <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
       </list>
     </option>
   </component>
@@ -674,12 +504,12 @@
       <workItem from="1522368444406" duration="601000" />
       <workItem from="1522422555240" duration="274000" />
       <workItem from="1522643479069" duration="29778000" />
-      <workItem from="1522741437055" duration="3987000" />
+      <workItem from="1522741437055" duration="4421000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308525000" />
+    <option name="totallyTimeSpent" value="308959000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="944" y="23" width="964" height="987" extended-state="0" />
@@ -1080,28 +910,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/common/models/Post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-503">
-          <caret line="4" column="40" lean-forward="false" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+        <state relative-caret-position="301">
+          <caret line="172" column="27" lean-forward="false" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
           <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
+            <element signature="e#33#41#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/components/TagsCloudWidget.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="80" />
-          <folding />
+        <state relative-caret-position="-1364">
+          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/components/RctReplyWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="54" selection-end-line="29" selection-end-column="54" />
+        <state relative-caret-position="105">
+          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <marker date="1522746395109" expanded="true" signature="334:764" ph="..." />
             <marker date="1522746395109" expanded="true" signature="362:758" ph="..." />
@@ -1114,22 +946,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/models/Post.php">
+    <entry file="file://$PROJECT_DIR$/frontend/components/TagsCloudWidget.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="172" column="27" lean-forward="true" selection-start-line="172" selection-start-column="27" selection-end-line="172" selection-end-column="27" />
-          <folding>
-            <element signature="e#33#41#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="30" selection-end-column="80" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1364">
-          <caret line="2" column="4" lean-forward="true" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state relative-caret-position="374">
+          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
           <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
+            <element signature="e#6#27#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
