@@ -10,8 +10,12 @@ $this->title = '安全规程考核系统';
         <h1>后台管理入口</h1>
 
         <p class="lead">在这里你可以创建考试题目，查看企业内部工作人员的考试信息，衡量他们的专业知识素养。</p>
+        <p class="lead">同时你可已发表自己或者别人的具有指导意义的文章、报道、新闻等 </p>
 
-        <p><?= Html::a('开始你的管理之路',['result/index',],['class' => "btn btn-lg btn-success" ])?></p>
+        <p>
+            <?= Html::a('管理成绩',['result/index',],['class' => "btn btn-lg btn-success" ])?>
+            <?= Html::a('发表文章',['post/create',],['class' => "btn btn-lg btn-success" ])?>
+        </p>
 
     </div>
 
@@ -34,8 +38,10 @@ $this->title = '安全规程考核系统';
             </div>
             <div class="col-lg-4">
                 <h2>查看考试信息</h2>
-                <p>在这里您可以查看本企业的员工平时的模拟成绩，了解他们专业知识水平，也可以看到正式测试考试的成绩。</p>
+                <p>在这里您可以查看本企业的员工平时的模拟成绩，了解他们专业知识水平，也可以看到正式测试考试的成绩。
+                这里你可以发表你自己或者别人的文章，报道信息，强化员工的素质。</p>
                 <p><?= Html::a('查看成绩&raquo;',['result/index',],['class' => "btn btn-default" ])?></p>
+                <p><?= Html::a('发表文章&raquo;',['result/create',],['class' => "btn btn-default" ])?></p>
             </div>
         </div>
 

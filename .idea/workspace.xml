@@ -2,6 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae2804d-2a6d-48df-8e7e-7e3e80e56558" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86c0b5548.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86fc6f6ad.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb872965098.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a1184f9e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a15bb789.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d19b0dd6.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d23c5757.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d342ce8e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d35997dc.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d38e2438.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc30c350b4b.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc40e6d2cc3.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc40ea1a22b.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc442189b5b.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc442278e77.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5db781769.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5dd2d3ea7.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5dd8d1e31.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de263483.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de39a918.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de7cf787.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de932890.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
+      <change beforePath="$PROJECT_DIR$/backend/views/site/index.php" afterPath="$PROJECT_DIR$/backend/views/site/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3290f26532.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3291930737.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3292890163.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac329372a094.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3297bb3048.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32b9ccdd86.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32b9fb6137.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cd866fbc.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cdbd9d53.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cdfa06d2.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ce1bbe35.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ce81650e.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32eb899414.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32eba528cf.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ebbae54b.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386188a1a.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386261250.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33864c9605.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386689968.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33869a7b91.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386a15e11.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac339268591d.data" afterPath="" />
       <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/frontend/runtime/debug/index.data" />
       <change beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
     </list>
@@ -55,10 +101,22 @@
             <file leaf-file-name="detail.php" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-1364">
-                    <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+                  <state relative-caret-position="346">
+                    <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
                     <folding>
                       <element signature="e#7#28#0#PHP" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="indexall.php" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/frontend/views/post/indexall.php">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="303">
+                    <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
+                    <folding>
+                      <element signature="e#6#27#0#PHP" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -71,11 +129,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+            <state relative-caret-position="734">
+              <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
               <folding>
                 <element signature="e#6#27#0#PHP" expanded="true" />
               </folding>
@@ -83,14 +141,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="indexall.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/views/post/indexall.php">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#27#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +179,7 @@
         <entry file="file://$PROJECT_DIR$/frontend/components/RctReplyWidget.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+              <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
               <folding>
                 <marker date="1522746395109" expanded="true" signature="334:764" ph="..." />
                 <marker date="1522746395109" expanded="true" signature="362:758" ph="..." />
@@ -180,7 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/views/result/quizer_view_result.php" />
         <option value="$PROJECT_DIR$/frontend/views/judgement/_judgement_view_only.php" />
         <option value="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" />
@@ -231,6 +286,7 @@
         <option value="$PROJECT_DIR$/common/models/Post.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/backend/views/site/index.php" />
       </list>
     </option>
   </component>
@@ -359,13 +415,20 @@
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="common" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="site" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
@@ -504,12 +567,12 @@
       <workItem from="1522368444406" duration="601000" />
       <workItem from="1522422555240" duration="274000" />
       <workItem from="1522643479069" duration="29778000" />
-      <workItem from="1522741437055" duration="4421000" />
+      <workItem from="1522741437055" duration="6805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="308959000" />
+    <option name="totallyTimeSpent" value="311343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="944" y="23" width="964" height="987" extended-state="0" />
@@ -562,13 +625,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/common/models/CommentSearch.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="66" column="11" lean-forward="true" selection-start-line="66" selection-start-column="11" selection-end-line="66" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/post/update.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -890,16 +946,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/indexall.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#27#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/controllers/SiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
@@ -920,20 +966,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1364">
-          <caret line="2" column="4" lean-forward="false" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-          <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/components/RctReplyWidget.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="8" column="27" lean-forward="true" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
           <folding>
             <marker date="1522746395109" expanded="true" signature="334:764" ph="..." />
             <marker date="1522746395109" expanded="true" signature="362:758" ph="..." />
@@ -954,13 +990,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/post/indexall.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="49" column="12" lean-forward="false" selection-start-line="49" selection-start-column="12" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="303">
+          <caret line="47" column="41" lean-forward="false" selection-start-line="47" selection-start-column="41" selection-end-line="47" selection-end-column="41" />
           <folding>
             <element signature="e#6#27#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#27#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
