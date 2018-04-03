@@ -2,54 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cae2804d-2a6d-48df-8e7e-7e3e80e56558" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86c0b5548.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb86fc6f6ad.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb872965098.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a1184f9e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8a15bb789.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d19b0dd6.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d23c5757.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d342ce8e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d35997dc.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abb8d38e2438.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc30c350b4b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc40e6d2cc3.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc40ea1a22b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc442189b5b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc442278e77.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5db781769.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5dd2d3ea7.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5dd8d1e31.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de263483.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de39a918.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de7cf787.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/5abc5de932890.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/backend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/backend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/backend/views/site/index.php" afterPath="$PROJECT_DIR$/backend/views/site/index.php" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3290f26532.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3291930737.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3292890163.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac329372a094.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3297bb3048.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32b9ccdd86.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32b9fb6137.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cd866fbc.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cdbd9d53.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32cdfa06d2.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ce1bbe35.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ce81650e.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32eb899414.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32eba528cf.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac32ebbae54b.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386188a1a.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386261250.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33864c9605.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386689968.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33869a7b91.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3386a15e11.data" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac339268591d.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/backend/controllers/PostController.php" afterPath="$PROJECT_DIR$/backend/controllers/PostController.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/controllers/PostController.php" afterPath="$PROJECT_DIR$/frontend/controllers/PostController.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac339283cc22.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33929cb8cd.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac339f76ddd8.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33a0791134.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33a4fa7a48.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33a5794335.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33a673c1a9.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33a6f0ce63.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33b03d3dea.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33f397898d.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33f469e0aa.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33f5b3eebd.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac33f654cd81.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac34449b7198.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac344b3aaa48.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3451f043ce.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3456a8b87a.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac34579b8265.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3469233c63.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac34702d05cb.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347113f62b.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347143e395.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347187c6ab.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3471cd39a0.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347214d7d6.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347260e832.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3472a57979.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac347e7457d5.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3480f15d76.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3481b36a7f.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3482d230d6.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3483123def.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac348e79dfe8.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac34a2b2d9cf.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac34a6e64bc4.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac35647627b8.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac357e0b924d.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac38f2581694.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac38fbf27330.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac38fdbdd01d.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3929a0b2d9.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac3929e02c28.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac392a739b65.data" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/5ac392b0c72f1.data" afterPath="" />
       <change beforePath="$PROJECT_DIR$/frontend/runtime/debug/index.data" afterPath="$PROJECT_DIR$/frontend/runtime/debug/index.data" />
-      <change beforePath="$PROJECT_DIR$/frontend/views/site/index.php" afterPath="$PROJECT_DIR$/frontend/views/site/index.php" />
+      <change beforePath="$PROJECT_DIR$/frontend/runtime/logs/app.log" afterPath="$PROJECT_DIR$/frontend/runtime/logs/app.log" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,8 +101,8 @@
             <file leaf-file-name="detail.php" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="346">
-                    <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+                  <state relative-caret-position="615">
+                    <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
                     <folding>
                       <element signature="e#7#28#0#PHP" expanded="true" />
                     </folding>
@@ -141,12 +141,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
               <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/PostController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-22">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JudgementController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="14" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="41" selection-end-column="14" />
+              <folding>
+                <element signature="e#39#47#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,14 +185,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PostController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/controllers/PostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="52" />
+            <state relative-caret-position="350">
+              <caret line="148" column="40" lean-forward="false" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
               <folding>
                 <element signature="e#40#66#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_guestform.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/views/post/_guestform.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -236,7 +268,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/frontend/views/judgement/_judgement_view_only.php" />
         <option value="$PROJECT_DIR$/frontend/views/judgementpaper/view_detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/choicepaper/view_detail.php" />
         <option value="$PROJECT_DIR$/backend/views/result/view.php" />
@@ -280,13 +311,14 @@
         <option value="$PROJECT_DIR$/frontend/components/TagsCloudWidget.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/_listitem.php" />
         <option value="$PROJECT_DIR$/frontend/components/RctReplyWidget.php" />
-        <option value="$PROJECT_DIR$/frontend/controllers/PostController.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/indexall.php" />
         <option value="$PROJECT_DIR$/frontend/controllers/SiteController.php" />
         <option value="$PROJECT_DIR$/common/models/Post.php" />
         <option value="$PROJECT_DIR$/frontend/views/post/detail.php" />
         <option value="$PROJECT_DIR$/frontend/views/site/index.php" />
         <option value="$PROJECT_DIR$/backend/views/site/index.php" />
+        <option value="$PROJECT_DIR$/backend/controllers/PostController.php" />
+        <option value="$PROJECT_DIR$/frontend/controllers/PostController.php" />
       </list>
     </option>
   </component>
@@ -421,6 +453,12 @@
               <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
               <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="controllers" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="newtest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="newtest" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="backend" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
@@ -511,7 +549,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="sign&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/models/SignupForm.php&#10;Login&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/LoginForm.php&#10;git&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/console/controllers/.gitkeep" />
+    <property name="SearchEverywhereHistoryKey" value="_&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/views/post/_guestform.php&#10;sign&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/models/SignupForm.php&#10;Login&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/LoginForm.php&#10;git&#9;FILE&#9;file:///Applications/XAMPP/xamppfiles/htdocs/newtest/console/controllers/.gitkeep" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -567,12 +605,12 @@
       <workItem from="1522368444406" duration="601000" />
       <workItem from="1522422555240" duration="274000" />
       <workItem from="1522643479069" duration="29778000" />
-      <workItem from="1522741437055" duration="6805000" />
+      <workItem from="1522741437055" duration="8126000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="311343000" />
+    <option name="totallyTimeSpent" value="312664000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="944" y="23" width="964" height="987" extended-state="0" />
@@ -625,13 +663,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/update.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/comment/_form.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -755,13 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/backend/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -890,17 +914,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/_guestform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="48" lean-forward="false" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/views/post/_comment.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="19" column="60" lean-forward="false" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -933,16 +951,6 @@
         <state relative-caret-position="661">
           <caret line="109" column="27" lean-forward="false" selection-start-line="109" selection-start-column="27" selection-end-line="109" selection-end-column="27" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/controllers/PostController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <element signature="e#40#66#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,13 +1008,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
+    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="116" column="18" lean-forward="false" selection-start-line="116" selection-start-column="18" selection-end-line="116" selection-end-column="18" />
+        <state relative-caret-position="180">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/JudgementController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="14" lean-forward="false" selection-start-line="29" selection-start-column="12" selection-end-line="41" selection-end-column="14" />
           <folding>
-            <element signature="e#7#28#0#PHP" expanded="true" />
+            <element signature="e#39#47#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/backend/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-22">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1020,11 +1044,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/backend/views/site/index.php">
+    <entry file="file://$PROJECT_DIR$/frontend/views/post/detail.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+        <state relative-caret-position="615">
+          <caret line="87" column="48" lean-forward="false" selection-start-line="87" selection-start-column="48" selection-end-line="87" selection-end-column="48" />
+          <folding>
+            <element signature="e#7#28#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/views/post/_guestform.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/controllers/PostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="148" column="40" lean-forward="false" selection-start-line="148" selection-start-column="40" selection-end-line="148" selection-end-column="40" />
+          <folding>
+            <element signature="e#40#66#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -141,11 +141,16 @@ class PostController extends Controller
         $recentComments = Comment::findRecentComments();
         $userMe = User::findOne(Yii::$app->user->id);
         $commentModel = new Comment();
-        $commentModel->email = $userMe->email;
-        $commentModel->user_id = $userMe->id;
 
         if ($commentModel->load(Yii::$app->request->post() ))
         {
+            if (is_null(Yii::$app->user->id))
+            {
+                 return $this->redirect(['site/login']);
+            }
+
+            $commentModel->email = $userMe->email;
+            $commentModel->user_id = $userMe->id;
             $commentModel->status = "已审核";//新评论默认状态
             $commentModel->post_id = $model->id;
             $commentModel->user_id = Yii::$app->user->id;
