@@ -33498,3 +33498,710 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1522768019.1327
     'REQUEST_TIME' => 1522768019
 ]
+2018-05-22 16:29:37 [192.168.1.105][4][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.105
+    in /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/views/layouts/main.php:81
+    in /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/controllers/SiteController.php:90
+2018-05-22 16:29:37 [192.168.1.105][4][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.105
+2018-05-22 16:29:33 [192.168.1.105][4][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '7a1b70b23bd73a819668cec77a0fb07b'
+    '_csrf-frontend' => '3e1ead1b1472c4dbd8fd7dc1e169980b1bfc5a0361d38d775036456979f2eb56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EJ2B8krGIJd6La-KeUay_0bks-GIMTHD\";}'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WwPU7Xy8o3PwPZiMXpFiWAAAAAA'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => '192.168.1.106'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'advanced-frontend=7a1b70b23bd73a819668cec77a0fb07b; _csrf-frontend=3e1ead1b1472c4dbd8fd7dc1e169980b1bfc5a0361d38d775036456979f2eb56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EJ2B8krGIJd6La-KeUay_0bks-GIMTHD%22%3B%7D; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => '192.168.1.106'
+    'SERVER_ADDR' => '192.168.1.106'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.105'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '59176'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/newtest/frontend/web/'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526977773.22
+    'REQUEST_TIME' => 1526977773
+]
+2018-05-22 16:29:45 [192.168.1.105][4][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.105
+    in /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/views/layouts/main.php:81
+    in /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/controllers/ResultController.php:90
+2018-05-22 16:29:45 [192.168.1.105][4][-][warning][yii\debug\Module::checkAccess] Access to debugger is denied due to IP address restriction. The requesting IP address is 192.168.1.105
+2018-05-22 16:29:44 [192.168.1.105][4][-][info][application] $_GET = [
+    'r' => 'result/index'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-frontend' => '7a1b70b23bd73a819668cec77a0fb07b'
+    '_csrf-frontend' => '3e1ead1b1472c4dbd8fd7dc1e169980b1bfc5a0361d38d775036456979f2eb56a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"EJ2B8krGIJd6La-KeUay_0bks-GIMTHD\";}'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'WwPU@EsmV3JmyCT1IwfjMwAAAAU'
+    'HTTP_ACCEPT' => 'text/html, application/xhtml+xml, image/jxr, */*'
+    'HTTP_REFERER' => 'http://192.168.1.106/newtest/frontend/web/'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36 Edge/16.16299'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_HOST' => '192.168.1.106'
+    'HTTP_CONNECTION' => 'Keep-Alive'
+    'HTTP_COOKIE' => 'advanced-frontend=7a1b70b23bd73a819668cec77a0fb07b; _csrf-frontend=3e1ead1b1472c4dbd8fd7dc1e169980b1bfc5a0361d38d775036456979f2eb56a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22EJ2B8krGIJd6La-KeUay_0bks-GIMTHD%22%3B%7D; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => '192.168.1.106'
+    'SERVER_ADDR' => '192.168.1.106'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '192.168.1.105'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '59185'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => 'r=result%2Findex'
+    'REQUEST_URI' => '/newtest/frontend/web/index.php?r=result%2Findex'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1526977784.57
+    'REQUEST_TIME' => 1526977784
+]
+2018-06-23 16:59:37 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=120....', 'root', 'thm', NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#28 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#20 [internal function]: yii\base\BaseObject->__construct(Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#28 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#30 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#39 {main}
+Additional Information:
+
+2018-06-23 16:58:37 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'UM_distinctid' => '1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285'
+    'pgv_pvi' => '1133319168'
+    'Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1520925642,1521434820'
+    'Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec' => '1522751661,1522808390'
+    'CNZZDATA1259283333' => '329558181-1522806620-|1522812157'
+    '_ga' => 'GA1.1.2076296024.1526451482'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+    'advanced-frontend' => 'be9e1e6ba3e93ab0b2bd9db4b17f7d45'
+    '_csrf-frontend' => 'ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FQXugVY4zdHxHLc0E3wW6RwDEh487wT3\";}'
+    '__lnkrntdmcvrd' => '-1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wy4LvQSDh6-odghRRqSiUwAAAAY'
+    'HTTP_HOST' => 'fg'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'UM_distinctid=1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285; pgv_pvi=1133319168; Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1520925642,1521434820; Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec=1522751661,1522808390; CNZZDATA1259283333=329558181-1522806620-%7C1522812157; _ga=GA1.1.2076296024.1526451482; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D; advanced-frontend=be9e1e6ba3e93ab0b2bd9db4b17f7d45; _csrf-frontend=ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FQXugVY4zdHxHLc0E3wW6RwDEh487wT3%22%3B%7D; __lnkrntdmcvrd=-1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '55188'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/newtest/frontend/web/index.php'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529744317.569
+    'REQUEST_TIME' => 1529744317
+]
+2018-06-23 17:05:12 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=120....', 'root', 'thm', NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#28 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#20 [internal function]: yii\base\BaseObject->__construct(Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#28 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#30 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#39 {main}
+Additional Information:
+
+2018-06-23 17:04:12 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'UM_distinctid' => '1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285'
+    'pgv_pvi' => '1133319168'
+    'Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1520925642,1521434820'
+    'Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec' => '1522751661,1522808390'
+    'CNZZDATA1259283333' => '329558181-1522806620-|1522812157'
+    '_ga' => 'GA1.1.2076296024.1526451482'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+    'advanced-frontend' => 'be9e1e6ba3e93ab0b2bd9db4b17f7d45'
+    '_csrf-frontend' => 'ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FQXugVY4zdHxHLc0E3wW6RwDEh487wT3\";}'
+    '__lnkrntdmcvrd' => '-1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wy4NDFsx0i3qLH@1wG-yMQAAAAQ'
+    'HTTP_HOST' => 'fg'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'UM_distinctid=1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285; pgv_pvi=1133319168; Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1520925642,1521434820; Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec=1522751661,1522808390; CNZZDATA1259283333=329558181-1522806620-%7C1522812157; _ga=GA1.1.2076296024.1526451482; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D; advanced-frontend=be9e1e6ba3e93ab0b2bd9db4b17f7d45; _csrf-frontend=ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FQXugVY4zdHxHLc0E3wW6RwDEh487wT3%22%3B%7D; __lnkrntdmcvrd=-1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '55813'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/newtest/frontend/web/index.php'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529744652.438
+    'REQUEST_TIME' => 1529744652
+]
+2018-06-23 17:06:12 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=120....', 'root', 'thm', NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#28 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] Operation timed out in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#20 [internal function]: yii\base\BaseObject->__construct(Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#28 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#30 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#39 {main}
+Additional Information:
+
+2018-06-23 17:04:23 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'UM_distinctid' => '1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285'
+    'pgv_pvi' => '1133319168'
+    'Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1520925642,1521434820'
+    'Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec' => '1522751661,1522808390'
+    'CNZZDATA1259283333' => '329558181-1522806620-|1522812157'
+    '_ga' => 'GA1.1.2076296024.1526451482'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+    'advanced-frontend' => 'be9e1e6ba3e93ab0b2bd9db4b17f7d45'
+    '_csrf-frontend' => 'ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FQXugVY4zdHxHLc0E3wW6RwDEh487wT3\";}'
+    '__lnkrntdmcvrd' => '-1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wy4NF@OpaDIlGarShv4U6AAAAAc'
+    'HTTP_HOST' => 'fg'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'UM_distinctid=1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285; pgv_pvi=1133319168; Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1520925642,1521434820; Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec=1522751661,1522808390; CNZZDATA1259283333=329558181-1522806620-%7C1522812157; _ga=GA1.1.2076296024.1526451482; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D; advanced-frontend=be9e1e6ba3e93ab0b2bd9db4b17f7d45; _csrf-frontend=ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FQXugVY4zdHxHLc0E3wW6RwDEh487wT3%22%3B%7D; __lnkrntdmcvrd=-1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '55814'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/newtest/frontend/web/index.php'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529744663.382
+    'REQUEST_TIME' => 1529744663
+]
+2018-06-23 17:09:23 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'117.101.218.26' (using password: YES) in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:687
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(687): PDO->__construct('mysql:host=47.9...', 'root', 'thm', NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#20 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#22 [internal function]: yii\base\BaseObject->__construct(Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#28 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#30 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#39 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#40 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#41 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'117.101.218.26' (using password: YES) in /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php:624
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(996): yii\db\Connection->open()
+#1 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(253): yii\db\Connection->getSlavePdo()
+#3 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(1143): yii\db\Command->prepare(true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(312): yii\db\Command->queryAll()
+#6 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(744): yii\db\mysql\Schema->loadTableSchema('test_user')
+#8 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata('{{%user}}', 'schema', false)
+#9 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(384): yii\db\Schema->getTableSchema('{{%user}}')
+#10 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(211): yii\db\ActiveRecord::getTableSchema()
+#11 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/ActiveRecord.php(190): yii\db\ActiveRecord::filterCondition(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/db/BaseActiveRecord.php(112): yii\db\ActiveRecord::findByCondition(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/newtest/common/models/User.php(107): yii\db\BaseActiveRecord::findOne(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(690): common\models\User::findIdentity(4)
+#15 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(192): yii\web\User->renewAuthStatus()
+#16 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/User.php(360): yii\web\User->getIdentity()
+#17 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Component.php(139): yii\web\User->getIsGuest()
+#18 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/panels/UserPanel.php(81): yii\base\Component->__get('isGuest')
+#19 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#20 [internal function]: yii\base\BaseObject->__construct(Array)
+#21 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(383): ReflectionClass->newInstanceArgs(Array)
+#22 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#23 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(177): yii\BaseYii::createObject(Array)
+#25 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2-debug/Module.php(149): yii\debug\Module->initPanels()
+#26 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\debug\Module->init()
+#27 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(158): yii\base\BaseObject->__construct(Array)
+#28 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#29 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(375): ReflectionClass->newInstanceArgs(Array)
+#30 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/di/Container.php(156): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#31 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/BaseYii.php(349): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#32 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Module.php(427): yii\BaseYii::createObject(Array, Array)
+#33 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(315): yii\base\Module->getModule('debug')
+#34 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/web/Application.php(69): yii\base\Application->bootstrap()
+#35 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(273): yii\web\Application->bootstrap()
+#36 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/BaseObject.php(109): yii\base\Application->init()
+#37 /Applications/XAMPP/xamppfiles/htdocs/newtest/vendor/yiisoft/yii2/base/Application.php(206): yii\base\BaseObject->__construct(Array)
+#38 /Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php(17): yii\base\Application->__construct('[<span class="s...')
+#39 {main}
+Additional Information:
+
+2018-06-23 17:09:23 [::1][-][be9e1e6ba3e93ab0b2bd9db4b17f7d45][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'UM_distinctid' => '1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285'
+    'pgv_pvi' => '1133319168'
+    'Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1' => '1520925642,1521434820'
+    'Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec' => '1522751661,1522808390'
+    'CNZZDATA1259283333' => '329558181-1522806620-|1522812157'
+    '_ga' => 'GA1.1.2076296024.1526451482'
+    '_identity-frontend' => '9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a:2:{i:0;s:18:\"_identity-frontend\";i:1;s:46:\"[4,\"zyAvLj6isI_DkirhbC6jwp21GfflT0kb\",2592000]\";}'
+    'advanced-frontend' => 'be9e1e6ba3e93ab0b2bd9db4b17f7d45'
+    '_csrf-frontend' => 'ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"FQXugVY4zdHxHLc0E3wW6RwDEh487wT3\";}'
+    '__lnkrntdmcvrd' => '-1'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 4
+]
+
+$_SERVER = [
+    'UNIQUE_ID' => 'Wy4OQ9@JnREYLRMtZ4NZSAAAAAI'
+    'HTTP_HOST' => 'fg'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.9'
+    'HTTP_COOKIE' => 'UM_distinctid=1621e3b8c221a0-0c487ec3d623c-32667b04-1fa400-1621e3b8c23285; pgv_pvi=1133319168; Hm_lvt_5a84e7b6dc3ccb0c69ad5cc9f52411b1=1520925642,1521434820; Hm_lvt_d554aac8a9af3d52d0d0d48611a355ec=1522751661,1522808390; CNZZDATA1259283333=329558181-1522806620-%7C1522812157; _ga=GA1.1.2076296024.1526451482; _identity-frontend=9cf6a99db14198bccc98065847157ab0cf2945951d3802af9cdb2a7fe0838494a%3A2%3A%7Bi%3A0%3Bs%3A18%3A%22_identity-frontend%22%3Bi%3A1%3Bs%3A46%3A%22%5B4%2C%22zyAvLj6isI_DkirhbC6jwp21GfflT0kb%22%2C2592000%5D%22%3B%7D; advanced-frontend=be9e1e6ba3e93ab0b2bd9db4b17f7d45; _csrf-frontend=ea11b97c891411cfcd2f7fad0f182892a7a401872c5a582ef611d6f3f44fb33fa%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22FQXugVY4zdHxHLc0E3wW6RwDEh487wT3%22%3B%7D; __lnkrntdmcvrd=-1'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'DYLD_LIBRARY_PATH' => '/Applications/XAMPP/xamppfiles/lib:/Applications/XAMPP/xamppfiles/lib'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache/2.4.29 (Unix) OpenSSL/1.0.2n PHP/7.2.3 mod_perl/2.0.8-dev Perl/v5.16.3'
+    'SERVER_NAME' => 'fg'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => '/Applications/XAMPP/xamppfiles/htdocs'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Applications/XAMPP/xamppfiles/htdocs/newtest/frontend/web/index.php'
+    'REMOTE_PORT' => '56671'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/newtest/frontend/web/index.php'
+    'SCRIPT_NAME' => '/newtest/frontend/web/index.php'
+    'PHP_SELF' => '/newtest/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1529744963.378
+    'REQUEST_TIME' => 1529744963
+]
